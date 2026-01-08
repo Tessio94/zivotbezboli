@@ -10,6 +10,7 @@ import {
 	IoLogoFacebook,
 	IoLogoInstagram,
 	IoLogoWhatsapp,
+	IoLogoYoutube,
 } from "react-icons/io";
 
 const Carousel = () => {
@@ -38,7 +39,7 @@ const Carousel = () => {
 								</h3>
 								<Link
 									href="/rezervacija"
-									className="px-10 py-5 rounded-4xl bg-theme1 text-slate-100 text-3xl font-semibold mt-5"
+									className="px-10 py-5 rounded-4xl bg-theme1 text-slate-100 text-3xl font-semibold mt-5 hover:bg-theme4 transition-all duration-300 border-2 border-transparent hover:border-slate-100"
 								>
 									Rezervirajte termin
 								</Link>
@@ -102,6 +103,9 @@ const Carousel = () => {
 									</a>
 									<a href="" className="text-4xl text-slate-100">
 										<IoLogoFacebook />
+									</a>
+									<a href="" className="text-4xl text-slate-100">
+										<IoLogoYoutube />
 									</a>
 								</div>
 							</div>
