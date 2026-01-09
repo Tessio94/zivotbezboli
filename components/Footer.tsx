@@ -3,150 +3,151 @@ import Image from "next/image";
 import Link from "next/link";
 import { CiClock1, CiLocationOn, CiMail, CiMobile3 } from "react-icons/ci";
 import {
-	IoLogoFacebook,
-	IoLogoInstagram,
-	IoLogoWhatsapp,
-	IoLogoYoutube,
+  IoLogoFacebook,
+  IoLogoInstagram,
+  IoLogoWhatsapp,
+  IoLogoYoutube,
 } from "react-icons/io";
 import { CgChevronRight } from "react-icons/cg";
 
 const Footer = () => {
-	return (
-		<footer className="relative bg-[url('/slike/bez-boli-9-xl.jpg')] z-10">
-			<div className="absolute inset-0  bg-theme4/90  -z-10" />
-			<div className="px-6 pt-15 pb-7 sm:px-10 lg:px-18 lg:pt-20 lg:pb-10 2xl:px-28 flex items-start flex-wrap justify-between max-xl:gap-y-15">
-				<div className="max-xl:w-1/2 max-sm:w-full max-sm:items-center flex flex-col  gap-10 items-start max-xl:order-1">
-					<Link href="/">
-						<Image
-							className="rounded-full"
-							src="/logo_transparent.png"
-							alt="Život bez boli logo"
-							width={220}
-							height={220}
-						/>
-					</Link>
-					<div className="flex items-center gap-6 bg-theme1 px-5 py-2 rounded-4xl">
-						<a href="" className="text-3xl text-slate-100 group">
-							<IoLogoWhatsapp className="group-hover:scale-120 transition-all duration-300" />
-						</a>
-						<a href="" className="text-3xl text-slate-100 group">
-							<IoLogoInstagram className="group-hover:scale-120 transition-all duration-300" />
-						</a>
-						<a href="" className="text-3xl text-slate-100 group">
-							<IoLogoFacebook className="group-hover:scale-120 transition-all duration-300" />
-						</a>
-						<a href="" className="text-3xl text-slate-100 group">
-							<IoLogoYoutube className="group-hover:scale-120 transition-all duration-300" />
-						</a>
-					</div>
-				</div>
-				<div className="max-xl:w-1/2 max-[500px]:w-full!  max-xl:order-3">
-					<p className="text-theme1 text-2xl font-semibold mb-7">
-						Brze poveznice:
-					</p>
-					<ul className="text-slate-100 flex-col flex gap-2">
-						<li className="flex items-center gap-4">
-							<CgChevronRight className="text-3xl text-theme1" />
-							<a className="relative text-2xl  text-slate-100 after:content-[''] after:top-full after:h-0.5 after:bg-slate-100 hover:after:right-0 after:right-full after:absolute after:left-0 after:transition-all after:duration-300">
-								O nama
-							</a>
-						</li>
-						<li className="flex items-center gap-4">
-							<CgChevronRight className="text-3xl text-theme1" />
-							<Link
-								href="/rezervacije"
-								className="relative text-2xl  text-slate-100 after:content-[''] after:top-full after:h-0.5 after:bg-slate-100 hover:after:right-0 after:right-full after:absolute after:left-0 after:transition-all after:duration-300"
-							>
-								Rezervacija
-							</Link>
-						</li>
-						<li className="flex items-center gap-4">
-							<CgChevronRight className="text-3xl text-theme1" />
-							<Link
-								href="/kontakt"
-								className="relative text-2xl  text-slate-100 after:content-[''] after:top-full after:h-0.5 after:bg-slate-100 hover:after:right-0 after:right-full after:absolute after:left-0 after:transition-all after:duration-300"
-							>
-								Konatkt
-							</Link>
-						</li>
-					</ul>
-				</div>
-				<div className="max-xl:w-1/2 max-sm:w-full max-xl:order-2">
-					<p className="text-theme1 text-2xl font-semibold mb-7">Konatkt:</p>
-					<ul className="text-slate-100 flex-col flex gap-3">
-						<li>
-							<p className="text-2xl flex items-center gap-4 text-slate-100">
-								<CiLocationOn className="text-3xl text-theme1" />
-								Ul. Charlesa Darwina 10, Zagreb
-							</p>
-						</li>
-						<li className="flex items-center gap-4">
-							<CiMobile3 className="text-3xl text-theme1" />
-							<a
-								href="tel:+385 98 964 8532"
-								className="text-2xl relative flex items-center gap-4 text-slate-100 after:content-[''] after:top-full after:h-0.5 after:bg-slate-100 hover:after:right-0 after:right-full after:absolute after:left-0 after:transition-all after:duration-300"
-							>
-								+385 98 964 8532
-							</a>
-						</li>
-						<li className="flex items-center gap-4">
-							<CiMail className="text-3xl text-theme1" />
-							<a
-								href="mail:ivan@ivanradicev.com "
-								className="text-2xl  relative flex items-center gap-4 text-slate-100 after:content-[''] after:top-full after:h-0.5 after:bg-slate-100 hover:after:right-0 after:right-full after:absolute after:left-0 after:transition-all after:duration-300"
-							>
-								ivan@ivanradicev.com
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div className="max-xl:w-1/2 max-[500px]:w-full! max-xl:order-4">
-					<p className="text-theme1 text-2xl font-semibold mb-7">
-						Radno vrijeme:
-					</p>
-					<ul className="text-slate-100 flex-col flex gap-3">
-						<li>
-							<p className="text-slate-100 text-lg font-regular flex items-center gap-2">
-								<CiClock1 className="text-xl text-theme1" />
-								Pon: 9-12h | 15-19h
-							</p>
-						</li>
-						<li>
-							<p className="text-slate-100 text-lg font-regular flex items-center gap-2">
-								<CiClock1 className="text-xl text-theme1" />
-								Uto: 9-12h | 15-19h
-							</p>
-						</li>
-						<li>
-							<p className="text-slate-100 text-lg font-regular flex items-center gap-2">
-								<CiClock1 className="text-xl text-theme1" />
-								Sri: 9-12h | 15-19h
-							</p>
-						</li>
-						<li>
-							<p className="text-slate-100 text-lg font-regular flex items-center gap-2">
-								<CiClock1 className="text-xl text-theme1" />
-								Čet: 9-12h | 15-19h
-							</p>
-						</li>
-						<li>
-							<p className="text-slate-100 text-lg font-regular flex items-center gap-2">
-								<CiClock1 className="text-xl text-theme1" />
-								Pet: 9-12h | 15-19h
-							</p>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div className="max-sm:px-2 max-lg:px-5 max-lg:px-10 px-30 pt-20 lg:pb-10 pb-7 flex justify-center">
-				<div className="max-lg:w-full max-xl:w-[80%] w-[60%] border-t border-slate-100">
-					<p className="text-center max-sm:p-2  max-lg:p-5 p-10 text-slate-100 text-xl">
-						Copyright © 2025 <i>Tessio94</i> - Sva prava pridržana.
-					</p>
-				</div>
-			</div>
-		</footer>
-	);
+  return (
+    <footer className="relative z-10 bg-[url('/slike/bez-boli-9-xl.jpg')]">
+      <div className="bg-theme4/90 absolute inset-0 -z-10" />
+      {/* <div className="px-6 pt-15 pb-7 sm:px-10 lg:px-18 lg:pt-20 lg:pb-10 2xl:px-28 flex items-start flex-wrap justify-between max-xl:gap-y-15"> */}
+      <div className="flex flex-wrap items-start justify-between px-6 pt-16 pb-8 max-xl:gap-y-15 sm:px-10 sm:py-20 sm:pt-20 sm:pb-10 lg:px-18 lg:pt-26 lg:pb-13">
+        <div className="flex flex-col items-start gap-10 max-xl:order-1 max-xl:w-1/2 max-sm:w-full max-sm:items-center">
+          <Link href="/">
+            <Image
+              className="rounded-full"
+              src="/logo_transparent.png"
+              alt="Život bez boli logo"
+              width={220}
+              height={220}
+            />
+          </Link>
+          <div className="bg-theme1 flex items-center gap-6 rounded-4xl px-5 py-2">
+            <a href="" className="group text-3xl text-slate-100">
+              <IoLogoWhatsapp className="transition-all duration-300 group-hover:scale-120" />
+            </a>
+            <a href="" className="group text-3xl text-slate-100">
+              <IoLogoInstagram className="transition-all duration-300 group-hover:scale-120" />
+            </a>
+            <a href="" className="group text-3xl text-slate-100">
+              <IoLogoFacebook className="transition-all duration-300 group-hover:scale-120" />
+            </a>
+            <a href="" className="group text-3xl text-slate-100">
+              <IoLogoYoutube className="transition-all duration-300 group-hover:scale-120" />
+            </a>
+          </div>
+        </div>
+        <div className="max-[500px]:w-full! max-xl:order-3 max-xl:w-1/2">
+          <p className="text-theme1 mb-7 text-2xl font-semibold">
+            Brze poveznice:
+          </p>
+          <ul className="flex flex-col gap-2 text-slate-100">
+            <li className="flex items-center gap-4">
+              <CgChevronRight className="text-theme1 text-3xl" />
+              <a className="relative text-2xl text-slate-100 after:absolute after:top-full after:right-full after:left-0 after:h-0.5 after:bg-slate-100 after:transition-all after:duration-300 after:content-[''] hover:after:right-0">
+                O nama
+              </a>
+            </li>
+            <li className="flex items-center gap-4">
+              <CgChevronRight className="text-theme1 text-3xl" />
+              <Link
+                href="/rezervacije"
+                className="relative text-2xl text-slate-100 after:absolute after:top-full after:right-full after:left-0 after:h-0.5 after:bg-slate-100 after:transition-all after:duration-300 after:content-[''] hover:after:right-0"
+              >
+                Rezervacija
+              </Link>
+            </li>
+            <li className="flex items-center gap-4">
+              <CgChevronRight className="text-theme1 text-3xl" />
+              <Link
+                href="/kontakt"
+                className="relative text-2xl text-slate-100 after:absolute after:top-full after:right-full after:left-0 after:h-0.5 after:bg-slate-100 after:transition-all after:duration-300 after:content-[''] hover:after:right-0"
+              >
+                Konatkt
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="max-xl:order-2 max-xl:w-1/2 max-sm:w-full">
+          <p className="text-theme1 mb-7 text-2xl font-semibold">Konatkt:</p>
+          <ul className="flex flex-col gap-3 text-slate-100">
+            <li>
+              <p className="flex items-center gap-4 text-2xl text-slate-100">
+                <CiLocationOn className="text-theme1 text-3xl" />
+                Ul. Charlesa Darwina 10, Zagreb
+              </p>
+            </li>
+            <li className="flex items-center gap-4">
+              <CiMobile3 className="text-theme1 text-3xl" />
+              <a
+                href="tel:+385 98 964 8532"
+                className="relative flex items-center gap-4 text-2xl text-slate-100 after:absolute after:top-full after:right-full after:left-0 after:h-0.5 after:bg-slate-100 after:transition-all after:duration-300 after:content-[''] hover:after:right-0"
+              >
+                +385 98 964 8532
+              </a>
+            </li>
+            <li className="flex items-center gap-4">
+              <CiMail className="text-theme1 text-3xl" />
+              <a
+                href="mail:ivan@ivanradicev.com "
+                className="relative flex items-center gap-4 text-2xl text-slate-100 after:absolute after:top-full after:right-full after:left-0 after:h-0.5 after:bg-slate-100 after:transition-all after:duration-300 after:content-[''] hover:after:right-0"
+              >
+                ivan@ivanradicev.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="max-[500px]:w-full! max-xl:order-4 max-xl:w-1/2">
+          <p className="text-theme1 mb-7 text-2xl font-semibold">
+            Radno vrijeme:
+          </p>
+          <ul className="flex flex-col gap-3 text-slate-100">
+            <li>
+              <p className="font-regular flex items-center gap-2 text-lg text-slate-100">
+                <CiClock1 className="text-theme1 text-xl" />
+                Pon: 9-12h | 15-19h
+              </p>
+            </li>
+            <li>
+              <p className="font-regular flex items-center gap-2 text-lg text-slate-100">
+                <CiClock1 className="text-theme1 text-xl" />
+                Uto: 9-12h | 15-19h
+              </p>
+            </li>
+            <li>
+              <p className="font-regular flex items-center gap-2 text-lg text-slate-100">
+                <CiClock1 className="text-theme1 text-xl" />
+                Sri: 9-12h | 15-19h
+              </p>
+            </li>
+            <li>
+              <p className="font-regular flex items-center gap-2 text-lg text-slate-100">
+                <CiClock1 className="text-theme1 text-xl" />
+                Čet: 9-12h | 15-19h
+              </p>
+            </li>
+            <li>
+              <p className="font-regular flex items-center gap-2 text-lg text-slate-100">
+                <CiClock1 className="text-theme1 text-xl" />
+                Pet: 9-12h | 15-19h
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="flex justify-center px-6 py-8 sm:px-10 sm:py-10 lg:px-18 lg:py-13">
+        <div className="w-[60%] border-t border-slate-100 max-xl:w-[80%] max-lg:w-full">
+          <p className="p-10 text-center text-xl text-slate-100 max-lg:p-5 max-sm:p-2">
+            Copyright © 2025 <i>Tessio94</i> - Sva prava pridržana.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;
