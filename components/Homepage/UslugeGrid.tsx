@@ -7,7 +7,7 @@ const UslugeGrid = () => {
 		<section className="">
 			<div className="px-6 py-26 sm:px-10 lg:px-18 lg:py-42">
 				<h2 className="text-theme1 text-5xl font-semibold mb-15">Usluge</h2>
-				<div className="grid grid-cols-5 items-stretch gap-10">
+				<div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 items-stretch gap-10">
 					<div className="p-8 rounded-2xl flex items-center flex-col gap-4  bg-theme1/20 border-2 border-theme1 hover:bg-theme1/30 transition-all duration-300 justify-between">
 						<Image
 							src="/usluge/ikone/kronicne.svg"
@@ -20,7 +20,7 @@ const UslugeGrid = () => {
 						</p>
 						<Link
 							href="/usluge/kronicna-bol"
-							className="flex items-center gap-6 bg-theme1 px-4 py-2 rounded-2xl text-lg text-slate-100 tracking-wider hover:bg-theme4 transition-all duration-300"
+							className="flex items-center gap-6 bg-theme1 px-4 py-2 text-center rounded-2xl text-lg text-slate-100 tracking-wider hover:bg-theme4 transition-all duration-300"
 						>
 							Pogledaj više
 						</Link>
@@ -37,7 +37,7 @@ const UslugeGrid = () => {
 						</p>
 						<Link
 							href="/usluge/bol-u-vratu"
-							className="flex items-center gap-6 bg-theme1 px-4 py-2 rounded-2xl text-lg text-slate-100 tracking-wider hover:bg-theme4 transition-all duration-300"
+							className="flex items-center gap-6 bg-theme1 px-4 py-2 text-center rounded-2xl text-lg text-slate-100 tracking-wider hover:bg-theme4 transition-all duration-300"
 						>
 							Pogledaj više
 						</Link>
@@ -54,7 +54,7 @@ const UslugeGrid = () => {
 						</p>
 						<Link
 							href="/usluge/bol-u-ledjima"
-							className="flex items-center gap-6 bg-theme1 px-4 py-2 rounded-2xl text-lg text-slate-100 tracking-wider hover:bg-theme4 transition-all duration-300"
+							className="flex items-center gap-6 bg-theme1 px-4 py-2 text-center rounded-2xl text-lg text-slate-100 tracking-wider hover:bg-theme4 transition-all duration-300"
 						>
 							Pogledaj više
 						</Link>
@@ -71,7 +71,7 @@ const UslugeGrid = () => {
 						</p>
 						<Link
 							href="/usluge/bol-u-kuku"
-							className="flex items-center gap-6 bg-theme1 px-4 py-2 rounded-2xl text-lg text-slate-100 tracking-wider hover:bg-theme4 transition-all duration-300"
+							className="flex items-center gap-6 bg-theme1 px-4 py-2 text-center rounded-2xl text-lg text-slate-100 tracking-wider hover:bg-theme4 transition-all duration-300"
 						>
 							Pogledaj više
 						</Link>
@@ -88,7 +88,7 @@ const UslugeGrid = () => {
 						</p>
 						<Link
 							href="/usluge/bol-u-vratu-i-ramenu"
-							className="flex items-center gap-6 bg-theme1 px-4 py-2 rounded-2xl text-lg text-slate-100 tracking-wider hover:bg-theme4 transition-all duration-300"
+							className="flex items-center gap-6 bg-theme1 px-4 py-2 text-center rounded-2xl text-lg text-slate-100 tracking-wider hover:bg-theme4 transition-all duration-300"
 						>
 							Pogledaj više
 						</Link>
@@ -105,7 +105,7 @@ const UslugeGrid = () => {
 						</p>
 						<Link
 							href="/usluge/bol-u-laktu-i-ruci"
-							className="flex items-center gap-6 bg-theme1 px-4 py-2 rounded-2xl text-lg text-slate-100 tracking-wider hover:bg-theme4 transition-all duration-300"
+							className="flex items-center gap-6 bg-theme1 px-4 py-2 text-center rounded-2xl text-lg text-slate-100 tracking-wider hover:bg-theme4 transition-all duration-300"
 						>
 							Pogledaj više
 						</Link>
@@ -122,7 +122,7 @@ const UslugeGrid = () => {
 						</p>
 						<Link
 							href="/usluge/bol-u-koljenima-i-stopalima"
-							className="flex items-center gap-6 bg-theme1 px-4 py-2 rounded-2xl text-lg text-slate-100 tracking-wider hover:bg-theme4 transition-all duration-300"
+							className="flex items-center gap-6 bg-theme1 px-4 py-2 text-center rounded-2xl text-lg text-slate-100 tracking-wider hover:bg-theme4 transition-all duration-300"
 						>
 							Pogledaj više
 						</Link>
@@ -139,7 +139,7 @@ const UslugeGrid = () => {
 						</p>
 						<Link
 							href="/usluge/sportske-ozljede"
-							className="flex items-center gap-6 bg-theme1 px-4 py-2 rounded-2xl text-lg text-slate-100 tracking-wider hover:bg-theme4 transition-all duration-300"
+							className="flex items-center gap-6 bg-theme1 px-4 py-2 text-center rounded-2xl text-lg text-slate-100 tracking-wider hover:bg-theme4 transition-all duration-300"
 						>
 							Pogledaj više
 						</Link>
@@ -156,7 +156,7 @@ const UslugeGrid = () => {
 						</p>
 						<Link
 							href="/usluge/tretmani-djece"
-							className="flex items-center gap-6 bg-theme1 px-4 py-2 rounded-2xl text-lg text-slate-100 tracking-wider hover:bg-theme4 transition-all duration-300"
+							className="flex items-center gap-6 bg-theme1 px-4 py-2 text-center rounded-2xl text-lg text-slate-100 tracking-wider hover:bg-theme4 transition-all duration-300"
 						>
 							Pogledaj više
 						</Link>
@@ -173,7 +173,7 @@ const UslugeGrid = () => {
 						</p>
 						<Link
 							href="/usluge/ostale-tegobe"
-							className="flex items-center gap-6 bg-theme1 px-4 py-2 rounded-2xl text-lg text-slate-100 tracking-wider hover:bg-theme4 transition-all duration-300"
+							className="flex items-center gap-6 bg-theme1 px-4 py-2 text-center rounded-2xl text-lg text-slate-100 tracking-wider hover:bg-theme4 transition-all duration-300"
 						>
 							Pogledaj više
 						</Link>

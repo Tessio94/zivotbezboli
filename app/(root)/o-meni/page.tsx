@@ -61,8 +61,8 @@ const Page = () => {
 						</p>
 						<p className="text-xl text-theme4">
 							Osobno „negativno“ iskustvo te želja za boljim poznavanje ljudskog
-							tijela, njegove anatomije, fiziologije usmjerile su me na studij
-							<strong>fizioterapije</strong> na kojem sam htio naučiti više o
+							tijela, njegove anatomije, fiziologije usmjerile su me na studij{" "}
+							<strong>fizioterapije</strong> na kojem sam htio naučiti više o{" "}
 							<strong>
 								zdravlju, rehabilitaciji, liječenju i pomaganju drugima.
 							</strong>

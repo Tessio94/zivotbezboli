@@ -14,8 +14,8 @@ const Footer = () => {
 	return (
 		<footer className="relative bg-[url('/slike/bez-boli-9-xl.jpg')] z-10">
 			<div className="absolute inset-0  bg-theme4/90  -z-10" />
-			<div className="px-6 pt-15 pb-7 sm:px-10 lg:px-18 lg:pt-20 lg:pb-10 2xl:px-28 flex items-start justify-between">
-				<div className="flex flex-col gap-10 items-center">
+			<div className="px-6 pt-15 pb-7 sm:px-10 lg:px-18 lg:pt-20 lg:pb-10 2xl:px-28 flex items-start flex-wrap justify-between max-xl:gap-y-15">
+				<div className="max-xl:w-1/2 max-sm:w-full max-sm:items-center flex flex-col  gap-10 items-start max-xl:order-1">
 					<Link href="/">
 						<Image
 							className="rounded-full"
@@ -40,7 +40,7 @@ const Footer = () => {
 						</a>
 					</div>
 				</div>
-				<div>
+				<div className="max-xl:w-1/2 max-[500px]:w-full!  max-xl:order-3">
 					<p className="text-theme1 text-2xl font-semibold mb-7">
 						Brze poveznice:
 					</p>
@@ -71,7 +71,7 @@ const Footer = () => {
 						</li>
 					</ul>
 				</div>
-				<div>
+				<div className="max-xl:w-1/2 max-sm:w-full max-xl:order-2">
 					<p className="text-theme1 text-2xl font-semibold mb-7">Konatkt:</p>
 					<ul className="text-slate-100 flex-col flex gap-3">
 						<li>
@@ -100,7 +100,7 @@ const Footer = () => {
 						</li>
 					</ul>
 				</div>
-				<div>
+				<div className="max-xl:w-1/2 max-[500px]:w-full! max-xl:order-4">
 					<p className="text-theme1 text-2xl font-semibold mb-7">
 						Radno vrijeme:
 					</p>
@@ -138,9 +138,9 @@ const Footer = () => {
 					</ul>
 				</div>
 			</div>
-			<div className="px-30 pt-20 lg:pb-10 pb-7 flex justify-center">
-				<div className="w-[60%] border-t border-slate-100">
-					<p className="text-center p-10 text-slate-100 text-xl">
+			<div className="max-sm:px-2 max-lg:px-5 max-lg:px-10 px-30 pt-20 lg:pb-10 pb-7 flex justify-center">
+				<div className="max-lg:w-full max-xl:w-[80%] w-[60%] border-t border-slate-100">
+					<p className="text-center max-sm:p-2  max-lg:p-5 p-10 text-slate-100 text-xl">
 						Copyright © 2025 <i>Tessio94</i> - Sva prava pridržana.
 					</p>
 				</div>
