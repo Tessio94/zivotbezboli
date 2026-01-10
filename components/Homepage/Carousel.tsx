@@ -120,7 +120,7 @@ const Carousel = () => {
           </div>
           <div className="embla__slide">
             <div className="relative">
-              <div className="from-theme4/20 via-theme4/90 to-theme4/20 absolute inset-0 bg-linear-to-l" />
+              <div className="from-theme4/20 via-theme4/90 to-theme4/20 max-[930px]:from-theme4/90 absolute inset-0 bg-linear-to-l max-[930px]:bg-linear-to-r max-[930px]:via-none" />
               <div className="absolute top-1/2 right-1/2 flex w-full translate-x-1/2 -translate-y-1/2 flex-col items-center gap-6 px-6 sm:px-10 xl:w-auto xl:px-0">
                 <h1 className="text-center text-9xl font-bold text-slate-100 max-[1700px]:text-8xl max-[1500px]:text-7xl max-[750px]:text-6xl max-[640px]:text-5xl max-[450px]:text-4xl">
                   <span className="text-theme1">Bol </span>nije problem.
