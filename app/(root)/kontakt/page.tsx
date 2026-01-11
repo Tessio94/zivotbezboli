@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Contact from "@/components/Homepage/Contact";
 import { CiLocationOn, CiMail, CiMobile3 } from "react-icons/ci";
+import * as motion from "motion/react-client";
 
 const Page = () => {
   return (
@@ -11,9 +12,14 @@ const Page = () => {
         <div className="relative">
           <div className="bg-theme4/70 absolute inset-0" />
           <div className="absolute top-1/2 right-1/2 flex translate-x-1/2 -translate-y-1/2 flex-col items-center gap-6">
-            <h1 className="after:to-theme1 relative text-center text-5xl text-8xl font-bold text-slate-100 after:absolute after:top-[calc(100%+5px)] after:left-1/2 after:h-1 after:w-[50%] after:-translate-x-1/2 after:rounded-full after:bg-linear-to-r after:from-slate-100 after:content-[''] sm:text-6xl md:text-7xl lg:text-8xl">
+            <motion.h1
+              className="after:to-theme1 relative text-center text-5xl text-8xl font-bold text-slate-100 after:absolute after:top-[calc(100%+5px)] after:left-1/2 after:h-1 after:w-[50%] after:-translate-x-1/2 after:rounded-full after:bg-linear-to-r after:from-slate-100 after:content-[''] sm:text-6xl md:text-7xl lg:text-8xl"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
               Kontakt
-            </h1>
+            </motion.h1>
           </div>
           <div className="md:h-unset h-140 max-h-150 overflow-hidden bg-[url(/slike/bez-boli-2-xl.jpg)] bg-cover md:bg-none">
             <Image
@@ -28,27 +34,56 @@ const Page = () => {
       </section>
       <section className="px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26">
         <div className="flex flex-col gap-4">
-          <h2 className="text-theme1 mb-11 text-5xl font-semibold">Kontakt</h2>
-          <p className="text-theme4 text-xl">
+          <motion.h2
+            className="text-theme1 mb-11 text-5xl font-semibold"
+            initial={{ y: -50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            Kontakt
+          </motion.h2>
+          <motion.p
+            className="text-theme4 text-xl"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             Imate pitanje, dvojbu ili želite rezervirati termin?
-          </p>
+          </motion.p>
 
-          <p className="text-theme4 text-xl">
+          <motion.p
+            className="text-theme4 text-xl"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             Slobodno se javite putem telefona, e-maila ili kontakt forme. Rado
             ću odgovoriti na vaša pitanja i pomoći vam procijeniti je li moj
             pristup pravi izbor za vas.
-          </p>
+          </motion.p>
 
-          <p className="text-theme4 text-xl">
+          <motion.p
+            className="text-theme4 text-xl"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             Svaki tretman započinje razgovorom i individualnom procjenom, kako
             bismo zajedno pronašli najbolji put prema životu bez boli.
-          </p>
-          <Link
-            href="/rezervacija"
-            className="bg-theme1 hover:bg-theme4 flex w-fit items-center gap-6 rounded-2xl px-4 py-2 text-lg tracking-wider text-slate-100 transition-all duration-300"
+          </motion.p>
+          <motion.div
+            className="mt-5"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
           >
-            Rezervirajte termin
-          </Link>
+            <Link
+              href="/rezervacija"
+              className="bg-theme1 hover:bg-theme4 w-fit rounded-2xl px-4 py-2 text-lg tracking-wider text-slate-100 transition-all duration-300"
+            >
+              Rezervirajte termin
+            </Link>
+          </motion.div>
         </div>
         <div className="mt-25 flex w-full flex-row justify-center max-[1180px]:mx-auto max-[1180px]:max-w-[80%] max-[1180px]:flex-col max-[630px]:max-w-[100%]">
           <div className="border-theme3 after:bg-theme3 before:bg-theme3 relative border-r-[3px] px-20 py-10 before:absolute before:top-0 before:-right-[8px] before:h-3 before:w-3 before:rotate-45 before:content-[''] after:absolute after:-right-2 after:bottom-0 after:h-3 after:w-3 after:rotate-45 after:content-[''] max-[1710px]:px-10 max-[1400px]:px-6 max-[1400px]:py-6 max-[1180px]:border-r-0 max-[1180px]:border-b-2 max-[1180px]:px-0 max-[1180px]:py-0 max-[1180px]:pb-18 max-[1180px]:before:top-[unset] max-[1180px]:before:right-0 max-[1180px]:before:-bottom-2 max-[1180px]:after:-bottom-2 max-[1180px]:after:left-0">

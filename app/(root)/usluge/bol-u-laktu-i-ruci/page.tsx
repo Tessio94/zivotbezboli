@@ -1,8 +1,35 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { BiChevronRight } from "react-icons/bi";
 import Banner from "@/components/Homepage/Banner";
+import { easeOut, motion } from "motion/react";
+
+const listVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: {
+    y: 50,
+    opacity: 0,
+  },
+  show: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      easingIn: easeOut,
+    },
+  },
+};
 
 const page = () => {
   return (
@@ -12,7 +39,12 @@ const page = () => {
           <div className="relative z-10 bg-[url(/zivotbezboli-background-nostroke-1920.png)] max-md:order-1 max-md:order-2 md:w-1/2">
             <div className="from-theme3/90 to-theme3/30 absolute inset-0 -z-10 bg-linear-to-r" />
 
-            <div className="flex flex-col items-start gap-10 px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26">
+            <motion.div
+              className="flex flex-col items-start gap-10 px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
               <Image
                 className="mx-auto inline-block"
                 src="/usluge/ikone/bijele/lakat.svg"
@@ -28,68 +60,110 @@ const page = () => {
                 <BiChevronRight className="shrink-0 text-3xl" />
                 mišići koljena onda postaju preopterećeni
               </p>
-            </div>
+            </motion.div>
           </div>
           <div className="flex flex-col gap-10 px-6 py-16 max-md:order-1 sm:px-10 sm:py-20 md:w-1/2 lg:px-18 lg:py-26">
-            <h2 className="text-theme1 text-5xl font-semibold">
+            <motion.h2
+              className="text-theme1 text-5xl font-semibold"
+              initial={{ y: -50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
               Bol u laktu i ruci
-            </h2>
-            <p className="text-theme4 text-xl">
+            </motion.h2>
+            <motion.p
+              className="text-theme4 text-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
               Čest slučaj sa stručnim nazivom teniski lakat, golferski lakat,
               ali dva zgloba koja često utječu jedan na drugi.
-            </p>
-            <p className="text-theme4 text-xl">
+            </motion.p>
+            <motion.p
+              className="text-theme4 text-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
               Sve to može biti posljedica starih tegoba s ramenom ili vratom,
               ali i kao posljedica ozljede ručnog zgloba.
-            </p>
-            <Link
-              href="/usluge/rezervacija"
-              className="bg-theme1 hover:bg-theme4 flex w-fit items-center gap-6 rounded-2xl px-4 py-2 text-lg tracking-wider text-slate-100 transition-all duration-300"
+            </motion.p>
+            <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
             >
-              Rezerviraj termin
-            </Link>
+              <Link
+                href="/usluge/rezervacija"
+                className="bg-theme1 hover:bg-theme4 flex w-fit items-center gap-6 rounded-2xl px-4 py-2 text-lg tracking-wider text-slate-100 transition-all duration-300"
+              >
+                Rezerviraj termin
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>
       <section className="bg-theme1/10">
         <div className="flex flex-col xl:flex-row">
           <div className="flex flex-col gap-10 px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26 xl:w-1/2">
-            <p className="text-theme4 text-xl">
+            <motion.p className="text-theme4 text-xl">
               Međutim da bih točno utvrdio o čemu se točno radi, moram vas
               podvrgnuti temeljitoj procjeni:
-            </p>
-            <ul className="flex flex-col gap-4">
-              <li className="flex flex-row items-start gap-2">
+            </motion.p>
+            <motion.ul
+              className="flex flex-col gap-4"
+              variants={listVariants}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <motion.li
+                className="flex flex-row items-start gap-2"
+                variants={itemVariants}
+              >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
                   Statički položaj
                 </p>
-              </li>
-              <li className="flex flex-row items-start gap-2">
+              </motion.li>
+              <motion.li
+                className="flex flex-row items-start gap-2"
+                variants={itemVariants}
+              >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
                   Opseg pokreta
                 </p>
-              </li>
-              <li className="flex flex-row items-start gap-2">
+              </motion.li>
+              <motion.li
+                className="flex flex-row items-start gap-2"
+                variants={itemVariants}
+              >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
                   Neurološka testiranja
                 </p>
-              </li>
-              <li className="flex flex-row items-start gap-2">
+              </motion.li>
+              <motion.li
+                className="flex flex-row items-start gap-2"
+                variants={itemVariants}
+              >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
                   Ortopedsko testiranje
                 </p>
-              </li>
-              <li className="flex flex-row items-start gap-2">
+              </motion.li>
+              <motion.li
+                className="flex flex-row items-start gap-2"
+                variants={itemVariants}
+              >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
                   Testiranje manualnih mišića
                 </p>
-              </li>
-            </ul>
+              </motion.li>
+            </motion.ul>
           </div>
           <div className="max-h-212.5 overflow-hidden xl:w-1/2">
             <Image

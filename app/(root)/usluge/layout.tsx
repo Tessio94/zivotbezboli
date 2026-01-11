@@ -3,6 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import { usePathname } from "next/navigation";
+import { motion } from "motion/react";
 
 const TITLES: Record<string, string> = {
   "/usluge/kronicna-bol": "Kronična bol",
@@ -38,9 +39,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <div className="relative">
           <div className="bg-theme4/70 absolute inset-0" />
           <div className="absolute top-1/2 right-1/2 flex translate-x-1/2 -translate-y-1/2 flex-col items-center gap-6">
-            <h1 className="after:to-theme1 relative w-[90vw] text-center text-5xl font-bold text-slate-100 after:absolute after:top-[calc(100%+5px)] after:left-1/2 after:h-1 after:w-[20%] after:-translate-x-1/2 after:rounded-full after:bg-linear-to-r after:from-slate-100 after:content-[''] sm:text-6xl md:text-7xl lg:text-8xl">
+            <motion.h1
+              className="after:to-theme1 relative w-[90vw] text-center text-5xl font-bold text-slate-100 after:absolute after:top-[calc(100%+5px)] after:left-1/2 after:h-1 after:w-[20%] after:-translate-x-1/2 after:rounded-full after:bg-linear-to-r after:from-slate-100 after:content-[''] sm:text-6xl md:text-7xl lg:text-8xl"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
               {TITLES[location]}
-            </h1>
+            </motion.h1>
           </div>
           <div
             className="h-140 max-h-150 overflow-hidden bg-cover md:h-fit md:bg-none!"

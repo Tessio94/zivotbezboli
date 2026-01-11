@@ -1,14 +1,27 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import * as motion from "motion/react-client";
 
 const UslugeGrid = () => {
   return (
     <section className="">
       <div className="px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26">
-        <h2 className="text-theme1 mb-15 text-5xl font-semibold">Usluge</h2>
+        <motion.h2
+          className="text-theme1 mb-15 text-5xl font-semibold"
+          initial={{ y: -50, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          Usluge
+        </motion.h2>
         <div className="grid items-stretch gap-10 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
-          <div className="bg-theme1/20 border-theme1 hover:bg-theme1/30 flex flex-col items-center justify-between gap-4 rounded-2xl border-2 p-8 transition-all duration-300">
+          <motion.div
+            className="bg-theme1/20 border-theme1 hover:bg-theme1/30 flex flex-col items-center justify-between gap-4 rounded-2xl border-2 p-8 transition-all duration-300"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <Image
               src="/usluge/ikone/kronicne.svg"
               alt=""
@@ -24,8 +37,13 @@ const UslugeGrid = () => {
             >
               Pogledaj više
             </Link>
-          </div>
-          <div className="bg-theme1/20 border-theme1 hover:bg-theme1/30 flex flex-col items-center justify-between gap-4 rounded-2xl border-2 p-8 transition-all duration-300">
+          </motion.div>
+          <motion.div
+            className="bg-theme1/20 border-theme1 hover:bg-theme1/30 flex flex-col items-center justify-between gap-4 rounded-2xl border-2 p-8 transition-all duration-300"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <Image
               src="/usluge/ikone/vrat.svg"
               alt=""
@@ -41,8 +59,13 @@ const UslugeGrid = () => {
             >
               Pogledaj više
             </Link>
-          </div>
-          <div className="bg-theme1/20 border-theme1 hover:bg-theme1/30 flex flex-col items-center justify-between gap-4 rounded-2xl border-2 p-8 transition-all duration-300">
+          </motion.div>
+          <motion.div
+            className="bg-theme1/20 border-theme1 hover:bg-theme1/30 flex flex-col items-center justify-between gap-4 rounded-2xl border-2 p-8 transition-all duration-300"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <Image
               src="/usluge/ikone/leda.svg"
               alt=""
@@ -58,8 +81,13 @@ const UslugeGrid = () => {
             >
               Pogledaj više
             </Link>
-          </div>
-          <div className="bg-theme1/20 border-theme1 hover:bg-theme1/30 flex flex-col items-center justify-between gap-4 rounded-2xl border-2 p-8 transition-all duration-300">
+          </motion.div>
+          <motion.div
+            className="bg-theme1/20 border-theme1 hover:bg-theme1/30 flex flex-col items-center justify-between gap-4 rounded-2xl border-2 p-8 transition-all duration-300"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <Image
               src="/usluge/ikone/kukovi.svg"
               alt=""
@@ -75,8 +103,13 @@ const UslugeGrid = () => {
             >
               Pogledaj više
             </Link>
-          </div>
-          <div className="bg-theme1/20 border-theme1 hover:bg-theme1/30 flex flex-col items-center justify-between gap-4 rounded-2xl border-2 p-8 transition-all duration-300">
+          </motion.div>
+          <motion.div
+            className="bg-theme1/20 border-theme1 hover:bg-theme1/30 flex flex-col items-center justify-between gap-4 rounded-2xl border-2 p-8 transition-all duration-300"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <Image
               src="/usluge/ikone/vrat-rame.svg"
               alt=""
@@ -92,8 +125,13 @@ const UslugeGrid = () => {
             >
               Pogledaj više
             </Link>
-          </div>
-          <div className="bg-theme1/20 border-theme1 hover:bg-theme1/30 flex flex-col items-center justify-between gap-4 rounded-2xl border-2 p-8 transition-all duration-300">
+          </motion.div>
+          <motion.div
+            className="bg-theme1/20 border-theme1 hover:bg-theme1/30 flex flex-col items-center justify-between gap-4 rounded-2xl border-2 p-8 transition-all duration-300"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <Image
               src="/usluge/ikone/lakat.svg"
               alt=""
@@ -109,8 +147,13 @@ const UslugeGrid = () => {
             >
               Pogledaj više
             </Link>
-          </div>
-          <div className="bg-theme1/20 border-theme1 hover:bg-theme1/30 flex flex-col items-center justify-between gap-4 rounded-2xl border-2 p-8 transition-all duration-300">
+          </motion.div>
+          <motion.div
+            className="bg-theme1/20 border-theme1 hover:bg-theme1/30 flex flex-col items-center justify-between gap-4 rounded-2xl border-2 p-8 transition-all duration-300"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <Image
               src="/usluge/ikone/koljeno-stopalo.svg"
               alt=""
@@ -126,8 +169,13 @@ const UslugeGrid = () => {
             >
               Pogledaj više
             </Link>
-          </div>
-          <div className="bg-theme1/20 border-theme1 hover:bg-theme1/30 flex flex-col items-center justify-between gap-4 rounded-2xl border-2 p-8 transition-all duration-300">
+          </motion.div>
+          <motion.div
+            className="bg-theme1/20 border-theme1 hover:bg-theme1/30 flex flex-col items-center justify-between gap-4 rounded-2xl border-2 p-8 transition-all duration-300"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <Image
               src="/usluge/ikone/sportske-ozljede.svg"
               alt=""
@@ -143,8 +191,13 @@ const UslugeGrid = () => {
             >
               Pogledaj više
             </Link>
-          </div>
-          <div className="bg-theme1/20 border-theme1 hover:bg-theme1/30 flex flex-col items-center justify-between gap-4 rounded-2xl border-2 p-8 transition-all duration-300">
+          </motion.div>
+          <motion.div
+            className="bg-theme1/20 border-theme1 hover:bg-theme1/30 flex flex-col items-center justify-between gap-4 rounded-2xl border-2 p-8 transition-all duration-300"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <Image
               src="/usluge/ikone/djeca.svg"
               alt=""
@@ -160,8 +213,13 @@ const UslugeGrid = () => {
             >
               Pogledaj više
             </Link>
-          </div>
-          <div className="bg-theme1/20 border-theme1 hover:bg-theme1/30 flex flex-col items-center justify-between gap-4 rounded-2xl border-2 p-8 transition-all duration-300">
+          </motion.div>
+          <motion.div
+            className="bg-theme1/20 border-theme1 hover:bg-theme1/30 flex flex-col items-center justify-between gap-4 rounded-2xl border-2 p-8 transition-all duration-300"
+            initial={{ y: 100, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             <Image
               src="/usluge/ikone/tegobe.svg"
               alt=""
@@ -177,7 +235,7 @@ const UslugeGrid = () => {
             >
               Pogledaj više
             </Link>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

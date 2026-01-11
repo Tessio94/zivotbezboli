@@ -1,8 +1,10 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { BiChevronRight } from "react-icons/bi";
-import Banner from "@/components/Homepage/Banner";
+import { motion } from "motion/react";
 
 const page = () => {
   return (
@@ -12,7 +14,12 @@ const page = () => {
           <div className="relative z-10 bg-[url(/zivotbezboli-background-nostroke-1920.png)] max-md:order-1 max-md:order-2 md:w-1/2">
             <div className="from-theme3/90 to-theme3/30 absolute inset-0 -z-10 bg-linear-to-r" />
 
-            <div className="flex flex-col items-start gap-10 px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26">
+            <motion.div
+              className="flex flex-col items-start gap-10 px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
               <Image
                 className="mx-auto inline-block"
                 src="/usluge/ikone/bijele/tegobe.svg"
@@ -26,27 +33,48 @@ const page = () => {
                 mišićima, zarobljenih živaca, glavobolje ili slično,
                 najvjerovatnije ću vam moći pomoći.
               </p>
-            </div>
+            </motion.div>
           </div>
           <div className="flex flex-col gap-10 px-6 py-16 max-md:order-1 sm:px-10 sm:py-20 md:w-1/2 lg:px-18 lg:py-26">
-            <h2 className="text-theme1 text-5xl font-semibold">
+            <motion.h2
+              className="text-theme1 text-5xl font-semibold"
+              initial={{ y: -50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
               Ostale tegobe
-            </h2>
-            <p className="text-theme4 text-xl">
+            </motion.h2>
+            <motion.p
+              className="text-theme4 text-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
               Pomažemo kod širokog spektra stanja, od bolova u leđima i vratu,
               do glavobolja, migrena i drugih...
-            </p>
-            <p className="text-theme4 text-xl">
+            </motion.p>
+            <motion.p
+              className="text-theme4 text-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
               Ako niste sigurni mogu li vam točno pomoći, slobodno me
               kontaktirajte, rado ću porazgovarati s vama o vašim točnim
               potrebama i odlučiti jeste li pravi izbor za mene.
-            </p>
-            <Link
-              href="/usluge/rezervacija"
-              className="bg-theme1 hover:bg-theme4 flex w-fit items-center gap-6 rounded-2xl px-4 py-2 text-lg tracking-wider text-slate-100 transition-all duration-300"
+            </motion.p>
+            <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
             >
-              Rezerviraj termin
-            </Link>
+              <Link
+                href="/usluge/rezervacija"
+                className="bg-theme1 hover:bg-theme4 flex w-fit items-center gap-6 rounded-2xl px-4 py-2 text-lg tracking-wider text-slate-100 transition-all duration-300"
+              >
+                Rezerviraj termin
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>

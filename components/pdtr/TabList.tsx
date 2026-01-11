@@ -3,15 +3,21 @@
 import React, { useState } from "react";
 import { cn } from "@/lib/utils";
 import { FaCircleChevronDown } from "react-icons/fa6";
+import * as motion from "motion/react-client";
 
 const TabList = () => {
   const [dropdown, setDropdown] = useState("");
 
   return (
     <section className="bg-theme1/10 px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26">
-      <h2 className="text-theme4 mb-11 text-center text-3xl font-semibold">
+      <motion.h2
+        className="text-theme4 mb-11 text-center text-3xl font-semibold"
+        initial={{ y: -50, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
         P-DTR® koristim kod slijedećih simptoma i sindroma:
-      </h2>
+      </motion.h2>
 
       <ul className="z-10 mx-auto rounded-t-2xl rounded-b-2xl md:max-w-[85%] xl:max-w-[70%]">
         <li

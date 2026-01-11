@@ -6,6 +6,7 @@ import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import Link from "next/link";
 import { CiLocationOn, CiMail, CiMobile3 } from "react-icons/ci";
+import { motion } from "motion/react";
 import {
   IoLogoFacebook,
   IoLogoInstagram,
@@ -14,8 +15,8 @@ import {
 } from "react-icons/io";
 
 const Carousel = () => {
-  //   const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
-  const [emblaRef] = useEmblaCarousel({ loop: false });
+  const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
+  // const [emblaRef] = useEmblaCarousel({ loop: false });
 
   return (
     <section>
@@ -25,24 +26,46 @@ const Carousel = () => {
             <div className="relative">
               <div className="from-theme4/90 to-theme4/20 absolute inset-0 z-10 bg-linear-to-r" />
               <div className="absolute top-1/2 left-1/2 z-20 flex w-full -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-6 px-6 max-[1400px]:gap-4 max-[1024px]:gap-6 sm:px-10 lg:left-18 lg:w-auto lg:translate-x-0 lg:px-0">
-                <h1 className="text-center text-9xl font-bold text-slate-100 max-[1700px]:text-8xl max-[1500px]:text-7xl max-[640px]:text-5xl max-[400px]:text-4xl">
+                <motion.h1
+                  className="text-center text-9xl font-bold text-slate-100 max-[1700px]:text-8xl max-[1500px]:text-7xl max-[640px]:text-5xl max-[400px]:text-4xl"
+                  initial={{ opacity: 0, y: -50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1 }}
+                >
                   Život <span className="text-theme1">bez boli</span>
-                </h1>
-                <h3 className="text-center text-3xl text-slate-100 max-[400px]:text-2xl">
+                </motion.h1>
+                <motion.h3
+                  className="text-center text-3xl text-slate-100 max-[400px]:text-2xl"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1 }}
+                >
                   <strong className="text-theme1 text-shadow-slate-100">
                     Ivan Radičev
                   </strong>
                   , fizioterapeut, osteopat, p-dtr terapeut
-                </h3>
-                <h3 className="text-center text-3xl text-slate-100 italic max-[400px]:text-2xl">
-                  Život bez boli i stresa – holistički pristup zdravlju
-                </h3>
-                <Link
-                  href="/rezervacija"
-                  className="bg-theme1 hover:bg-theme4 mt-5 rounded-4xl border-2 border-transparent px-10 py-5 text-3xl font-semibold text-slate-100 transition-all duration-300 hover:border-slate-100 max-[1400px]:px-7 max-[1400px]:py-3 max-[640px]:text-2xl"
+                </motion.h3>
+                <motion.h3
+                  className="text-center text-3xl text-slate-100 italic max-[400px]:text-2xl"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1 }}
                 >
-                  Rezervirajte termin
-                </Link>
+                  Život bez boli i stresa – holistički pristup zdravlju
+                </motion.h3>
+                <motion.div
+                  className="mt-5"
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1 }}
+                >
+                  <Link
+                    href="/rezervacija"
+                    className="bg-theme1 hover:bg-theme4 rounded-4xl border-2 border-transparent px-10 py-5 text-3xl font-semibold text-slate-100 transition-all duration-300 hover:border-slate-100 max-[1400px]:px-7 max-[1400px]:py-3 max-[640px]:text-2xl"
+                  >
+                    Rezervirajte termin
+                  </Link>
+                </motion.div>
               </div>
               <Image
                 className="z-0 rotate-y-180 max-[930px]:object-[30%] max-xl:min-h-[1080px] max-xl:object-cover"
@@ -122,7 +145,7 @@ const Carousel = () => {
             <div className="relative">
               <div className="from-theme4/20 via-theme4/90 to-theme4/20 max-[930px]:from-theme4/90 absolute inset-0 bg-linear-to-l max-[930px]:bg-linear-to-r max-[930px]:via-none" />
               <div className="absolute top-1/2 right-1/2 flex w-full translate-x-1/2 -translate-y-1/2 flex-col items-center gap-6 px-6 sm:px-10 xl:w-auto xl:px-0">
-                <h1 className="text-center text-9xl font-bold text-slate-100 max-[1700px]:text-8xl max-[1500px]:text-7xl max-[750px]:text-6xl max-[640px]:text-5xl max-[450px]:text-4xl">
+                <h1 className="text-center text-9xl font-bold text-slate-100 max-[1700px]:text-8xl max-[1500px]:text-7xl max-[750px]:text-6xl max-[640px]:text-5xl max-[450px]:text-4xl xl:text-nowrap">
                   <span className="text-theme1">Bol </span>nije problem.
                 </h1>
                 <h3 className="text-center text-3xl text-slate-100 max-[400px]:text-2xl">

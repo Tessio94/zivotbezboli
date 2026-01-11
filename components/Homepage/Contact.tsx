@@ -2,6 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
+import * as motion from "motion/react-client";
 
 const Contact = () => {
   const [success, setSuccess] = useState(false);
@@ -18,7 +19,14 @@ const Contact = () => {
     <section className="bg-theme1/10">
       <div className="px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26">
         {location === "/" && (
-          <h2 className="text-theme1 mb-15 text-5xl font-semibold">Kontakt</h2>
+          <motion.h2
+            className="text-theme1 mb-15 text-5xl font-semibold"
+            initial={{ y: -50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            Kontakt
+          </motion.h2>
         )}
         <div className="flex w-full flex-col items-center justify-between gap-15 lg:h-160 lg:flex-row lg:gap-0">
           <div className="shadow-theme1/60 relative z-10 order-1 h-full rounded-2xl bg-[url(/zivotbezboli-background-nostroke-1920.png)] bg-cover bg-no-repeat p-5 shadow-lg sm:rounded-4xl sm:p-10 lg:order-2 lg:h-fit lg:w-[750px]">

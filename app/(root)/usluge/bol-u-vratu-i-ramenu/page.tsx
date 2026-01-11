@@ -1,7 +1,34 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { BiChevronRight } from "react-icons/bi";
+import { easeOut, motion } from "motion/react";
+
+const listVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: {
+    y: 50,
+    opacity: 0,
+  },
+  show: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      easingIn: easeOut,
+    },
+  },
+};
 
 const page = () => {
   return (
@@ -11,7 +38,12 @@ const page = () => {
           <div className="relative z-10 bg-[url(/zivotbezboli-background-nostroke-1920.png)] max-md:order-1 max-md:order-2 md:md:w-1/2">
             <div className="from-theme3/90 to-theme3/30 absolute inset-0 -z-10 bg-linear-to-r" />
 
-            <div className="flex flex-col items-start gap-10 px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26">
+            <motion.div
+              className="flex flex-col items-start gap-10 px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
               <Image
                 className="mx-auto inline-block"
                 src="/usluge/ikone/bijele/vrat-rame.svg"
@@ -30,26 +62,47 @@ const page = () => {
                 Problemi u ovom području mogu uzrokovati smanjenu pokretljivost,
                 širenje boli u ruku, trnce ili osjećaj ukočenosti
               </p>
-            </div>
+            </motion.div>
           </div>
           <div className="flex flex-col gap-10 px-6 py-16 max-md:order-1 sm:px-10 sm:py-20 md:w-1/2 lg:px-18 lg:py-26">
-            <h2 className="text-theme1 text-5xl font-semibold">
+            <motion.h2
+              className="text-theme1 text-5xl font-semibold"
+              initial={{ y: -50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
               Bol u vratu i ramenu
-            </h2>
-            <p className="text-theme4 text-xl">
+            </motion.h2>
+            <motion.p
+              className="text-theme4 text-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
               Vrlo često ova dva problema idu ruku pod ruku, s bolovima u ramenu
               zbog vrata ili bolovima u vratu uzrokovanim iz ramena.
-            </p>
-            <p className="text-theme4 text-xl">
+            </motion.p>
+            <motion.p
+              className="text-theme4 text-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
               Cilj tretmana je pronaći stvarni uzrok boli i vratiti normalan,
               bezbolan pokret kroz individualnu procjenu cijelog tijela.
-            </p>
-            <Link
-              href="/usluge/rezervacija"
-              className="bg-theme1 hover:bg-theme4 flex w-fit items-center gap-6 rounded-2xl px-4 py-2 text-lg tracking-wider text-slate-100 transition-all duration-300"
+            </motion.p>
+            <motion.div
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
             >
-              Rezerviraj termin
-            </Link>
+              <Link
+                href="/usluge/rezervacija"
+                className="bg-theme1 hover:bg-theme4 flex w-fit items-center gap-6 rounded-2xl px-4 py-2 text-lg tracking-wider text-slate-100 transition-all duration-300"
+              >
+                Rezerviraj termin
+              </Link>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -62,48 +115,79 @@ const page = () => {
               zahtijeva temeljit pregled kako bi se sagledali vaši:
             </p>
 
-            <ul className="flex flex-col gap-4">
-              <li className="flex flex-row items-start gap-2">
+            <motion.ul
+              className="flex flex-col gap-4"
+              variants={listVariants}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <motion.li
+                className="flex flex-row items-start gap-2"
+                variants={itemVariants}
+              >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
                   Statički položaj
                 </p>
-              </li>
-              <li className="flex flex-row items-start gap-2">
+              </motion.li>
+              <motion.li
+                className="flex flex-row items-start gap-2"
+                variants={itemVariants}
+              >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
                   Opseg pokreta
                 </p>
-              </li>
-              <li className="flex flex-row items-start gap-2">
+              </motion.li>
+              <motion.li
+                className="flex flex-row items-start gap-2"
+                variants={itemVariants}
+              >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
                   Neurološka testiranja
                 </p>
-              </li>
-              <li className="flex flex-row items-start gap-2">
+              </motion.li>
+              <motion.li
+                className="flex flex-row items-start gap-2"
+                variants={itemVariants}
+              >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
                   Ortopedsko testiranje
                 </p>
-              </li>
-              <li className="flex flex-row items-start gap-2">
+              </motion.li>
+              <motion.li
+                className="flex flex-row items-start gap-2"
+                variants={itemVariants}
+              >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
                   Testiranje manualnih mišića
                 </p>
-              </li>
-            </ul>
-            <p className="text-theme4 text-xl">
+              </motion.li>
+            </motion.ul>
+            <motion.p
+              className="text-theme4 text-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
               Uzroci boli u vratu i ramenima su vrlo široki i mogu biti
               posljedica prošlih trauma, kompenzacija, mikroozljede, napetosti
               povezane s naprezanjem očiju, prenesene boli iz čeljusti i drugih
               čimbenika.
-            </p>
-            <p className="text-theme4 text-xl">
+            </motion.p>
+            <motion.p
+              className="text-theme4 text-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
               Bol u ramenu može imati brojne uzroke, poput pritiska živaca,
               mišićne neravnoteže ili iritacije struktura tijekom vremena.
-            </p>
+            </motion.p>
           </div>
           <div className="max-h-212.5 overflow-hidden xl:w-1/2">
             <Image

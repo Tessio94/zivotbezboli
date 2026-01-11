@@ -1,40 +1,74 @@
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { BsArrowRight } from "react-icons/bs";
+import * as motion from "motion/react-client";
 
 const About = () => {
   return (
     <section className="bg-theme1/10">
       <div className="flex flex-col xl:flex-row">
         <div className="flex flex-col px-6 py-16 max-xl:gap-10 max-sm:gap-8 sm:px-10 sm:py-20 lg:px-18 lg:py-26 xl:w-1/2 xl:justify-between 2xl:gap-10">
-          <h2 className="text-theme1 text-5xl font-semibold">O meni</h2>
-          <p className="text-theme4 text-xl">
+          <motion.h2
+            className="text-theme1 text-5xl font-semibold"
+            initial={{ y: -50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            O meni
+          </motion.h2>
+          <motion.p
+            className="text-theme4 text-xl"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             Moje ime je <strong>Ivan Radičev</strong>, diplomirani
             fizioterapeut, osteopat i P-DTR terapeut. Kroz vlastito iskustvo
             ozljede i dugotrajnog oporavka započeo je moj profesionalni put.
-          </p>
-          <p className="text-theme4 text-xl">
+          </motion.p>
+          <motion.p
+            className="text-theme4 text-xl"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             Godinama radim s osobama koje osjećaju bol unatoč „urednim“
             nalazima, sportašima svih razina te ljudima koji su izgubili
             povjerenje u svoje tijelo i pokret.
-          </p>
-          <p className="text-theme4 text-xl">
+          </motion.p>
+          <motion.p
+            className="text-theme4 text-xl"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             U svom radu spajam znanja iz fizioterapije, osteopatije i
             neuroloških metoda kako bih svakom klijentu pristupio individualno,
             s fokusom na uzrok problema, a ne samo na simptome.
-          </p>
-          <p className="text-theme4 text-xl">
+          </motion.p>
+          <motion.p
+            className="text-theme4 text-xl"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
             Moj cilj je pomoći vam razumjeti zašto vas boli i pokazati da
             promjena jest moguća.
-          </p>
-          <Link
-            href="/o-meni"
-            className="bg-theme1 hover:bg-theme4 group flex w-fit items-center gap-3 rounded-2xl px-4 py-2 text-lg tracking-wider text-slate-100 transition-all duration-300"
+          </motion.p>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
           >
-            Više o meni{" "}
-            <BsArrowRight className="text-2xl text-slate-100 transition-all duration-300 group-hover:translate-x-1" />
-          </Link>
+            <Link
+              href="/o-meni"
+              className="bg-theme1 hover:bg-theme4 group flex w-fit items-center gap-3 rounded-2xl px-4 py-2 text-lg tracking-wider text-slate-100 transition-all duration-300"
+            >
+              Više o meni{" "}
+              <BsArrowRight className="text-2xl text-slate-100 transition-all duration-300 group-hover:translate-x-1" />
+            </Link>
+          </motion.div>
         </div>
 
         <div className="max-h-212.5 overflow-hidden xl:w-1/2">
