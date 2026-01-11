@@ -27,16 +27,33 @@ const Footer = () => {
             />
           </Link>
           <div className="bg-theme1 flex items-center gap-6 rounded-4xl px-5 py-2">
-            <a href="" className="group text-3xl text-slate-100">
+            <a
+              href="https://wa.me/385989648532"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group text-3xl text-slate-100"
+            >
               <IoLogoWhatsapp className="transition-all duration-300 group-hover:scale-120" />
             </a>
-            <a href="" className="group text-3xl text-slate-100">
+            <a
+              href="https://www.instagram.com/ivan_radicev/"
+              target="_blank"
+              className="group text-3xl text-slate-100"
+            >
               <IoLogoInstagram className="transition-all duration-300 group-hover:scale-120" />
             </a>
-            <a href="" className="group text-3xl text-slate-100">
+            <a
+              href="https://web.facebook.com/RadicevIvan/?locale=hr_HR&_rdc=1&_rdr#"
+              target="_blank"
+              className="group text-3xl text-slate-100"
+            >
               <IoLogoFacebook className="transition-all duration-300 group-hover:scale-120" />
             </a>
-            <a href="" className="group text-3xl text-slate-100">
+            <a
+              href="https://www.youtube.com/@ivanradicev7934"
+              target="_blank"
+              className="group text-3xl text-slate-100"
+            >
               <IoLogoYoutube className="transition-all duration-300 group-hover:scale-120" />
             </a>
           </div>
