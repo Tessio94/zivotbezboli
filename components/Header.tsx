@@ -166,35 +166,35 @@ const Header = () => {
         </ul>
       </nav>
 
-      <div className="bg-theme1 hidden items-center gap-2 rounded-4xl px-5 py-2 lg:flex">
+      <div className="bg-theme1 hidden items-center gap-2 rounded-4xl px-5 py-1 lg:flex">
         <a
           href="https://wa.me/385989648532"
           target="_blank"
           rel="noopener noreferrer"
-          className="group text-2xl text-slate-100"
+          className="group text-slate-100"
         >
-          <IoLogoWhatsapp className="transition-all duration-300 group-hover:scale-120" />
+          <IoLogoWhatsapp className="h-8 w-8 rounded-xl p-1 transition-all duration-300 group-hover:scale-120 group-hover:bg-slate-100 group-hover:text-green-400" />
         </a>
         <a
           href="https://www.instagram.com/ivan_radicev/"
           target="_blank"
-          className="group text-2xl text-slate-100"
+          className="group text-slate-100"
         >
-          <IoLogoInstagram className="transition-all duration-300 group-hover:scale-120" />
+          <IoLogoInstagram className="h-8 w-8 rounded-xl p-1 transition-all duration-300 group-hover:scale-120 group-hover:bg-slate-100 group-hover:text-pink-600" />
         </a>
         <a
           href="https://web.facebook.com/RadicevIvan/?locale=hr_HR&_rdc=1&_rdr#"
           target="_blank"
-          className="group text-2xl text-slate-100"
+          className="group text-slate-100"
         >
-          <IoLogoFacebook className="transition-all duration-300 group-hover:scale-120" />
+          <IoLogoFacebook className="h-8 w-8 rounded-xl p-1 transition-all duration-300 group-hover:scale-120 group-hover:bg-slate-100 group-hover:text-blue-600" />
         </a>
         <a
           href="https://www.youtube.com/@ivanradicev7934"
           target="_blank"
-          className="group text-2xl text-slate-100"
+          className="group text-slate-100"
         >
-          <IoLogoYoutube className="transition-all duration-300 group-hover:scale-120" />
+          <IoLogoYoutube className="h-8 w-8 rounded-xl p-1 transition-all duration-300 group-hover:scale-120 group-hover:bg-slate-100 group-hover:text-red-600" />
         </a>
       </div>
 
