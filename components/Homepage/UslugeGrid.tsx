@@ -32,7 +32,8 @@ const UslugeGrid = () => {
               Kronična bol
             </p>
             <Link
-              href="/usluge/kronicna-bol"
+              href="/usluge/kronicna-bol#kronicna-bol"
+              scroll={true}
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-2xl px-4 py-2 text-center text-lg tracking-wider text-slate-100 transition-all duration-300"
             >
               Pogledaj više
@@ -54,7 +55,8 @@ const UslugeGrid = () => {
               Bol u vratu
             </p>
             <Link
-              href="/usluge/bol-u-vratu"
+              href="/usluge/bol-u-vratu#bol-u-vratu"
+              scroll={true}
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-2xl px-4 py-2 text-center text-lg tracking-wider text-slate-100 transition-all duration-300"
             >
               Pogledaj više
@@ -76,7 +78,8 @@ const UslugeGrid = () => {
               Bol u leđima
             </p>
             <Link
-              href="/usluge/bol-u-ledjima"
+              href="/usluge/bol-u-ledjima#bol-u-ledjima"
+              scroll={true}
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-2xl px-4 py-2 text-center text-lg tracking-wider text-slate-100 transition-all duration-300"
             >
               Pogledaj više
@@ -98,7 +101,8 @@ const UslugeGrid = () => {
               Bol u kuku
             </p>
             <Link
-              href="/usluge/bol-u-kuku"
+              href="/usluge/bol-u-kuku#bol-u-kuku"
+              scroll={true}
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-2xl px-4 py-2 text-center text-lg tracking-wider text-slate-100 transition-all duration-300"
             >
               Pogledaj više
@@ -120,7 +124,8 @@ const UslugeGrid = () => {
               Bol u vratu i ramenu
             </p>
             <Link
-              href="/usluge/bol-u-vratu-i-ramenu"
+              href="/usluge/bol-u-vratu-i-ramenu#bol-u-vratu-i-ramenu"
+              scroll={true}
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-2xl px-4 py-2 text-center text-lg tracking-wider text-slate-100 transition-all duration-300"
             >
               Pogledaj više
@@ -142,7 +147,8 @@ const UslugeGrid = () => {
               Bol u laktu i ruci
             </p>
             <Link
-              href="/usluge/bol-u-laktu-i-ruci"
+              href="/usluge/bol-u-laktu-i-ruci#bol-u-laktu-i-ruci"
+              scroll={true}
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-2xl px-4 py-2 text-center text-lg tracking-wider text-slate-100 transition-all duration-300"
             >
               Pogledaj više
@@ -164,7 +170,8 @@ const UslugeGrid = () => {
               Bol u koljenima i stopalima
             </p>
             <Link
-              href="/usluge/bol-u-koljenima-i-stopalima"
+              href="/usluge/bol-u-koljenima-i-stopalima#bol-u-koljenima-i-stopalima"
+              scroll={true}
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-2xl px-4 py-2 text-center text-lg tracking-wider text-slate-100 transition-all duration-300"
             >
               Pogledaj više
@@ -186,7 +193,8 @@ const UslugeGrid = () => {
               Sportske ozljede
             </p>
             <Link
-              href="/usluge/sportske-ozljede"
+              href="/usluge/sportske-ozljede#sportske-ozljede"
+              scroll={true}
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-2xl px-4 py-2 text-center text-lg tracking-wider text-slate-100 transition-all duration-300"
             >
               Pogledaj više
@@ -208,7 +216,8 @@ const UslugeGrid = () => {
               Tretmani djece
             </p>
             <Link
-              href="/usluge/tretmani-djece"
+              href="/usluge/tretmani-djece#tretmani-djece"
+              scroll={true}
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-2xl px-4 py-2 text-center text-lg tracking-wider text-slate-100 transition-all duration-300"
             >
               Pogledaj više
@@ -230,7 +239,8 @@ const UslugeGrid = () => {
               Ostale tegobe
             </p>
             <Link
-              href="/usluge/ostale-tegobe"
+              href="/usluge/ostale-tegobe#ostale-tegobe"
+              scroll={true}
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-2xl px-4 py-2 text-center text-lg tracking-wider text-slate-100 transition-all duration-300"
             >
               Pogledaj više

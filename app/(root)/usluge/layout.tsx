@@ -33,9 +33,12 @@ const IMAGES: Record<string, string> = {
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const location = usePathname();
+
+  const locationId = location.split("/")[2];
+  console.log(locationId);
   return (
     <>
-      <section>
+      <section id={locationId}>
         <div className="relative">
           <div className="bg-theme4/70 absolute inset-0" />
           <div className="absolute top-1/2 right-1/2 flex translate-x-1/2 -translate-y-1/2 flex-col items-center gap-6">

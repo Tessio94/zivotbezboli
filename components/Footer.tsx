@@ -65,9 +65,12 @@ const Footer = () => {
           <ul className="flex flex-col gap-2 text-slate-100">
             <li className="flex items-center gap-4">
               <CgChevronRight className="text-theme1 text-3xl" />
-              <a className="relative text-2xl text-slate-100 after:absolute after:top-full after:right-full after:left-0 after:h-0.5 after:bg-slate-100 after:transition-all after:duration-300 after:content-[''] hover:after:right-0">
-                O nama
-              </a>
+              <Link
+                href="/o-meni"
+                className="relative text-2xl text-slate-100 after:absolute after:top-full after:right-full after:left-0 after:h-0.5 after:bg-slate-100 after:transition-all after:duration-300 after:content-[''] hover:after:right-0"
+              >
+                O meni
+              </Link>
             </li>
             <li className="flex items-center gap-4">
               <CgChevronRight className="text-theme1 text-3xl" />
