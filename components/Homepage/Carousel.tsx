@@ -3,7 +3,7 @@
 import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import Image from "next/image";
+import Image, { ImageLoader } from "next/image";
 import Link from "next/link";
 import { CiLocationOn, CiMail, CiMobile3 } from "react-icons/ci";
 import { motion } from "motion/react";
