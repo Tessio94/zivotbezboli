@@ -373,34 +373,51 @@ const Header = () => {
           <div className="flex flex-col gap-5">
             <div className="px-3 py-1 transition-all duration-500">
               <a
-                href="tel:+385957269444"
+                href="tel:+385989648532"
                 className="flex cursor-pointer items-center gap-2 text-xl tracking-wider text-slate-100 capitalize"
               >
                 <CiMobile3 className="text-3xl text-slate-100" />
-                095 726 94 44
+                +385 98 964 8532
               </a>
             </div>
             <div className="px-3 py-1 transition-all duration-500">
               <a
-                href="mailto:info@plan41.hr"
+                href="mailto:ivan@ivanradicev.com"
                 className="flex cursor-pointer items-center gap-2 text-xl tracking-wider text-slate-100"
               >
                 <CiMail className="text-3xl text-slate-100" />
-                info@plan41.hr
+                ivan@ivanradicev.com
               </a>
             </div>
 
             <div className="ml-3 flex w-fit items-center gap-2 rounded-4xl bg-slate-100 px-5 py-2">
-              <a href="" className="group text-2xl text-green-400">
+              <a
+                href="https://wa.me/385989648532"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group text-2xl text-green-400"
+              >
                 <IoLogoWhatsapp className="transition-all duration-300 group-hover:scale-120" />
               </a>
-              <a href="" className="group text-2xl text-pink-600">
+              <a
+                href="https://www.instagram.com/ivan_radicev/"
+                target="_blank"
+                className="group text-2xl text-pink-600"
+              >
                 <IoLogoInstagram className="transition-all duration-300 group-hover:scale-120" />
               </a>
-              <a href="" className="group text-2xl text-blue-600">
+              <a
+                href="https://web.facebook.com/RadicevIvan/?locale=hr_HR&_rdc=1&_rdr#"
+                target="_blank"
+                className="group text-2xl text-blue-600"
+              >
                 <IoLogoFacebook className="transition-all duration-300 group-hover:scale-120" />
               </a>
-              <a href="" className="group text-2xl text-red-600">
+              <a
+                href="https://www.youtube.com/@ivanradicev7934"
+                target="_blank"
+                className="group text-2xl text-red-600"
+              >
                 <IoLogoYoutube className="transition-all duration-300 group-hover:scale-120" />
               </a>
             </div>
