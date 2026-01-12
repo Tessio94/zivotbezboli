@@ -68,7 +68,7 @@ const Banner = ({ version }: { version: string }) => {
             viewport={{ once: true, amount: 0.3 }}
           >
             <Link
-              href="/konatkt"
+              href="/kontakt"
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-4xl px-8 py-3 text-center text-3xl tracking-wider text-slate-100 transition-all duration-300"
             >
               Kontaktirajte nas
