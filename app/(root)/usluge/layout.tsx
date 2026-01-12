@@ -60,6 +60,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
               alt="Život bez boli hero image"
               width={1920}
               height={300}
+              preload={true}
             />
           </div>
         </div>

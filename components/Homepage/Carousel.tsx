@@ -73,6 +73,7 @@ const Carousel = () => {
                 alt="Život bez boli hero image"
                 width={1920}
                 height={1080}
+                preload={true}
               />
             </div>
           </div>
