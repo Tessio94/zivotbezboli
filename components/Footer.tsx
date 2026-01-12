@@ -17,7 +17,7 @@ const Footer = () => {
       {/* <div className="px-6 pt-15 pb-7 sm:px-10 lg:px-18 lg:pt-20 lg:pb-10 2xl:px-28 flex items-start flex-wrap justify-between max-xl:gap-y-15"> */}
       <div className="flex flex-wrap items-start justify-between px-6 pt-16 pb-8 max-xl:gap-y-15 sm:px-10 sm:py-20 sm:pt-20 sm:pb-10 lg:px-18 lg:pt-26 lg:pb-13">
         <div className="flex flex-col items-start gap-10 max-xl:order-1 max-xl:w-1/2 max-sm:w-full max-sm:items-center">
-          <Link href="/">
+          <a href="#">
             <Image
               className="rounded-full"
               src="/logo_transparent.png"
@@ -25,7 +25,7 @@ const Footer = () => {
               width={220}
               height={220}
             />
-          </Link>
+          </a>
           <div className="bg-theme1 flex items-center gap-5 rounded-4xl px-5 py-2">
             <a
               href="https://wa.me/385989648532"
