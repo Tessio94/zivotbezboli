@@ -64,7 +64,7 @@ const Footer = () => {
           </p>
           <ul className="flex flex-col gap-2 text-slate-100">
             <li className="flex items-center gap-4">
-              <CgChevronRight className="text-theme1 text-3xl" />
+              <CgChevronRight className="text-theme1 shrink-0 text-3xl" />
               <Link
                 href="/o-meni"
                 className="relative text-2xl text-slate-100 after:absolute after:top-full after:right-full after:left-0 after:h-0.5 after:bg-slate-100 after:transition-all after:duration-300 after:content-[''] hover:after:right-0"
@@ -73,7 +73,7 @@ const Footer = () => {
               </Link>
             </li>
             <li className="flex items-center gap-4">
-              <CgChevronRight className="text-theme1 text-3xl" />
+              <CgChevronRight className="text-theme1 shrink-0 text-3xl" />
               <Link
                 href="/rezervacije"
                 className="relative text-2xl text-slate-100 after:absolute after:top-full after:right-full after:left-0 after:h-0.5 after:bg-slate-100 after:transition-all after:duration-300 after:content-[''] hover:after:right-0"
@@ -82,7 +82,7 @@ const Footer = () => {
               </Link>
             </li>
             <li className="flex items-center gap-4">
-              <CgChevronRight className="text-theme1 text-3xl" />
+              <CgChevronRight className="text-theme1 shrink-0 text-3xl" />
               <Link
                 href="/kontakt"
                 className="relative text-2xl text-slate-100 after:absolute after:top-full after:right-full after:left-0 after:h-0.5 after:bg-slate-100 after:transition-all after:duration-300 after:content-[''] hover:after:right-0"
@@ -97,12 +97,12 @@ const Footer = () => {
           <ul className="flex flex-col gap-3 text-slate-100">
             <li>
               <p className="flex items-center gap-4 text-2xl text-slate-100">
-                <CiLocationOn className="text-theme1 text-3xl" />
+                <CiLocationOn className="text-theme1 shrink-0 text-3xl" />
                 Ul. Charlesa Darwina 10, Zagreb
               </p>
             </li>
             <li className="flex items-center gap-4">
-              <CiMobile3 className="text-theme1 text-3xl" />
+              <CiMobile3 className="text-theme1 shrink-0 text-3xl" />
               <a
                 href="tel:+385 98 964 8532"
                 className="relative flex items-center gap-4 text-2xl text-slate-100 after:absolute after:top-full after:right-full after:left-0 after:h-0.5 after:bg-slate-100 after:transition-all after:duration-300 after:content-[''] hover:after:right-0"
@@ -111,7 +111,7 @@ const Footer = () => {
               </a>
             </li>
             <li className="flex items-center gap-4">
-              <CiMail className="text-theme1 text-3xl" />
+              <CiMail className="text-theme1 shrink-0 text-3xl" />
               <a
                 href="mailto:ivan@ivanradicev.com "
                 className="relative flex items-center gap-4 text-2xl text-slate-100 after:absolute after:top-full after:right-full after:left-0 after:h-0.5 after:bg-slate-100 after:transition-all after:duration-300 after:content-[''] hover:after:right-0"
@@ -128,31 +128,31 @@ const Footer = () => {
           <ul className="flex flex-col gap-3 text-slate-100">
             <li>
               <p className="font-regular flex items-center gap-2 text-lg text-slate-100">
-                <CiClock1 className="text-theme1 text-xl" />
+                <CiClock1 className="text-theme1 shrink-0 text-xl" />
                 Pon: 9-12h | 15-19h
               </p>
             </li>
             <li>
               <p className="font-regular flex items-center gap-2 text-lg text-slate-100">
-                <CiClock1 className="text-theme1 text-xl" />
+                <CiClock1 className="text-theme1 shrink-0 text-xl" />
                 Uto: 9-12h | 15-19h
               </p>
             </li>
             <li>
               <p className="font-regular flex items-center gap-2 text-lg text-slate-100">
-                <CiClock1 className="text-theme1 text-xl" />
+                <CiClock1 className="text-theme1 shrink-0 text-xl" />
                 Sri: 9-12h | 15-19h
               </p>
             </li>
             <li>
               <p className="font-regular flex items-center gap-2 text-lg text-slate-100">
-                <CiClock1 className="text-theme1 text-xl" />
+                <CiClock1 className="text-theme1 shrink-0 text-xl" />
                 Čet: 9-12h | 15-19h
               </p>
             </li>
             <li>
               <p className="font-regular flex items-center gap-2 text-lg text-slate-100">
-                <CiClock1 className="text-theme1 text-xl" />
+                <CiClock1 className="text-theme1 shrink-0 text-xl" />
                 Pet: 9-12h | 15-19h
               </p>
             </li>

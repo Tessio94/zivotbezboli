@@ -374,23 +374,23 @@ const Header = () => {
             <div className="px-3 py-1 transition-all duration-500">
               <a
                 href="tel:+385989648532"
-                className="flex cursor-pointer items-center gap-2 text-xl tracking-wider text-slate-100 capitalize"
+                className="flex cursor-pointer items-center gap-2 text-lg tracking-wider text-slate-100 capitalize sm:text-xl"
               >
-                <CiMobile3 className="text-3xl text-slate-100" />
+                <CiMobile3 className="shrink-0 text-2xl text-slate-100 sm:text-3xl" />
                 +385 98 964 8532
               </a>
             </div>
             <div className="px-3 py-1 transition-all duration-500">
               <a
                 href="mailto:ivan@ivanradicev.com"
-                className="flex cursor-pointer items-center gap-2 text-xl tracking-wider text-slate-100"
+                className="flex cursor-pointer items-center gap-2 text-lg tracking-wider text-slate-100 sm:text-xl"
               >
-                <CiMail className="text-3xl text-slate-100" />
+                <CiMail className="shrink-0 text-2xl text-slate-100 sm:text-3xl" />
                 ivan@ivanradicev.com
               </a>
             </div>
 
-            <div className="ml-3 flex w-fit items-center gap-2 rounded-4xl bg-slate-100 px-5 py-2">
+            <div className="ml-3 flex w-fit items-center gap-3 rounded-4xl bg-slate-100 px-5 py-2">
               <a
                 href="https://wa.me/385989648532"
                 target="_blank"
