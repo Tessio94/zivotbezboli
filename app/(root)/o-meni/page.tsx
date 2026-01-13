@@ -20,7 +20,13 @@ const Page = () => {
               O Meni
             </motion.h1>
           </div>
-          <div className="md:h-unset h-140 max-h-150 overflow-hidden bg-[url(/slike/bez-boli-8-xl.jpg)] bg-cover md:bg-none">
+
+          <div
+            className="h-140 max-h-150 overflow-hidden bg-cover md:h-fit md:bg-none!"
+            style={{
+              background: `url(/slike/bez-boli-8-xl.jpg) center / cover no-repeat`,
+            }}
+          >
             <Image
               className="hidden md:block"
               src="/slike/bez-boli-8-xl.jpg"
