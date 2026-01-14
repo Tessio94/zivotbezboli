@@ -28,7 +28,7 @@ const Page = () => {
             }}
           >
             <Image
-              className="hidden md:block"
+              className="hidden min-[1920px]:w-full md:block"
               src="/slike/bez-boli-10-xl.jpg"
               alt="Život bez boli hero image"
               width={1920}

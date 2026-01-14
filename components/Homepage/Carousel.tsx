@@ -3,7 +3,7 @@
 import React from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import Image, { ImageLoader } from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { CiLocationOn, CiMail, CiMobile3 } from "react-icons/ci";
 import { motion } from "motion/react";
@@ -15,8 +15,8 @@ import {
 } from "react-icons/io";
 
 const Carousel = () => {
-  const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
-  // const [emblaRef] = useEmblaCarousel({ loop: false });
+  // const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
+  const [emblaRef] = useEmblaCarousel({ loop: false });
 
   return (
     <section>
@@ -68,7 +68,7 @@ const Carousel = () => {
                 </motion.div>
               </div>
               <Image
-                className="z-0 rotate-y-180 max-[930px]:object-[30%] max-xl:min-h-[1080px] max-xl:object-cover"
+                className="z-0 rotate-y-180 max-[930px]:object-[30%] max-xl:min-h-[1080px] max-xl:object-cover min-[1920px]:w-full"
                 src="/slike/bez-boli-4-xl.jpg"
                 alt="Život bez boli hero image"
                 width={1920}
@@ -151,7 +151,7 @@ const Carousel = () => {
                 </div>
               </div>
               <Image
-                className="z-0 rotate-y-180 max-[930px]:object-[30%] max-xl:min-h-[1080px] max-xl:object-cover"
+                className="z-0 rotate-y-180 max-[930px]:object-[30%] max-xl:min-h-[1080px] max-xl:object-cover min-[1920px]:w-full"
                 src="/slike/bez-boli-10-xl.jpg"
                 alt="Život bez boli hero image"
                 width={1920}
@@ -181,7 +181,7 @@ const Carousel = () => {
                 </Link>
               </div>
               <Image
-                className="z-0 max-[930px]:object-[30%] max-xl:min-h-[1080px] max-xl:object-cover"
+                className="z-0 max-[930px]:object-[30%] max-xl:min-h-[1080px] max-xl:object-cover min-[1920px]:w-full"
                 src="/slike/bez-boli-3-xl.jpg"
                 alt="Život bez boli hero image"
                 width={1920}

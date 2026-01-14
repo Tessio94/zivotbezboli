@@ -12,7 +12,7 @@ import { CgChevronRight } from "react-icons/cg";
 
 const Footer = () => {
   return (
-    <footer className="relative z-10 bg-[url('/slike/bez-boli-9-xl.jpg')]">
+    <footer className="relative z-10 bg-[url('/slike/bez-boli-9-xl.jpg')] bg-cover max-xl:bg-position-[50%]">
       <div className="bg-theme4/90 absolute inset-0 -z-10" />
       {/* <div className="px-6 pt-15 pb-7 sm:px-10 lg:px-18 lg:pt-20 lg:pb-10 2xl:px-28 flex items-start flex-wrap justify-between max-xl:gap-y-15"> */}
       <div className="flex flex-wrap items-start justify-between px-6 pt-16 pb-8 max-xl:gap-y-15 sm:px-10 sm:py-20 sm:pt-20 sm:pb-10 lg:px-18 lg:pt-26 lg:pb-13">

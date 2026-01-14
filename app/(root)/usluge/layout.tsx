@@ -58,7 +58,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
             }}
           >
             <Image
-              className="hidden md:block"
+              className="hidden min-[1920px]:w-full md:block"
               src={IMAGES[location]}
               alt="Život bez boli hero image"
               width={1920}
