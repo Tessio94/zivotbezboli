@@ -20,21 +20,21 @@ const Recenzije = () => {
   return (
     <div
       className={cn(
-        "border-theme4/30 fixed bottom-3 left-3 z-1000 max-w-[95%] rounded-2xl border sm:max-w-110",
+        "fixed bottom-3 left-3 z-900 max-w-[95%] sm:max-w-110",
         closeModal ? "hidden" : "block",
       )}
     >
-      <button
-        type="button"
-        onClick={() => setCloseModal((prev) => !prev)}
-        className="border-theme4/30 hover:bg-theme4 group/close-btn absolute -top-3.5 right-1 z-1000 h-7 w-7 cursor-pointer rounded-full border bg-slate-100 p-0.5 transition-all duration-300"
-        aria-label="Close"
-      >
-        <CgClose className="text-theme4 h-full w-full transition-all duration-300 group-hover/close-btn:text-slate-100" />
-      </button>
-      <div className="embla" ref={emblaRef}>
+      <div className="embla pt-3.5" ref={emblaRef}>
         <div className="embla__container">
-          <div className="embla__slide group">
+          <div className="embla__slide group border-theme4/30 relative rounded-2xl border">
+            <button
+              type="button"
+              onClick={() => setCloseModal((prev) => !prev)}
+              className="border-theme4/30 hover:bg-theme4 group/close-btn absolute -top-3.5 right-1 z-1000 h-7 w-7 cursor-pointer rounded-full border bg-slate-100 p-0.5 transition-all duration-300"
+              aria-label="Close"
+            >
+              <CgClose className="text-theme4 h-full w-full transition-all duration-300 group-hover/close-btn:text-slate-100" />
+            </button>
             <div className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100">
               <div className="shrink-0 p-2">
                 <Image
@@ -73,7 +73,15 @@ const Recenzije = () => {
               </div>
             </div>
           </div>
-          <div className="embla__slide group">
+          <div className="embla__slide group border-theme4/30 relative rounded-2xl border">
+            <button
+              type="button"
+              onClick={() => setCloseModal((prev) => !prev)}
+              className="border-theme4/30 hover:bg-theme4 group/close-btn absolute -top-3.5 right-1 z-1000 h-7 w-7 cursor-pointer rounded-full border bg-slate-100 p-0.5 transition-all duration-300"
+              aria-label="Close"
+            >
+              <CgClose className="text-theme4 h-full w-full transition-all duration-300 group-hover/close-btn:text-slate-100" />
+            </button>
             <div className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100">
               <div className="shrink-0 p-2">
                 <Image
@@ -112,7 +120,15 @@ const Recenzije = () => {
               </div>
             </div>
           </div>
-          <div className="embla__slide group">
+          <div className="embla__slide group border-theme4/30 relative rounded-2xl border">
+            <button
+              type="button"
+              onClick={() => setCloseModal((prev) => !prev)}
+              className="border-theme4/30 hover:bg-theme4 group/close-btn absolute -top-3.5 right-1 z-1000 h-7 w-7 cursor-pointer rounded-full border bg-slate-100 p-0.5 transition-all duration-300"
+              aria-label="Close"
+            >
+              <CgClose className="text-theme4 h-full w-full transition-all duration-300 group-hover/close-btn:text-slate-100" />
+            </button>
             <div className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100">
               <div className="shrink-0 p-2">
                 <Image
@@ -151,7 +167,15 @@ const Recenzije = () => {
               </div>
             </div>
           </div>
-          <div className="embla__slide group">
+          <div className="embla__slide group border-theme4/30 relative rounded-2xl border">
+            <button
+              type="button"
+              onClick={() => setCloseModal((prev) => !prev)}
+              className="border-theme4/30 hover:bg-theme4 group/close-btn absolute -top-3.5 right-1 z-1000 h-7 w-7 cursor-pointer rounded-full border bg-slate-100 p-0.5 transition-all duration-300"
+              aria-label="Close"
+            >
+              <CgClose className="text-theme4 h-full w-full transition-all duration-300 group-hover/close-btn:text-slate-100" />
+            </button>
             <div className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100">
               <div className="shrink-0 p-2">
                 <p className="bg-theme4/20 text-theme4 border-theme4/30 flex h-15 w-15 items-center justify-center rounded-full border text-3xl uppercase">
@@ -186,7 +210,15 @@ const Recenzije = () => {
               </div>
             </div>
           </div>
-          <div className="embla__slide group">
+          <div className="embla__slide group border-theme4/30 relative rounded-2xl border">
+            <button
+              type="button"
+              onClick={() => setCloseModal((prev) => !prev)}
+              className="border-theme4/30 hover:bg-theme4 group/close-btn absolute -top-3.5 right-1 z-1000 h-7 w-7 cursor-pointer rounded-full border bg-slate-100 p-0.5 transition-all duration-300"
+              aria-label="Close"
+            >
+              <CgClose className="text-theme4 h-full w-full transition-all duration-300 group-hover/close-btn:text-slate-100" />
+            </button>
             <div className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100">
               <div className="shrink-0 p-2">
                 <p className="bg-theme4/20 text-theme4 border-theme4/30 flex h-15 w-15 items-center justify-center rounded-full border text-3xl uppercase">
@@ -221,7 +253,15 @@ const Recenzije = () => {
               </div>
             </div>
           </div>
-          <div className="embla__slide group">
+          <div className="embla__slide group border-theme4/30 relative rounded-2xl border">
+            <button
+              type="button"
+              onClick={() => setCloseModal((prev) => !prev)}
+              className="border-theme4/30 hover:bg-theme4 group/close-btn absolute -top-3.5 right-1 z-1000 h-7 w-7 cursor-pointer rounded-full border bg-slate-100 p-0.5 transition-all duration-300"
+              aria-label="Close"
+            >
+              <CgClose className="text-theme4 h-full w-full transition-all duration-300 group-hover/close-btn:text-slate-100" />
+            </button>
             <div className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100">
               <div className="shrink-0 p-2">
                 <p className="bg-theme4/20 text-theme4 border-theme4/30 flex h-15 w-15 items-center justify-center rounded-full border text-3xl uppercase">
