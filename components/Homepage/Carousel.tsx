@@ -15,8 +15,8 @@ import {
 } from "react-icons/io";
 
 const Carousel = () => {
-  // const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
-  const [emblaRef] = useEmblaCarousel({ loop: false });
+  const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
+  // const [emblaRef] = useEmblaCarousel({ loop: false });
 
   return (
     <section>
