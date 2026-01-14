@@ -20,7 +20,7 @@ const Recenzije = () => {
   return (
     <div
       className={cn(
-        "group border-theme4/30 fixed bottom-3 left-3 z-1000 max-w-[95%] rounded-2xl border sm:max-w-110",
+        "border-theme4/30 fixed bottom-3 left-3 z-1000 max-w-[95%] rounded-2xl border sm:max-w-110",
         closeModal ? "hidden" : "block",
       )}
     >
@@ -34,7 +34,7 @@ const Recenzije = () => {
       </button>
       <div className="embla" ref={emblaRef}>
         <div className="embla__container">
-          <div className="embla__slide">
+          <div className="embla__slide group">
             <div className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100">
               <div className="shrink-0 p-2">
                 <Image
@@ -73,7 +73,7 @@ const Recenzije = () => {
               </div>
             </div>
           </div>
-          <div className="embla__slide">
+          <div className="embla__slide group">
             <div className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100">
               <div className="shrink-0 p-2">
                 <Image
@@ -112,7 +112,7 @@ const Recenzije = () => {
               </div>
             </div>
           </div>
-          <div className="embla__slide">
+          <div className="embla__slide group">
             <div className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100">
               <div className="shrink-0 p-2">
                 <Image
@@ -151,7 +151,7 @@ const Recenzije = () => {
               </div>
             </div>
           </div>
-          <div className="embla__slide">
+          <div className="embla__slide group">
             <div className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100">
               <div className="shrink-0 p-2">
                 <p className="bg-theme4/20 text-theme4 border-theme4/30 flex h-15 w-15 items-center justify-center rounded-full border text-3xl uppercase">
@@ -186,7 +186,7 @@ const Recenzije = () => {
               </div>
             </div>
           </div>
-          <div className="embla__slide">
+          <div className="embla__slide group">
             <div className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100">
               <div className="shrink-0 p-2">
                 <p className="bg-theme4/20 text-theme4 border-theme4/30 flex h-15 w-15 items-center justify-center rounded-full border text-3xl uppercase">
@@ -221,7 +221,7 @@ const Recenzije = () => {
               </div>
             </div>
           </div>
-          <div className="embla__slide">
+          <div className="embla__slide group">
             <div className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100">
               <div className="shrink-0 p-2">
                 <p className="bg-theme4/20 text-theme4 border-theme4/30 flex h-15 w-15 items-center justify-center rounded-full border text-3xl uppercase">
