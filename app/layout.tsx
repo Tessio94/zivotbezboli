@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
-import Recenzije from "@/components/Recenzije";
+// import Recenzije from "@/components/Recenzije";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,15 +29,15 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div>
+        {/* <div>
           <Link
             href="/rezervacija"
             className="text-md bg-theme1 hover:text-theme1 border-theme1 fixed top-1/2 right-0 z-20 hidden -translate-y-1/2 rounded-4xl border-2 px-5 py-1 font-semibold text-slate-100 uppercase transition-all duration-300 [text-orientation:upright] [writing-mode:vertical-rl] hover:bg-slate-100 sm:inline-block lg:py-2"
           >
             Rezervacija
           </Link>
-        </div>
-        <Recenzije />
+        </div> */}
+        {/* <Recenzije /> */}
         {children}
       </body>
     </html>
