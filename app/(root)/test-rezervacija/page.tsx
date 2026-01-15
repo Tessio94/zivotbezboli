@@ -33,11 +33,11 @@ const page = () => {
                   <div className="flex grow flex-row items-center gap-3">
                     <p className="text-theme4 flex flex-row items-center gap-1 text-lg">
                       Jutro{" "}
-                      <span className="bg-theme1 block h-3 w-3 shrink-0 rounded-full" />
+                      <span className="bg-theme1 block h-3 w-3 shrink-0" />
                     </p>
                     <p className="text-theme4 flex flex-row items-center gap-1 text-lg">
                       Popodne
-                      <span className="border-b-theme3 block shrink-0 border-r-[6px] border-b-[10px] border-l-[6px] border-r-transparent border-l-transparent" />
+                      <span className="bg-theme3 block h-3 w-3 shrink-0" />
                     </p>
                     <p className="text-theme4 flex flex-row items-center gap-1 text-lg">
                       Večer
