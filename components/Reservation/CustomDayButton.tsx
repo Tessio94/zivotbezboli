@@ -23,9 +23,9 @@ export function CustomDayButton(props: Props) {
 
       {/* Icons row */}
       <div className="flex w-full grow flex-row items-stretch overflow-hidden rounded-b-full">
-        <div className="bg-theme1 aspect-square w-1/3 shrink-0" />
-        <div className="bg-theme3 aspect-square w-1/3 shrink-0" />
-        <div className="bg-theme4 aspect-square w-1/3 shrink-0" />
+        <div className="bg-theme1 aspect-square w-[34%] shrink-0" />
+        <div className="bg-theme3 aspect-square w-[34%] shrink-0" />
+        <div className="bg-theme4 aspect-square w-[34%] shrink-0" />
       </div>
 
       {/* {availability && (
