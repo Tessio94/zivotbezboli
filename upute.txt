@@ -1,0 +1,29 @@
+//////ROUTER//////
+1. rute
+router.route("/book-now/appointments/:therapistId").get(getAvailableSlots);
+router.route("/book-now/reservations").post(requireAuth, createReservation);
+
+
+
+2. admin rute
+router.route("/admin/dashboard/data").get(getAllDashboardData);
+router
+	.route("/admin/dashboard/data/:therapistId")
+	.get(getAllAdminDashboardData);
+router.route("/admin/schedule/:therapistId").get(getAdminAppointments);
+router
+	.route("/admin/schedule/appointment-details/:userId")
+	.get(getAppointmentDetails);
+
+/* admin korisnici */
+router.route("/admin/korisnici").get(getAllUsers);
+
+/* admin postavke */
+router.route("/admin/postavke").get(getAdminSettings);
+router.route("/admin/postavke/add-unavailable-slots").post(removeBookingSlots);
+
+------------------------admin login---------------------------------
+router.route("/admin/login").post(adminLogin);
+router.route("/admin/logout").post(logoutAdminUser);
+router.route("/admin/current").get(requireAdminAuth, getAdminInfo);
+
