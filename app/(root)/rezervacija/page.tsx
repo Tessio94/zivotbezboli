@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "motion/react";
 
-const page = () => {
+const Page = () => {
   return (
     <div className="relative z-10 h-screen max-h-screen min-h-screen w-full bg-[url(/slike/bez-boli-2-xl.jpg)] max-lg:bg-position-[20%] max-md:bg-position-[30%] max-sm:bg-position-[55%] min-[1920px]:bg-cover">
       <div className="from-theme4/90 to-theme4/20 absolute inset-0 -z-10 bg-linear-to-r" />
@@ -34,4 +34,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

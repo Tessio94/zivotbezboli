@@ -12,7 +12,13 @@ import {
 } from "@/components/ui/popover";
 import ReCAPTCHA from "react-google-recaptcha";
 
-const ReservationModal = ({ onClose }: { onClose: () => void }) => {
+type Props = {
+  onClose: () => void;
+  selectedDate: boolean;
+  selectedSlot: boolean;
+};
+
+const ReservationModal = ({ onClose, selectedDate, selectedSlot }: Props) => {
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
   const [name, setName] = useState("");
