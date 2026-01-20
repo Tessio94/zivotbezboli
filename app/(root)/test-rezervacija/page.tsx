@@ -1,7 +1,7 @@
 import ReservationClient from "@/components/Reservation/ReservationClient";
 
 const fetchUrl = process.env.NEXT_PUBLIC_FETCH_URL;
-
+console.log("aaa", fetchUrl);
 async function getAvailableSlots() {
   const res = await fetch(`${fetchUrl}/api/book/appointments`, {
     cache: "no-store",

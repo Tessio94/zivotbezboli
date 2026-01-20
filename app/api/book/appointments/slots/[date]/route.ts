@@ -48,7 +48,7 @@ export async function GET(
     const editedSlots = editSlotsAvailability(slots.rows);
 
     return NextResponse.json({
-      slots: slots.rows,
+      slots: editedSlots,
     });
   } catch (error) {
     console.log(error);

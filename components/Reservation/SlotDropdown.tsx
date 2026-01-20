@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils";
 import React from "react";
 import { BsFillClockFill } from "react-icons/bs";
 
@@ -8,9 +9,10 @@ const SlotDropdown = ({
 }: {
   dateTitle: string;
   timeSlots: string[];
-  setSelectedSlot: React.Dispatch<React.SetStateAction<boolean>>;
+  setSelectedSlot: React.Dispatch<React.SetStateAction<string | null>>;
 }) => {
   console.log(timeSlots);
+
   return (
     <div className="flex flex-col gap-5">
       <div className="max-max-[435px]:px-2 flex flex-col gap-3 rounded-2xl bg-slate-100 p-3 max-[435px]:py-3">
@@ -25,15 +27,22 @@ const SlotDropdown = ({
         </p>
       </div>
 
-      <div className="flex flex-col gap-2 rounded-xl bg-slate-100 p-2">
+      <div className="flex grow flex-col justify-between gap-3 rounded-xl bg-slate-100 p-2">
         {timeSlots.map((time, i) => {
+          const timeOfDay = time.slice(0, 2);
+          const timeTitle = +timeOfDay < 12 ? `${time}am` : `${time}pm`;
+
           return (
-            <div
+            <button
               key={i}
-              className="bg-theme1 hover:text-theme4 hover:border-theme4 cursor-pointer rounded-xl border-2 border-transparent p-2 text-center text-slate-100 transition-all duration-300 hover:bg-slate-100"
+              className={cn(
+                "hover:text-theme4 hover:border-theme4 cursor-pointer rounded-xl border-2 border-transparent p-2 text-center text-slate-100 transition-all duration-300 hover:bg-slate-100",
+                +timeOfDay < 12 ? "bg-theme1" : "bg-theme4",
+              )}
+              onClick={() => setSelectedSlot(timeTitle)}
             >
               {time}
-            </div>
+            </button>
           );
         })}
       </div>

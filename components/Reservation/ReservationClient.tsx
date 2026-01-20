@@ -39,8 +39,9 @@ async function fetchAvailableSlots(date: string | null) {
 
 const ReservationClient = ({ availability }: Props) => {
   const [selectedDate, setSelectedDate] = useState<string | null>(null);
-  const [selectedSlot, setSelectedSlot] = useState<boolean>(false);
+  const [selectedSlot, setSelectedSlot] = useState<string | null>(null);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [showSpinner, setShowSpinner] = useState(false);
   console.log(selectedDate);
   const onClose = useCallback(() => {
     setIsModalOpen(false);
@@ -69,17 +70,25 @@ const ReservationClient = ({ availability }: Props) => {
     year: "numeric",
   }).format(date);
 
-  const { data, isLoading, isError } = useQuery({
+  const { data, isPending, isError } = useQuery({
     queryKey: ["availableSlots", selectedDate],
     queryFn: () => fetchAvailableSlots(selectedDate),
     enabled: !!selectedDate,
   });
 
-  let timeSlots;
-  if (data) {
-    timeSlots = { timeSlots };
-  }
-  console.log("dejtona", data);
+  const timeSlots = data?.slots ?? [];
+
+  useEffect(() => {
+    if (isPending) {
+      setShowSpinner(true);
+    } else {
+      const timeout = setTimeout(() => {
+        setShowSpinner(false);
+      }, 1000);
+
+      return () => clearTimeout(timeout);
+    }
+  }, [isPending]);
 
   return (
     <>
@@ -120,15 +129,40 @@ const ReservationClient = ({ availability }: Props) => {
                   setSelectedDate={setSelectedDate}
                 />
               </div>
-              {selectedDate ? (
+              {selectedDate && !showSpinner ? (
                 <SlotDropdown
                   //   availability={availability}
                   timeSlots={timeSlots}
                   dateTitle={dateTitle}
-                  onSelect={setSelectedSlot}
+                  setSelectedSlot={setSelectedSlot}
                 />
+              ) : selectedDate && showSpinner ? (
+                <div className="flex grow flex-col items-center justify-center place-self-stretch rounded-2xl bg-slate-100 lg:mt-29 lg:max-w-1/3">
+                  <div className="text-theme4 flex items-center justify-center gap-4 px-5 py-3.5 text-lg">
+                    <svg
+                      className="text-theme4 size-12 animate-spin"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <circle
+                        className="opacity-25"
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="currentColor"
+                        strokeWidth="4"
+                      ></circle>
+                      <path
+                        className="opacity-75"
+                        fill="currentColor"
+                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
               ) : (
-                <div className="flex grow flex-col place-self-start rounded-2xl bg-slate-100 lg:mt-29 lg:max-w-1/3">
+                <div className="flex flex-col items-center justify-center place-self-stretch rounded-2xl bg-slate-100 lg:mt-29 lg:max-w-1/3">
                   <p className="text-theme4 flex items-center gap-4 px-5 py-3.5 text-lg">
                     <FaHandPointLeft className="text-theme4 hidden shrink-0 text-2xl lg:block" />
                     <FaHandPointUp className="text-theme4 block shrink-0 text-2xl lg:hidden" />
@@ -137,7 +171,7 @@ const ReservationClient = ({ availability }: Props) => {
                 </div>
               )}
 
-              <div className="flex flex-col place-self-start rounded-2xl bg-slate-100 lg:mt-29">
+              <div className="flex flex-col place-self-stretch rounded-2xl bg-slate-100 lg:mt-29">
                 <p className="text-theme4 border-theme4 bg-theme1/10 border-b px-5 pt-5 pb-3.5 text-lg font-semibold">
                   Informacije o rezervaciji:
                 </p>
@@ -155,16 +189,19 @@ const ReservationClient = ({ availability }: Props) => {
                   <p className="text-theme4 flex items-center gap-4 px-5 py-3.5 text-lg">
                     <BsClock className="text-theme4 shrink-0 text-2xl" />
                     {/* {slotTitle} */}
+                    {selectedSlot}
                   </p>
                 )}
               </div>
             </div>
-            <button
-              className="bg-theme1 hover:border-theme4 hover:text-theme4 w-full cursor-pointer rounded-2xl border-2 border-transparent p-2 font-semibold text-slate-100 transition-all duration-300 hover:bg-slate-100"
-              onClick={() => setIsModalOpen(true)}
-            >
-              Rezerviraj
-            </button>
+            {selectedDate && selectedSlot && (
+              <button
+                className="bg-theme1 hover:border-theme4 hover:text-theme4 w-full cursor-pointer rounded-2xl border-2 border-transparent p-2 font-semibold text-slate-100 transition-all duration-300 hover:bg-slate-100"
+                onClick={() => setIsModalOpen(true)}
+              >
+                Rezerviraj
+              </button>
+            )}
           </div>
         </div>
       </section>
