@@ -11,6 +11,8 @@ import {
 import { CgChevronRight } from "react-icons/cg";
 
 const Footer = () => {
+  const date = new Date().getFullYear();
+
   return (
     <footer className="relative z-10 bg-[url('/slike/bez-boli-9-xl.jpg')] bg-cover max-xl:bg-position-[50%]">
       <div className="bg-theme4/90 absolute inset-0 -z-10" />
@@ -162,7 +164,7 @@ const Footer = () => {
       <div className="flex justify-center px-6 py-8 sm:px-10 sm:py-10 lg:px-18 lg:py-13">
         <div className="w-[60%] border-t border-slate-100 max-xl:w-[80%] max-lg:w-full">
           <p className="p-10 text-center text-xl text-slate-100 max-lg:p-5 max-sm:p-2">
-            Copyright © 2025 <i>Tessio94</i> - Sva prava pridržana.
+            Copyright © {date} <i>Tessio94</i> - Sva prava pridržana.
           </p>
         </div>
       </div>

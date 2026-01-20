@@ -14,7 +14,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 type Props = {
   onClose: () => void;
-  selectedDate: boolean;
+  selectedDate: number | null;
   selectedSlot: boolean;
 };
 
@@ -150,7 +150,7 @@ const ReservationModal = ({ onClose, selectedDate, selectedSlot }: Props) => {
                 name="message"
                 rows={4}
                 cols={50}
-                placeholder="Napišite vaš zahtjev ovdje..."
+                placeholder="Opišite vašu vrstu problema ovdje..."
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 required

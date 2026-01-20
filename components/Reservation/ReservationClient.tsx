@@ -8,6 +8,10 @@ import { FaHandPointLeft, FaHandPointUp } from "react-icons/fa6";
 import DatePicker from "@/components/Reservation/DatePicker";
 import SlotDropdown from "@/components/Reservation/SlotDropdown";
 import ReservationModal from "@/components/Reservation/ReservationModal";
+import { BsClock } from "react-icons/bs";
+import { useQuery } from "@tanstack/react-query";
+
+const fetchUrl = process.env.NEXT_PUBLIC_FETCH_URL;
 
 type Availability = {
   date: string;
@@ -21,11 +25,23 @@ type Props = {
 
 type AvailabilityMap = Record<string, Availability>;
 
+async function fetchAvailableSlots(date: string | null) {
+  const res = await fetch(`${fetchUrl}/api/book/appointments/slots/${date}`);
+
+  if (!res.ok) {
+    throw new Error("Failed fetching slots");
+  }
+
+  const data = await res.json();
+
+  return data;
+}
+
 const ReservationClient = ({ availability }: Props) => {
-  const [selectedDate, setSelectedDate] = useState<boolean>(false);
+  const [selectedDate, setSelectedDate] = useState<string | null>(null);
   const [selectedSlot, setSelectedSlot] = useState<boolean>(false);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-
+  console.log(selectedDate);
   const onClose = useCallback(() => {
     setIsModalOpen(false);
   }, []);
@@ -44,6 +60,26 @@ const ReservationClient = ({ availability }: Props) => {
   const availabilityMap: AvailabilityMap = Object.fromEntries(
     availability.map((a) => [a.date, a]),
   );
+
+  const date = new Date(selectedDate as string);
+
+  const dateTitle = new Intl.DateTimeFormat("hr-HR", {
+    day: "2-digit",
+    month: "long",
+    year: "numeric",
+  }).format(date);
+
+  const { data, isLoading, isError } = useQuery({
+    queryKey: ["availableSlots", selectedDate],
+    queryFn: () => fetchAvailableSlots(selectedDate),
+    enabled: !!selectedDate,
+  });
+
+  let timeSlots;
+  if (data) {
+    timeSlots = { timeSlots };
+  }
+  console.log("dejtona", data);
 
   return (
     <>
@@ -87,7 +123,8 @@ const ReservationClient = ({ availability }: Props) => {
               {selectedDate ? (
                 <SlotDropdown
                   //   availability={availability}
-                  selectedDate={selectedDate}
+                  timeSlots={timeSlots}
+                  dateTitle={dateTitle}
                   onSelect={setSelectedSlot}
                 />
               ) : (
@@ -108,6 +145,18 @@ const ReservationClient = ({ availability }: Props) => {
                   <CiLocationOn className="text-theme4 shrink-0 text-2xl" />
                   Ul. Charlesa Darwina 10, Zagreb
                 </p>
+                {selectedDate && (
+                  <p className="text-theme4 flex items-center gap-4 px-5 py-3.5 text-lg">
+                    <BiCalendar className="text-theme4 shrink-0 text-2xl" />
+                    {dateTitle}
+                  </p>
+                )}
+                {selectedSlot && (
+                  <p className="text-theme4 flex items-center gap-4 px-5 py-3.5 text-lg">
+                    <BsClock className="text-theme4 shrink-0 text-2xl" />
+                    {/* {slotTitle} */}
+                  </p>
+                )}
               </div>
             </div>
             <button

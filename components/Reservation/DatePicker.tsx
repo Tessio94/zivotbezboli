@@ -2,7 +2,6 @@
 
 import React from "react";
 import { useState } from "react";
-
 import { DayPicker, getDefaultClassNames } from "react-day-picker";
 import "react-day-picker/style.css";
 import { hr } from "react-day-picker/locale";
@@ -14,7 +13,7 @@ type Props = {
     string,
     { date: string; morning: boolean; afternoon: boolean }
   >;
-  setSelectedDate: React.Dispatch<React.SetStateAction<boolean>>;
+  setSelectedDate: React.Dispatch<React.SetStateAction<string | null>>;
 };
 
 const DatePicker = ({ availability, setSelectedDate }: Props) => {
@@ -49,6 +48,7 @@ const DatePicker = ({ availability, setSelectedDate }: Props) => {
               <CustomDayButton
                 {...props}
                 availability={availability[dateKey]}
+                setSelectedDate={setSelectedDate}
               />
             );
           }
