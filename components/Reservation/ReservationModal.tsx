@@ -14,11 +14,17 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 type Props = {
   onClose: () => void;
-  selectedDate: number | null;
-  selectedSlot: boolean;
+  selectedDate: string | null;
+  selectedSlot: string | null;
+  dateTitle: string;
 };
 
-const ReservationModal = ({ onClose, selectedDate, selectedSlot }: Props) => {
+const ReservationModal = ({
+  onClose,
+  selectedDate,
+  selectedSlot,
+  dateTitle,
+}: Props) => {
   const [success, setSuccess] = useState(false);
   const [loading, setLoading] = useState(false);
   const [name, setName] = useState("");
@@ -27,7 +33,7 @@ const ReservationModal = ({ onClose, selectedDate, selectedSlot }: Props) => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const isDesktop =
     typeof window !== "undefined" &&
@@ -167,14 +173,14 @@ const ReservationModal = ({ onClose, selectedDate, selectedSlot }: Props) => {
                     <BsCalendarFill className="text-theme4 shrink-0 text-xl" />
                     Datum:
                   </span>
-                  16 siječnja 2026
+                  {dateTitle}
                 </p>
                 <p className="text-theme4 flex items-center gap-1 text-xl">
                   <span className="flex flex-row items-center gap-1.5 font-semibold">
                     <BsFillClockFill className="text-theme4 shrink-0 text-xl" />
                     Vrijeme:
                   </span>
-                  10:30am
+                  {selectedSlot}
                 </p>
               </div>
               <p className="text-theme4 flex flex-row flex-wrap items-center gap-1 text-xl">

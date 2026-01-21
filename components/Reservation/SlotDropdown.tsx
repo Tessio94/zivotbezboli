@@ -14,7 +14,7 @@ const SlotDropdown = ({
   console.log(timeSlots);
 
   return (
-    <div className="flex flex-col gap-5">
+    <div className="flex min-w-70 flex-col gap-5">
       <div className="max-max-[435px]:px-2 flex flex-col gap-3 rounded-2xl bg-slate-100 p-3 max-[435px]:py-3">
         <p className="text-theme4 flex flex-row items-center gap-2 text-2xl font-semibold max-[750px]:text-xl">
           <BsFillClockFill className="text-theme4 shrink-0 text-xl" />

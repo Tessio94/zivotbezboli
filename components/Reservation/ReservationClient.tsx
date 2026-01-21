@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useEffectEvent, useState } from "react";
 import { motion } from "motion/react";
 import { BiCalendar } from "react-icons/bi";
 import { CiLocationOn } from "react-icons/ci";
@@ -78,9 +78,13 @@ const ReservationClient = ({ availability }: Props) => {
 
   const timeSlots = data?.slots ?? [];
 
+  const addSpinner = useEffectEvent(() => {
+    setShowSpinner(true);
+  });
+
   useEffect(() => {
     if (isPending) {
-      setShowSpinner(true);
+      addSpinner();
     } else {
       const timeout = setTimeout(() => {
         setShowSpinner(false);
@@ -95,7 +99,7 @@ const ReservationClient = ({ availability }: Props) => {
       <section className="relative z-10 h-fit min-h-screen w-full bg-[url(/slike/bez-boli-2-xl.jpg)] max-lg:bg-position-[20%] max-md:bg-position-[30%] max-sm:bg-position-[55%] min-[1920px]:bg-cover">
         <div className="from-theme4/90 to-theme4/20 absolute inset-0 -z-10 bg-linear-to-r" />
         <div className="w-full px-6 py-16 max-sm:px-0 sm:px-10 sm:py-20 lg:px-18 lg:py-26">
-          <div className="from-theme1/60 z-20 mx-auto mt-44 flex flex-col items-start gap-10 rounded-4xl bg-linear-to-br to-slate-100/60 p-10 max-[700px]:px-6 max-[400px]:px-3 sm:mt-40 lg:mt-34 2xl:w-[87%]">
+          <div className="from-theme1/60 z-20 mx-auto mt-44 flex flex-col items-start gap-10 rounded-4xl bg-linear-to-br to-slate-100/60 p-10 max-[700px]:px-6 max-[400px]:px-3 sm:mt-40 lg:mt-34 2xl:w-[90%]">
             <motion.h1
               className="text-center text-5xl font-bold text-slate-100 max-[1500px]:text-4xl max-[750px]:text-3xl"
               initial={{ opacity: 0 }}
@@ -137,7 +141,7 @@ const ReservationClient = ({ availability }: Props) => {
                   setSelectedSlot={setSelectedSlot}
                 />
               ) : selectedDate && showSpinner ? (
-                <div className="flex grow flex-col items-center justify-center place-self-stretch rounded-2xl bg-slate-100 lg:mt-29 lg:max-w-1/3">
+                <div className="flex min-w-70 flex-col items-center justify-center place-self-stretch rounded-2xl bg-slate-100 lg:mt-29 lg:max-w-1/3">
                   <div className="text-theme4 flex items-center justify-center gap-4 px-5 py-3.5 text-lg">
                     <svg
                       className="text-theme4 size-12 animate-spin"
@@ -162,7 +166,7 @@ const ReservationClient = ({ availability }: Props) => {
                   </div>
                 </div>
               ) : (
-                <div className="flex flex-col items-center justify-center place-self-stretch rounded-2xl bg-slate-100 lg:mt-29 lg:max-w-1/3">
+                <div className="flex min-w-70 flex-col items-center justify-center place-self-stretch rounded-2xl bg-slate-100 lg:mt-29 lg:max-w-1/3">
                   <p className="text-theme4 flex items-center gap-4 px-5 py-3.5 text-lg">
                     <FaHandPointLeft className="text-theme4 hidden shrink-0 text-2xl lg:block" />
                     <FaHandPointUp className="text-theme4 block shrink-0 text-2xl lg:hidden" />
@@ -188,20 +192,19 @@ const ReservationClient = ({ availability }: Props) => {
                 {selectedSlot && (
                   <p className="text-theme4 flex items-center gap-4 px-5 py-3.5 text-lg">
                     <BsClock className="text-theme4 shrink-0 text-2xl" />
-                    {/* {slotTitle} */}
                     {selectedSlot}
                   </p>
                 )}
+                {selectedDate && selectedSlot && (
+                  <button
+                    className="bg-theme1 hover:border-theme4 hover:text-theme4 mx-2 mt-auto mb-2 animate-pulse cursor-pointer rounded-2xl border-2 border-transparent p-2 font-semibold text-slate-100 transition-all duration-300 hover:bg-slate-100"
+                    onClick={() => setIsModalOpen(true)}
+                  >
+                    Rezerviraj
+                  </button>
+                )}
               </div>
             </div>
-            {selectedDate && selectedSlot && (
-              <button
-                className="bg-theme1 hover:border-theme4 hover:text-theme4 w-full cursor-pointer rounded-2xl border-2 border-transparent p-2 font-semibold text-slate-100 transition-all duration-300 hover:bg-slate-100"
-                onClick={() => setIsModalOpen(true)}
-              >
-                Rezerviraj
-              </button>
-            )}
           </div>
         </div>
       </section>
@@ -209,6 +212,7 @@ const ReservationClient = ({ availability }: Props) => {
         <ReservationModal
           onClose={onClose}
           selectedDate={selectedDate}
+          dateTitle={dateTitle}
           selectedSlot={selectedSlot}
         />
       )}
