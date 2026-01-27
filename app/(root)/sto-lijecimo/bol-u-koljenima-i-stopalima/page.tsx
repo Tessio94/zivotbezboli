@@ -39,15 +39,10 @@ const page = () => {
           <div className="relative z-10 bg-[url(/zivotbezboli-background-nostroke-1920.png)] max-md:order-1 max-md:order-2 md:w-1/2">
             <div className="from-theme3/90 to-theme3/30 absolute inset-0 -z-10 bg-linear-to-r" />
 
-            <motion.div
-              className="flex flex-col items-start gap-10 px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, transition: { duration: 1 } }}
-              viewport={{ once: true, amount: 0.3 }}
-            >
+            <motion.div className="flex flex-col items-start gap-10 px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26">
               <Image
                 className="mx-auto inline-block"
-                src="/usluge/ikone/bijele/lakat.svg"
+                src="/usluge/ikone/bijele/koljeno-stopalo.svg"
                 alt=""
                 width={160}
                 height={160}
@@ -62,14 +57,14 @@ const page = () => {
               </p>
             </motion.div>
           </div>
-          <div className="flex flex-col gap-10 px-6 py-16 max-md:order-1 sm:px-10 sm:py-20 md:w-1/2 lg:px-18 lg:py-26">
+          <div className="flex flex-col items-start gap-10 px-6 py-16 sm:px-10 sm:py-20 md:w-1/2 lg:px-18 lg:py-26">
             <motion.h2
               className="text-theme1 text-5xl font-semibold"
               initial={{ y: -50, opacity: 0 }}
               whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              Bol u laktu i ruci
+              Bol u koljima i stopalima
             </motion.h2>
             <motion.p
               className="text-theme4 text-xl"
@@ -77,8 +72,8 @@ const page = () => {
               whileInView={{ opacity: 1, transition: { duration: 1 } }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              Čest slučaj sa stručnim nazivom teniski lakat, golferski lakat,
-              ali dva zgloba koja često utječu jedan na drugi.
+              Bol u koljenu jedan je od najčešćih problema s kojima se susrećem
+              u ordinaciji
             </motion.p>
             <motion.p
               className="text-theme4 text-xl"
@@ -86,8 +81,17 @@ const page = () => {
               whileInView={{ opacity: 1, transition: { duration: 1 } }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              Sve to može biti posljedica starih tegoba s ramenom ili vratom,
-              ali i kao posljedica ozljede ručnog zgloba.
+              Prema iskustvu, postoje dvije vrste boli u koljenu.
+            </motion.p>
+            <motion.p
+              className="text-theme4 text-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              To može biti oštećenje tetiva, ligamenata ili hrskavice, na
+              primjer. Moramo procijeniti opseg bilo kakvih artritičnih promjena
+              i vidjeti koliko koljeno ima kapaciteta za promjene.
             </motion.p>
             <motion.div
               initial={{ y: 50, opacity: 0 }}
@@ -106,10 +110,36 @@ const page = () => {
       </section>
       <section className="bg-theme1/10">
         <div className="flex flex-col xl:flex-row">
-          <div className="flex flex-col gap-10 px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26 xl:w-1/2">
-            <motion.p className="text-theme4 text-xl">
-              Međutim da bih točno utvrdio o čemu se točno radi, moram vas
-              podvrgnuti temeljitoj procjeni:
+          <div className="flex flex-col gap-10 px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26 xl:w-1/2 xl:gap-6 2xl:gap-10">
+            <motion.p
+              className="text-theme4 text-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              Dobra vijest je da se u većini slučajeva, čak i kada dođe do
+              trošenja, bol u koljenu koju osjećate može promijeniti. 80%
+              vremena utvrdimo da je bol u koljenu zapravo kompenzacija za kuk
+              ili gležanj.
+            </motion.p>
+            <motion.p
+              className="text-theme4 text-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              To znači da mišići oko koljena često previše rade kako bi pomogli
+              negdje drugdje. Moj posao je saznati{" "}
+              <span className="font-semibold">GDJE</span> i{" "}
+              <span className="font-semibold">ZAŠTO</span>.
+            </motion.p>
+            <motion.p
+              className="text-theme4 text-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              To znači da ću vas podvrgnuti temeljitoj procjeni:
             </motion.p>
             <motion.ul
               className="flex flex-col gap-4"
@@ -168,10 +198,10 @@ const page = () => {
           <div className="max-h-212.5 overflow-hidden xl:w-1/2">
             <Image
               className="h-auto w-full"
-              src="/slike/bez-boli-9-md.jpg"
+              src="/slike/bez-boli-16-md.jpg"
               alt=""
               width={960}
-              height={1080}
+              height={960}
               sizes="(min-width: 1280px) 50vw, 100vw"
             />
           </div>

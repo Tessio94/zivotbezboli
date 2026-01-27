@@ -6,29 +6,29 @@ import { usePathname } from "next/navigation";
 import { motion } from "motion/react";
 
 const TITLES: Record<string, string> = {
-  "/usluge/kronicna-bol": "Kronična bol",
-  "/usluge/bol-u-ledjima": "Bol u leđima",
-  "/usluge/bol-u-kuku": "Bol u kuku",
-  "/usluge/bol-u-koljenima-i-stopalima": "Bol u koljenima i stopalima",
-  "/usluge/bol-u-vratu": "Bol u vratu",
-  "/usluge/bol-u-vratu-i-ramenu": "Bol u vratu i ramenima",
-  "/usluge/bol-u-laktu-i-ruci": "Bol u laktu i ruci",
-  "/usluge/sportske-ozljede": "Sportske ozljede",
-  "/usluge/tretmani-djece": "Tretmani djece",
-  "/usluge/ostale-tegobe": "Ostale tegobe",
+  "/sto-lijecimo/kronicna-bol": "Kronična bol",
+  "/sto-lijecimo/bol-u-ledjima": "Bol u leđima",
+  "/sto-lijecimo/bol-u-kuku": "Bol u kuku",
+  "/sto-lijecimo/bol-u-koljenima-i-stopalima": "Bol u koljenima i stopalima",
+  "/sto-lijecimo/bol-u-vratu": "Bol u vratu",
+  "/sto-lijecimo/bol-u-vratu-i-ramenu": "Bol u vratu i ramenima",
+  "/sto-lijecimo/bol-u-laktu-i-ruci": "Bol u laktu i ruci",
+  "/sto-lijecimo/sportske-ozljede": "Sportske ozljede",
+  "/sto-lijecimo/tretmani-djece": "Tretmani djece",
+  "/sto-lijecimo/ostale-tegobe": "Ostale tegobe",
 };
 
 const IMAGES: Record<string, string> = {
-  "/usluge/kronicna-bol": "/slike/bez-boli-8-xl.jpg",
-  "/usluge/bol-u-ledjima": "/slike/bez-boli-9-xl.jpg",
-  "/usluge/bol-u-kuku": "/slike/bez-boli-2-xl.jpg",
-  "/usluge/bol-u-koljenima-i-stopalima": "/slike/bez-boli-8-xl.jpg",
-  "/usluge/bol-u-vratu": "/slike/bez-boli-5-xl.jpg",
-  "/usluge/bol-u-vratu-i-ramenu": "/slike/bez-boli-6-xl.jpg",
-  "/usluge/bol-u-laktu-i-ruci": "/slike/bez-boli-6-xl.jpg",
-  "/usluge/sportske-ozljede": "/slike/bez-boli-7-xl.jpg",
-  "/usluge/tretmani-djece": "/slike/bez-boli-8-xl.jpg",
-  "/usluge/ostale-tegobe": "/slike/bez-boli-9-xl.jpg",
+  "/sto-lijecimo/kronicna-bol": "/slike/bez-boli-19-xl.jpg",
+  "/sto-lijecimo/bol-u-ledjima": "/slike/bez-boli-9-xl.jpg",
+  "/sto-lijecimo/bol-u-kuku": "/slike/bez-boli-2-xl.jpg",
+  "/sto-lijecimo/bol-u-koljenima-i-stopalima": "/slike/bez-boli-8-xl.jpg",
+  "/sto-lijecimo/bol-u-vratu": "/slike/bez-boli-17-xl.jpg",
+  "/sto-lijecimo/bol-u-vratu-i-ramenu": "/slike/bez-boli-6-xl.jpg",
+  "/sto-lijecimo/bol-u-laktu-i-ruci": "/slike/bez-boli-6-xl.jpg",
+  "/sto-lijecimo/sportske-ozljede": "/slike/bez-boli-13-xl.jpg",
+  "/sto-lijecimo/tretmani-djece": "/slike/bez-boli-14-xl.jpg",
+  "/sto-lijecimo/ostale-tegobe": "/slike/bez-boli-9-xl.jpg",
 };
 
 const Layout = ({ children }: { children: React.ReactNode }) => {

@@ -13,7 +13,7 @@ const UslugeGrid = () => {
           whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
           viewport={{ once: true, amount: 0.3 }}
         >
-          Usluge
+          Što liječimo
         </motion.h2>
         <div className="grid items-stretch gap-10 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
           <motion.div
@@ -32,7 +32,7 @@ const UslugeGrid = () => {
               Kronična bol
             </p>
             <Link
-              href="/usluge/kronicna-bol#kronicna-bol"
+              href="/sto-lijecimo/kronicna-bol#kronicna-bol"
               scroll={true}
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-2xl px-4 py-2 text-center text-lg tracking-wider text-slate-100 transition-all duration-300"
             >
@@ -55,7 +55,7 @@ const UslugeGrid = () => {
               Bol u vratu
             </p>
             <Link
-              href="/usluge/bol-u-vratu#bol-u-vratu"
+              href="/sto-lijecimo/bol-u-vratu#bol-u-vratu"
               scroll={true}
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-2xl px-4 py-2 text-center text-lg tracking-wider text-slate-100 transition-all duration-300"
             >
@@ -78,7 +78,7 @@ const UslugeGrid = () => {
               Bol u leđima
             </p>
             <Link
-              href="/usluge/bol-u-ledjima#bol-u-ledjima"
+              href="/sto-lijecimo/bol-u-ledjima#bol-u-ledjima"
               scroll={true}
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-2xl px-4 py-2 text-center text-lg tracking-wider text-slate-100 transition-all duration-300"
             >
@@ -101,7 +101,7 @@ const UslugeGrid = () => {
               Bol u kuku
             </p>
             <Link
-              href="/usluge/bol-u-kuku#bol-u-kuku"
+              href="/sto-lijecimo/bol-u-kuku#bol-u-kuku"
               scroll={true}
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-2xl px-4 py-2 text-center text-lg tracking-wider text-slate-100 transition-all duration-300"
             >
@@ -124,7 +124,7 @@ const UslugeGrid = () => {
               Bol u vratu i ramenu
             </p>
             <Link
-              href="/usluge/bol-u-vratu-i-ramenu#bol-u-vratu-i-ramenu"
+              href="/sto-lijecimo/bol-u-vratu-i-ramenu#bol-u-vratu-i-ramenu"
               scroll={true}
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-2xl px-4 py-2 text-center text-lg tracking-wider text-slate-100 transition-all duration-300"
             >
@@ -147,7 +147,7 @@ const UslugeGrid = () => {
               Bol u laktu i ruci
             </p>
             <Link
-              href="/usluge/bol-u-laktu-i-ruci#bol-u-laktu-i-ruci"
+              href="/sto-lijecimo/bol-u-laktu-i-ruci#bol-u-laktu-i-ruci"
               scroll={true}
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-2xl px-4 py-2 text-center text-lg tracking-wider text-slate-100 transition-all duration-300"
             >
@@ -170,7 +170,7 @@ const UslugeGrid = () => {
               Bol u koljenima i stopalima
             </p>
             <Link
-              href="/usluge/bol-u-koljenima-i-stopalima#bol-u-koljenima-i-stopalima"
+              href="/sto-lijecimo/bol-u-koljenima-i-stopalima#bol-u-koljenima-i-stopalima"
               scroll={true}
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-2xl px-4 py-2 text-center text-lg tracking-wider text-slate-100 transition-all duration-300"
             >
@@ -193,7 +193,7 @@ const UslugeGrid = () => {
               Sportske ozljede
             </p>
             <Link
-              href="/usluge/sportske-ozljede#sportske-ozljede"
+              href="/sto-lijecimo/sportske-ozljede#sportske-ozljede"
               scroll={true}
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-2xl px-4 py-2 text-center text-lg tracking-wider text-slate-100 transition-all duration-300"
             >
@@ -216,7 +216,7 @@ const UslugeGrid = () => {
               Tretmani djece
             </p>
             <Link
-              href="/usluge/tretmani-djece#tretmani-djece"
+              href="/sto-lijecimo/tretmani-djece#tretmani-djece"
               scroll={true}
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-2xl px-4 py-2 text-center text-lg tracking-wider text-slate-100 transition-all duration-300"
             >
@@ -239,7 +239,7 @@ const UslugeGrid = () => {
               Ostale tegobe
             </p>
             <Link
-              href="/usluge/ostale-tegobe#ostale-tegobe"
+              href="/sto-lijecimo/ostale-tegobe#ostale-tegobe"
               scroll={true}
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-2xl px-4 py-2 text-center text-lg tracking-wider text-slate-100 transition-all duration-300"
             >

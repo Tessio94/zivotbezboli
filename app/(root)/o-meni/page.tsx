@@ -22,14 +22,14 @@ const Page = () => {
           </div>
 
           <div
-            className="h-140 max-h-150 overflow-hidden bg-cover md:h-fit md:bg-none!"
+            className="h-140 max-h-150 overflow-hidden bg-cover bg-no-repeat max-[550px]:bg-position-[30%]! md:h-fit md:bg-none!"
             style={{
-              background: `url(/slike/bez-boli-8-xl.jpg) center / cover no-repeat`,
+              background: `url(/slike/bez-boli-11-xl.jpg) center / cover no-repeat`,
             }}
           >
             <Image
               className="hidden min-[1920px]:w-full md:block"
-              src="/slike/bez-boli-8-xl.jpg"
+              src="/slike/bez-boli-11-xl.jpg"
               alt="Život bez boli hero image"
               width={1920}
               height={300}

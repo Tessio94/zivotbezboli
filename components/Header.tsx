@@ -59,13 +59,13 @@ const Header = () => {
           </li>
           <li>
             <div className="text-md group relative flex cursor-pointer items-center gap-2 font-semibold text-slate-100">
-              USLUGE
+              ŠTO LIJEČIMO
               <BiChevronDown className="text-3xl transition-all duration-300 group-hover:rotate-x-180" />
               <div className="invisible absolute top-[130%] max-h-0 opacity-0 transition-all duration-300 group-hover:visible group-hover:max-h-250 group-hover:opacity-100">
                 <ul className="flex flex-col">
                   <li>
                     <Link
-                      href="/usluge/kronicna-bol"
+                      href="/sto-lijecimo/kronicna-bol"
                       className="text-theme4 hover:bg-theme4 block rounded-t-xl bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Kronična bol
@@ -73,7 +73,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/usluge/bol-u-vratu"
+                      href="/sto-lijecimo/bol-u-vratu"
                       className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Bol u vratu
@@ -81,7 +81,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/usluge/bol-u-ledjima"
+                      href="/sto-lijecimo/bol-u-ledjima"
                       className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Bol u leđima
@@ -89,7 +89,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/usluge/bol-u-kuku"
+                      href="/sto-lijecimo/bol-u-kuku"
                       className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Bol u kuku
@@ -97,7 +97,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/usluge/bol-u-vratu-i-ramenu"
+                      href="/sto-lijecimo/bol-u-vratu-i-ramenu"
                       className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Bol u vratu i ramenima
@@ -105,7 +105,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/usluge/bol-u-laktu-i-ruci"
+                      href="/sto-lijecimo/bol-u-laktu-i-ruci"
                       className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Bol u laktu i ruci
@@ -113,7 +113,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/usluge/bol-u-koljenima-i-stopalima"
+                      href="/sto-lijecimo/bol-u-koljenima-i-stopalima"
                       className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Bol u koljenima i stopalima
@@ -121,7 +121,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/usluge/sportske-ozljede"
+                      href="/sto-lijecimo/sportske-ozljede"
                       className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Sportske ozljede
@@ -129,7 +129,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/usluge/tretmani-djece"
+                      href="/sto-lijecimo/tretmani-djece"
                       className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Tretmani djece
@@ -137,7 +137,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/usluge/ostale-tegobe"
+                      href="/sto-lijecimo/ostale-tegobe"
                       className="text-theme4 hover:bg-theme4 border-theme4 block rounded-b-xl border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Ostale tegobe
