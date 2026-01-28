@@ -16,6 +16,7 @@ import { cn } from "@/lib/utils";
 
 const Header = () => {
   const [hambActive, setHambActive] = useState<boolean>(false);
+  const [lijecenjeDrodown, setLijecenjeDropdown] = useState<boolean>(false);
   const [uslugeDrodown, setUslugeDropdown] = useState<boolean>(false);
 
   const path = usePathname();
@@ -57,15 +58,16 @@ const Header = () => {
               O meni
             </Link>
           </li>
+         
           <li>
             <div className="text-md group relative flex cursor-pointer items-center gap-2 font-semibold text-slate-100">
-              USLUGE
+              <span className="uppercase">Što liječimo</span>
               <BiChevronDown className="text-3xl transition-all duration-300 group-hover:rotate-x-180" />
               <div className="invisible absolute top-[130%] max-h-0 opacity-0 transition-all duration-300 group-hover:visible group-hover:max-h-250 group-hover:opacity-100">
                 <ul className="flex flex-col">
                   <li>
                     <Link
-                      href="/usluge/kronicna-bol"
+                      href="/sto-lijecimo/kronicna-bol"
                       className="text-theme4 hover:bg-theme4 block rounded-t-xl bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Kronična bol
@@ -73,7 +75,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/usluge/bol-u-vratu"
+                      href="/sto-lijecimo/bol-u-vratu"
                       className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Bol u vratu
@@ -81,7 +83,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/usluge/bol-u-ledjima"
+                      href="/sto-lijecimo/bol-u-ledjima"
                       className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Bol u leđima
@@ -89,7 +91,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/usluge/bol-u-kuku"
+                      href="/sto-lijecimo/bol-u-kuku"
                       className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Bol u kuku
@@ -97,7 +99,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/usluge/bol-u-vratu-i-ramenu"
+                      href="/sto-lijecimo/bol-u-vratu-i-ramenu"
                       className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Bol u vratu i ramenima
@@ -105,7 +107,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/usluge/bol-u-laktu-i-ruci"
+                      href="/sto-lijecimo/bol-u-laktu-i-ruci"
                       className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Bol u laktu i ruci
@@ -113,7 +115,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/usluge/bol-u-koljenima-i-stopalima"
+                      href="/sto-lijecimo/bol-u-koljenima-i-stopalima"
                       className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Bol u koljenima i stopalima
@@ -121,7 +123,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/usluge/sportske-ozljede"
+                      href="/sto-lijecimo/sportske-ozljede"
                       className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Sportske ozljede
@@ -129,7 +131,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/usluge/tretmani-djece"
+                      href="/sto-lijecimo/tretmani-djece"
                       className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Tretmani djece
@@ -137,7 +139,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      href="/usluge/ostale-tegobe"
+                      href="/sto-lijecimo/ostale-tegobe"
                       className="text-theme4 hover:bg-theme4 border-theme4 block rounded-b-xl border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Ostale tegobe
@@ -147,13 +149,63 @@ const Header = () => {
               </div>
             </div>
           </li>
-          <li>
-            <Link
-              href="/p-dtr"
-              className="text-md relative inline-block cursor-pointer font-semibold text-slate-100 uppercase before:absolute before:top-full before:right-0 before:left-full before:h-0.5 before:bg-slate-100 before:transition-all before:duration-300 after:absolute after:top-full after:right-full after:left-0 after:h-0.5 after:bg-slate-100 after:transition-all after:duration-300 after:content-[''] hover:before:left-1/2 hover:after:right-1/2"
-            >
-              P-DTR
-            </Link>
+           <li>
+            <div className="text-md group relative flex cursor-pointer items-center gap-2 font-semibold text-slate-100">
+              <span className="uppercase">Usluge</span>
+              <BiChevronDown className="text-3xl transition-all duration-300 group-hover:rotate-x-180" />
+              <div className="invisible absolute top-[130%] max-h-0 opacity-0 transition-all duration-300 group-hover:visible group-hover:max-h-250 group-hover:opacity-100">
+                <ul className="flex flex-col">
+                  <li>
+                    <Link
+                      href="/usluge/p-dtr"
+                      className="text-theme4 hover:bg-theme4 block rounded-t-xl bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
+                    >
+                      P-DTR
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/usluge/pregled"
+                      className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
+                    >
+                      Pregled
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/usluge/osteopatija"
+                      className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
+                    >
+                     Osteopatija
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/usluge/manualna-fizioterapija"
+                      className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
+                    >
+                      Manualna fizioterapija
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/usluge/terapijske-vjezbe"
+                      className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
+                    >
+                      Terapijske vježbe
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/usluge/terapijski-trening"
+                      className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100 rounded-b-xl"
+                    >
+                      Terapijski trening
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li>
             <Link
@@ -253,6 +305,109 @@ const Header = () => {
               <div>
                 <p
                   className="text-md group relative flex w-full cursor-pointer items-center gap-2 px-3 py-1 text-2xl font-bold tracking-widest text-slate-100 capitalize"
+                  onClick={() => setLijecenjeDropdown((prev) => !prev)}
+                >
+                  Što liječimo
+                  <BiChevronDown className="text-3xl transition-all duration-300 group-hover:rotate-x-180" />
+                </p>
+
+                <div
+                  className={cn(
+                    "transition-all duration-300",
+                    lijecenjeDrodown
+                      ? "visible max-h-250 opacity-100"
+                      : "invisible max-h-0 opacity-0",
+                  )}
+                >
+                  <ul className="flex flex-col">
+                    <li>
+                      <Link
+                        href="/sto-lijecimo/kronicna-bol"
+                        className="block px-3 py-2 text-slate-100"
+                      >
+                        Kronična bol
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/sto-lijecimo/bol-u-vratu"
+                        className="block border-t border-slate-100 px-3 py-2 text-slate-100"
+                      >
+                        Bol u vratu
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/sto-lijecimo/bol-u-ledjima"
+                        className="block border-t border-slate-100 px-3 py-2 text-slate-100"
+                      >
+                        Bol u leđima
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/sto-lijecimo/bol-u-kuku"
+                        className="block border-t border-slate-100 px-3 py-2 text-slate-100"
+                      >
+                        Bol u kuku
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/sto-lijecimo/bol-u-vratu-i-ramenu"
+                        className="block border-t border-slate-100 px-3 py-2 text-slate-100"
+                      >
+                        Bol u vratu i ramenima
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/sto-lijecimo/bol-u-laktu-i-ruci"
+                        className="block border-t border-slate-100 px-3 py-2 text-slate-100"
+                      >
+                        Bol u laktu i ruci
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/sto-lijecimo/bol-u-koljenima-i-stopalima"
+                        className="block border-t border-slate-100 px-3 py-2 text-slate-100"
+                      >
+                        Bol u koljenima i stopalima
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/sto-lijecimo/sportske-ozljede"
+                        className="block border-t border-slate-100 px-3 py-2 text-slate-100"
+                      >
+                        Sportske ozljede
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/sto-lijecimo/tretmani-djece"
+                        className="block border-t border-slate-100 px-3 py-2 text-slate-100"
+                      >
+                        Tretmani djece
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="/sto-lijecimo/ostale-tegobe"
+                        className="block border-t border-slate-100 px-3 py-2 text-slate-100"
+                      >
+                        Ostale tegobe
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <p
+                  className="text-md group relative flex w-full cursor-pointer items-center gap-2 px-3 py-1 text-2xl font-bold tracking-widest text-slate-100 capitalize"
                   onClick={() => setUslugeDropdown((prev) => !prev)}
                 >
                   Usluge
@@ -270,95 +425,55 @@ const Header = () => {
                   <ul className="flex flex-col">
                     <li>
                       <Link
-                        href="/usluge/kronicna-bol"
+                        href="/usluge/p-dtr"
                         className="block px-3 py-2 text-slate-100"
                       >
-                        Kronična bol
+                        P-DTR
                       </Link>
                     </li>
                     <li>
                       <Link
-                        href="/usluge/bol-u-vratu"
+                        href="/usluge/pregled"
                         className="block border-t border-slate-100 px-3 py-2 text-slate-100"
                       >
-                        Bol u vratu
+                        Pregled
                       </Link>
                     </li>
                     <li>
                       <Link
-                        href="/usluge/bol-u-ledjima"
+                        href="/usluge/osteopatija"
                         className="block border-t border-slate-100 px-3 py-2 text-slate-100"
                       >
-                        Bol u leđima
+                        Osteopatija
                       </Link>
                     </li>
                     <li>
                       <Link
-                        href="/usluge/bol-u-kuku"
+                        href="/usluge/manualna-fizioterapija"
                         className="block border-t border-slate-100 px-3 py-2 text-slate-100"
                       >
-                        Bol u kuku
+                       Manualna fizioterapija
                       </Link>
                     </li>
                     <li>
                       <Link
-                        href="/usluge/bol-u-vratu-i-ramenu"
+                        href="/usluge/terapijske-vjezbe"
                         className="block border-t border-slate-100 px-3 py-2 text-slate-100"
                       >
-                        Bol u vratu i ramenima
+                        Terapijske vježbe
                       </Link>
                     </li>
                     <li>
                       <Link
-                        href="/usluge/bol-u-laktu-i-ruci"
+                        href="/usluge/terapijski-trening"
                         className="block border-t border-slate-100 px-3 py-2 text-slate-100"
                       >
-                        Bol u laktu i ruci
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/usluge/bol-u-koljenima-i-stopalima"
-                        className="block border-t border-slate-100 px-3 py-2 text-slate-100"
-                      >
-                        Bol u koljenima i stopalima
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/usluge/sportske-ozljede"
-                        className="block border-t border-slate-100 px-3 py-2 text-slate-100"
-                      >
-                        Sportske ozljede
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/usluge/tretmani-djece"
-                        className="block border-t border-slate-100 px-3 py-2 text-slate-100"
-                      >
-                        Tretmani djece
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        href="/usluge/ostale-tegobe"
-                        className="block border-t border-slate-100 px-3 py-2 text-slate-100"
-                      >
-                        Ostale tegobe
+                        Terapijski trening
                       </Link>
                     </li>
                   </ul>
                 </div>
               </div>
-            </li>
-            <li className="w-full">
-              <Link
-                href="/p-dtr"
-                className="relative block w-full cursor-pointer px-3 py-1 text-2xl font-bold tracking-widest text-slate-100 capitalize"
-              >
-                P-DTR
-              </Link>
             </li>
             <li className="w-full">
               <Link

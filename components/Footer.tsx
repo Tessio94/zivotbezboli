@@ -129,31 +129,31 @@ const Footer = () => {
             <li>
               <p className="font-regular flex items-center gap-2 text-lg text-slate-100">
                 <CiClock1 className="text-theme1 shrink-0 text-xl" />
-                Pon: 9-12h | 15-19h
+                Pon: 10-13h | 15-18h
               </p>
             </li>
             <li>
               <p className="font-regular flex items-center gap-2 text-lg text-slate-100">
                 <CiClock1 className="text-theme1 shrink-0 text-xl" />
-                Uto: 9-12h | 15-19h
+                Uto: 9-15h
               </p>
             </li>
             <li>
               <p className="font-regular flex items-center gap-2 text-lg text-slate-100">
                 <CiClock1 className="text-theme1 shrink-0 text-xl" />
-                Sri: 9-12h | 15-19h
+                Sri: 9-15h
               </p>
             </li>
             <li>
               <p className="font-regular flex items-center gap-2 text-lg text-slate-100">
                 <CiClock1 className="text-theme1 shrink-0 text-xl" />
-                Čet: 9-12h | 15-19h
+                Čet: 10-13h | 15-18h
               </p>
             </li>
             <li>
               <p className="font-regular flex items-center gap-2 text-lg text-slate-100">
                 <CiClock1 className="text-theme1 shrink-0 text-xl" />
-                Pet: 9-12h | 15-19h
+                Pet: 9-13h
               </p>
             </li>
           </ul>

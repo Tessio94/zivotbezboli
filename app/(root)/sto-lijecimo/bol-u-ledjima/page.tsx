@@ -47,21 +47,19 @@ const page = () => {
             >
               <Image
                 className="mx-auto inline-block"
-                src="/usluge/ikone/bijele/vrat.svg"
+                src="/usluge/ikone/bijele/leda.svg"
                 alt=""
                 width={160}
                 height={160}
               />
-
               <p className="flex flex-row items-start gap-2 text-xl text-slate-100">
                 <BiChevronRight className="shrink-0 text-3xl" />
-                Bol u vratu često je povezana s dugotrajnim sjedenjem, lošim
-                držanjem, stresom ili prenaprezanjem mišića.
+                Bol je ovdje zaštitni odgovor koji je pošao po zlu.
               </p>
               <p className="flex flex-row items-start gap-2 text-xl text-slate-100">
                 <BiChevronRight className="shrink-0 text-3xl" />
-                Tegobe mogu uključivati ukočenost, smanjenu pokretljivost,
-                glavobolje ili širenje boli prema ramenima i rukama.
+                To ima puno više veze sa vašim mozgom, a puno manje sa dijelom
+                tijela koji vas boli
               </p>
             </motion.div>
           </div>
@@ -72,7 +70,7 @@ const page = () => {
               whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              Bol u vratu
+              Bol u leđima
             </motion.h2>
             <motion.p
               className="text-theme4 text-xl"
@@ -80,9 +78,7 @@ const page = () => {
               whileInView={{ opacity: 1, transition: { duration: 1 } }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              Bol u vratu jedna je od najčešćih tegoba u današnjem načinu
-              života, posebno kod osoba koje puno vremena provode sjedeći ili
-              pod stresom.
+              Bol u leđima je najčešća tegoba koju vidimo u svojoj ordinaciji.
             </motion.p>
             <motion.p
               className="text-theme4 text-xl"
@@ -90,9 +86,18 @@ const page = () => {
               whileInView={{ opacity: 1, transition: { duration: 1 } }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              Promjene na strukturi ne moraju nužno značiti bol – često je uzrok
-              u načinu na koji živčani sustav kontrolira pokret i mišićnu
-              napetost.
+              Prvi dio procesa je utvrditi postoji li stvarna šteta na
+              zglobovima, mišićima ili drugim hardverskim strukturama.
+            </motion.p>
+            <motion.p
+              className="text-theme4 text-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              Bez prisutnosti bilo kakvog &quot;oštećenja&quot;, bol je
+              posljedica zaštite mozga i živčanog sustava (često od prošlih
+              ozljeda).
             </motion.p>
             <motion.div
               initial={{ y: 50, opacity: 0 }}
@@ -111,15 +116,15 @@ const page = () => {
       </section>
       <section className="bg-theme1/10">
         <div className="flex flex-col xl:flex-row">
-          <div className="flex flex-col gap-10 px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26 xl:w-1/2">
+          <div className="flex flex-col gap-10 px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26 xl:w-1/2 xl:gap-8 2xl:gap-10">
             <motion.p
               className="text-theme4 text-xl"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, transition: { duration: 1 } }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              Moj posao je napraviti vam procjenu cijelog tijela kako bismo
-              otkrili <span className="font-semibold">ZAŠTO</span> vas boli.
+              Bol je ovdje zaštitni odgovor koji je pošao po zlu. Moj posao je
+              otkriti zašto i usmjeriti vas na put oporavka
             </motion.p>
             <motion.p
               className="text-theme4 text-xl"
@@ -127,7 +132,8 @@ const page = () => {
               whileInView={{ opacity: 1, transition: { duration: 1 } }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              To zahtijeva temeljit pregled kako bi se sagledali vaši:
+              Bol u donjem dijelu leđa često je bezopasna, a čak i ako su vam
+              rekli da imate:
             </motion.p>
             <motion.ul
               className="flex flex-col gap-4"
@@ -142,7 +148,7 @@ const page = () => {
               >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
-                  Statički položaj
+                  Hernija
                 </p>
               </motion.li>
               <motion.li
@@ -151,7 +157,7 @@ const page = () => {
               >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
-                  Opseg pokreta
+                  Protruzija
                 </p>
               </motion.li>
               <motion.li
@@ -160,7 +166,7 @@ const page = () => {
               >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
-                  Neurološka testiranja
+                  Artritis
                 </p>
               </motion.li>
               <motion.li
@@ -169,7 +175,7 @@ const page = () => {
               >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
-                  Ortopedsko testiranje
+                  Degeneracija
                 </p>
               </motion.li>
               <motion.li
@@ -178,7 +184,16 @@ const page = () => {
               >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
-                  Testiranje manualnih mišića
+                  Stenoza
+                </p>
+              </motion.li>
+              <motion.li
+                className="flex flex-row items-start gap-2"
+                variants={itemVariants}
+              >
+                <BiChevronRight className="text-theme4 text-3xl" />
+                <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
+                  Prolaps diska
                 </p>
               </motion.li>
             </motion.ul>
@@ -188,18 +203,17 @@ const page = () => {
               whileInView={{ opacity: 1, transition: { duration: 1 } }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              Uzroci boli u vratu mogu biti vrlo raznoliki – od mišićne
-              napetosti, kompenzacija zbog ramena ili čeljusti, do
-              preopterećenja živčanog sustava nakon stresa ili starih ozljeda.
+              Postoji mnogo toga što se može učiniti da se pomogne. Zapravo,
+              mnogi ljudi će imati sve te nalaze u odsutnosti boli.
             </motion.p>
           </div>
-          <div className="max-h-212.5 overflow-hidden xl:w-1/2">
+          <div className="max-h-230 overflow-hidden xl:w-1/2">
             <Image
-              className="h-auto w-full"
-              src="/slike/bez-boli-5-md.jpg"
+              className="h-auto min-h-full w-full"
+              src="/slike/bez-boli-6-md.jpg"
               alt=""
               width={960}
-              height={960}
+              height={1080}
               sizes="(min-width: 1280px) 50vw, 100vw"
             />
           </div>

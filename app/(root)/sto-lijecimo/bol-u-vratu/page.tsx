@@ -36,7 +36,7 @@ const page = () => {
     <>
       <section>
         <div className="flex flex-col md:flex-row">
-          <div className="relative z-10 bg-[url(/zivotbezboli-background-nostroke-1920.png)] max-md:order-1 max-md:order-2 md:md:w-1/2">
+          <div className="relative z-10 bg-[url(/zivotbezboli-background-nostroke-1920.png)] max-md:order-1 max-md:order-2 md:w-1/2">
             <div className="from-theme3/90 to-theme3/30 absolute inset-0 -z-10 bg-linear-to-r" />
 
             <motion.div
@@ -47,7 +47,7 @@ const page = () => {
             >
               <Image
                 className="mx-auto inline-block"
-                src="/usluge/ikone/bijele/kukovi.svg"
+                src="/usluge/ikone/bijele/vrat.svg"
                 alt=""
                 width={160}
                 height={160}
@@ -55,13 +55,13 @@ const page = () => {
 
               <p className="flex flex-row items-start gap-2 text-xl text-slate-100">
                 <BiChevronRight className="shrink-0 text-3xl" />
-                Bolovi u kuku, leđima i koljenu idu ruku pod ruku.
+                Bol u vratu često je povezana s dugotrajnim sjedenjem, lošim
+                držanjem, stresom ili prenaprezanjem mišića.
               </p>
               <p className="flex flex-row items-start gap-2 text-xl text-slate-100">
                 <BiChevronRight className="shrink-0 text-3xl" />
-                Uzroci vaše boli u kuku mogu biti povezani s tendinitisom,
-                burzitisom, pritiskom živaca ili kompenzacijom od prošlih
-                ozljeda na drugim područjima.
+                Tegobe mogu uključivati ukočenost, smanjenu pokretljivost,
+                glavobolje ili širenje boli prema ramenima i rukama.
               </p>
             </motion.div>
           </div>
@@ -72,7 +72,7 @@ const page = () => {
               whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              Bol u kuku
+              Bol u vratu
             </motion.h2>
             <motion.p
               className="text-theme4 text-xl"
@@ -80,7 +80,9 @@ const page = () => {
               whileInView={{ opacity: 1, transition: { duration: 1 } }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              Bol u kuku je česta pojava u mojoj ordinaciji.
+              Bol u vratu jedna je od najčešćih tegoba u današnjem načinu
+              života, posebno kod osoba koje puno vremena provode sjedeći ili
+              pod stresom.
             </motion.p>
             <motion.p
               className="text-theme4 text-xl"
@@ -88,18 +90,9 @@ const page = () => {
               whileInView={{ opacity: 1, transition: { duration: 1 } }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              Pacijenti mi često govore da imaju artritis, trošenje,
-              degeneraciju i druge tegobe. Međutim, češće se može učiniti mnogo
-              toga kako bi se pomoglo.
-            </motion.p>
-            <motion.p
-              className="text-theme4 text-xl"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, transition: { duration: 1 } }}
-              viewport={{ once: true, amount: 0.3 }}
-            >
-              Promjena na strukturi ne znači i bol, vrlo često možete imati
-              artritis, a ipak nemati bol.
+              Promjene na strukturi ne moraju nužno značiti bol – često je uzrok
+              u načinu na koji živčani sustav kontrolira pokret i mišićnu
+              napetost.
             </motion.p>
             <motion.div
               initial={{ y: 50, opacity: 0 }}
@@ -195,17 +188,18 @@ const page = () => {
               whileInView={{ opacity: 1, transition: { duration: 1 } }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              Postoji mnogo toga što se može učiniti da se pomogne. Zapravo,
-              mnogi ljudi će imati sve te nalaze u odsutnosti boli.
+              Uzroci boli u vratu mogu biti vrlo raznoliki – od mišićne
+              napetosti, kompenzacija zbog ramena ili čeljusti, do
+              preopterećenja živčanog sustava nakon stresa ili starih ozljeda.
             </motion.p>
           </div>
           <div className="max-h-212.5 overflow-hidden xl:w-1/2">
             <Image
-              className="h-auto w-full"
-              src="/slike/bez-boli-2-md.jpg"
+              className="h-auto min-h-full w-full"
+              src="/slike/bez-boli-18-md.jpg"
               alt=""
               width={960}
-              height={1080}
+              height={960}
               sizes="(min-width: 1280px) 50vw, 100vw"
             />
           </div>

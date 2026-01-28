@@ -5,7 +5,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 import Link from "next/link";
-import { CiLocationOn, CiMail, CiMobile3 } from "react-icons/ci";
+import { CiClock1, CiLocationOn, CiMail, CiMobile3 } from "react-icons/ci";
 import { motion } from "motion/react";
 import {
   IoLogoFacebook,
@@ -111,12 +111,29 @@ const Carousel = () => {
                   </li>
                 </ul>
 
-                <p className="text-2xl text-slate-100">
-                  Radno vrijeme:{" "}
-                  <span className="font-semibold">
-                    Pon - Pet: 9-12h | 15-19h
-                  </span>
-                </p>
+                <div className="flex flex-col gap-2 text-2xl text-slate-100">
+                  <p className="mb-5">Radno vrijeme:</p>{" "}
+                  <ul className="flex list-disc flex-col gap-2 text-slate-100">
+                    <li>
+                      <p className="font-regular flex items-center gap-2 text-lg text-slate-100">
+                        <CiClock1 className="shrink-0 text-xl text-slate-100" />{" "}
+                        Pon, Čet: 10-13h | 15-18h
+                      </p>
+                    </li>
+                    <li>
+                      <p className="font-regular flex items-center gap-2 text-lg text-slate-100">
+                        <CiClock1 className="shrink-0 text-xl text-slate-100" />{" "}
+                        Uto - Sri: 9-15h
+                      </p>
+                    </li>
+                    <li>
+                      <p className="font-regular flex items-center gap-2 text-lg text-slate-100">
+                        <CiClock1 className="shrink-0 text-xl text-slate-100" />{" "}
+                        Pet: 9-13h
+                      </p>
+                    </li>
+                  </ul>
+                </div>
 
                 <div className="bg-theme1 flex items-center gap-3 rounded-4xl px-5 py-2.5 sm:gap-5 sm:px-10">
                   <a

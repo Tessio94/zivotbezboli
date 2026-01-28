@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import * as motion from "motion/react-client";
 import Banner from "@/components/Homepage/Banner";
 import { CgChevronRight } from "react-icons/cg";
-import * as motion from "motion/react-client";
+import CarouselReal from "@/components/omeni/CarouselReal";
 
 const Page = () => {
   return (
@@ -22,14 +23,14 @@ const Page = () => {
           </div>
 
           <div
-            className="h-140 max-h-150 overflow-hidden bg-cover md:h-fit md:bg-none!"
+            className="h-140 max-h-150 overflow-hidden bg-cover bg-no-repeat max-[550px]:bg-position-[30%]! md:h-fit md:bg-none!"
             style={{
-              background: `url(/slike/bez-boli-8-xl.jpg) center / cover no-repeat`,
+              background: `url(/slike/bez-boli-11-xl.jpg) center / cover no-repeat`,
             }}
           >
             <Image
               className="hidden min-[1920px]:w-full md:block"
-              src="/slike/bez-boli-8-xl.jpg"
+              src="/slike/bez-boli-11-xl.jpg"
               alt="Život bez boli hero image"
               width={1920}
               height={300}
@@ -95,7 +96,7 @@ const Page = () => {
               viewport={{ once: true, amount: 0.3 }}
             >
               Kada sada gledam unazad vidim da je to zapravo početak mog
-              interesa sa ono s čime se danas bavim.
+              interesa sa čime se i danas bavim.
             </motion.p>
             <motion.p
               className="text-theme4 text-xl"
@@ -103,8 +104,8 @@ const Page = () => {
               whileInView={{ opacity: 1, transition: { duration: 1 } }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              Svi nalazi su mi bili uredni, ali mene je i dalje boljelo i nisam
-              mogao igrati, a doktori nisu znali što mi se događa.
+              Nalazi su mi bili uredni, ali mene je i dalje boljelo, danas zbog
+              svog iskustva svoje pacijente puno bolje razumijem.
             </motion.p>
             <motion.p
               className="text-theme4 text-xl"
@@ -114,7 +115,7 @@ const Page = () => {
             >
               U tom periodu u kojem nisam mogao igrati zbog ozljede, odlučujem
               se na odrađivanje pripravničkog staža godinu dana u Vinogradskoj
-              bolnici kao medicinski tehničar na odjelu za intezivnog liječenje.
+              bolnici kao medicinski tehničar na odjelu za intezivno liječenje.
             </motion.p>
             <motion.p
               className="text-theme4 text-xl"
@@ -265,8 +266,7 @@ const Page = () => {
           >
             <CgChevronRight className="text-theme1 shrink-0 text-3xl" />
             <p className="text-theme4 text-2xl font-semibold sm:text-3xl">
-              2018 Miofoascijalno opuštanje (tečaj Miofascijal Release by
-              Barnes)
+              2018 Miofoascijalno opuštanje (tečaj Miofascial Release by Barnes)
             </p>
           </motion.li>
           <motion.li
@@ -295,6 +295,186 @@ const Page = () => {
         </ul>
       </section>
       <Banner version="two" />
+      <section>
+        <div className="flex flex-col xl:flex-row">
+          <div className="bg-theme1/10 flex flex-col gap-10 px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26 xl:w-1/2">
+            <motion.h2
+              className="text-theme1 text-5xl font-semibold"
+              initial={{ y: -50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              Često postavljena pitanja
+            </motion.h2>
+            <ul className="flex flex-col gap-8">
+              <motion.li
+                className="flex items-start gap-2 sm:gap-4"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, transition: { duration: 1 } }}
+                viewport={{ once: true, amount: 0.3 }}
+              >
+                <CgChevronRight className="text-theme1 shrink-0 text-3xl" />
+                <p className="text-theme4 text-2xl font-semibold sm:text-3xl">
+                  Nakon 3-6 mjeseci sve ozljede bi trebale zacijeliti
+                </p>
+              </motion.li>
+              <motion.li
+                className="flex items-start gap-2 sm:gap-4"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, transition: { duration: 1 } }}
+                viewport={{ once: true, amount: 0.3 }}
+              >
+                <CgChevronRight className="text-theme1 shrink-0 text-3xl" />
+                <p className="text-theme4 text-2xl font-semibold sm:text-3xl">
+                  Nakon zacjeljivanja: Bol bi trebala popustiti (zglobovi/mišići
+                  se opuštaju)
+                </p>
+              </motion.li>
+              <motion.li
+                className="flex items-start gap-2 sm:gap-4"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, transition: { duration: 1 } }}
+                viewport={{ once: true, amount: 0.3 }}
+              >
+                <CgChevronRight className="text-theme1 shrink-0 text-3xl" />
+                <p className="text-theme4 text-2xl font-semibold sm:text-3xl">
+                  Ako bol potraje, ozljeda više nije glavni problem
+                </p>
+              </motion.li>
+              <motion.li
+                className="flex items-start gap-2 sm:gap-4"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, transition: { duration: 1 } }}
+                viewport={{ once: true, amount: 0.3 }}
+              >
+                <CgChevronRight className="text-theme1 shrink-0 text-3xl" />
+                <p className="text-theme4 text-2xl font-semibold sm:text-3xl">
+                  Mozak održava bol kako bi te zaštitio
+                </p>
+              </motion.li>
+              <motion.li
+                className="flex items-start gap-2 sm:gap-4"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, transition: { duration: 1 } }}
+                viewport={{ once: true, amount: 0.3 }}
+              >
+                <CgChevronRight className="text-theme1 shrink-0 text-3xl" />
+                <p className="text-theme4 text-2xl font-semibold sm:text-3xl">
+                  Ako je to slučaj onda znam da je nešto krenulo u krivom smjeru
+                </p>
+              </motion.li>
+            </ul>
+          </div>
+          <div className="h-auto w-full overflow-hidden bg-none bg-cover bg-no-repeat xl:w-1/2 xl:bg-[url(/slike/bez-boli-11-md.jpg)]">
+            <Image
+              className="block h-auto w-full xl:hidden"
+              src="/slike/bez-boli-11-md.jpg"
+              alt=""
+              width={960}
+              height={960}
+              sizes="(min-width: 1280px) 50vw, 100vw"
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="flex flex-col xl:flex-row">
+          <div className="w-full px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26 xl:w-1/2">
+            <motion.h2
+              className="text-theme1 mb-15 text-5xl font-semibold"
+              initial={{ y: -50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              Zašto je ovaj pristup drugačiji
+            </motion.h2>
+            {/* <Carousel /> */}
+            <CarouselReal />
+          </div>
+          <div className="bg-theme1/10 w-full px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26 xl:w-1/2">
+            <motion.h2
+              className="text-theme1 mb-15 text-5xl font-semibold"
+              initial={{ y: -50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              Proces od 4 koraka
+            </motion.h2>
+            <div className="flex flex-col gap-5">
+              <div className="flex flex-row items-start gap-3">
+                <div className="bg-theme4 after:bg-theme4 relative z-10 flex h-10 min-w-10 items-center justify-center rounded-full text-2xl font-semibold text-slate-100 after:absolute after:top-full after:left-1/2 after:h-40 after:w-1 after:-translate-x-1/2 after:content-[''] max-[500px]:after:h-65">
+                  1
+                </div>
+                <div className="flex flex-col items-start gap-2">
+                  <p className="text-theme4 text-2xl font-semibold">
+                    Dijagnoza
+                  </p>
+                  <p className="text-theme4 font-regular text-xl">
+                    Najvažnije je utvrdite imate li strukturni problem,
+                    oštećenja mišića, diska ili zgloba, ili imate funkcionalni
+                    problem, pri čemu su slike čiste i nema oštećenja, nego se
+                    radi o zaštiti živčanog sustava.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <div className="flex flex-row items-start gap-3">
+                  <div className="bg-theme4 after:bg-theme4 relative z-10 flex h-10 min-w-10 items-center justify-center rounded-full text-2xl font-semibold text-slate-100 after:absolute after:top-full after:left-1/2 after:h-75 after:w-1 after:-translate-x-1/2 after:content-[''] max-[500px]:after:h-105 max-[380px]:after:h-135 sm:after:h-55 xl:after:h-75">
+                    2
+                  </div>
+                  <div className="flex flex-col items-start gap-2">
+                    <p className="text-theme4 text-2xl font-semibold">
+                      Desibilizacija živčanog sustava i terapija
+                    </p>
+                    <p className="text-theme4 font-regular text-xl">
+                      Ovo je glavni dio procesa u kojem tražim razloge zašto
+                      osjećate bol u nekom području i koji je razlog za to.
+                      <br />
+                      Bilo da se radi o starim traumama, zbog prekomjerne
+                      upotrebe ili različitih kompenzacija. Popravljamo ulaznu
+                      informaciju preko vašeg tijela da vas mozak i živčani
+                      sustav prestanu štiti i da prestane osjećati bol i
+                      ukočenost.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="flex flex-row items-start gap-3">
+                  <div className="bg-theme4 relative z-20 flex h-10 min-w-10 items-center justify-center rounded-full text-2xl font-semibold text-slate-100">
+                    3
+                  </div>
+                  <div className="flex flex-col items-start gap-2">
+                    <p className="text-theme4 text-2xl font-semibold">Pokret</p>
+                    <p className="text-theme4 font-regular text-xl">
+                      Naučiti ću vas kako se kretati na siguran i učinkovit
+                      način bez kompenzacija i novih bolova i to ciljano za
+                      svakog što mu je u tom trenutku potrebno.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div className="flex flex-row items-start gap-3">
+                  <div className="bg-theme4 after:bg-theme4 relative z-10 flex h-10 min-w-10 items-center justify-center rounded-full text-2xl font-semibold text-slate-100 after:absolute after:bottom-full after:left-1/2 after:h-45 after:w-1 after:-translate-x-1/2 after:rotate-x-180 after:content-[''] max-[380px]:after:h-55">
+                    4
+                  </div>
+                  <div className="flex flex-col items-start gap-2">
+                    <p className="text-theme4 text-2xl font-semibold">
+                      Trening jakosti
+                    </p>
+                    <p className="text-theme4 font-regular text-xl">
+                      Naučit ću vas kako da ojačate slaba područja, poboljšate
+                      kvalitetu života i zaštite se od budućih ozljeda i bolova
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };

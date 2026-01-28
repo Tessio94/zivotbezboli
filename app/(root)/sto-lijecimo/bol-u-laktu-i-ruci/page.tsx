@@ -168,7 +168,7 @@ const page = () => {
           <div className="max-h-212.5 overflow-hidden xl:w-1/2">
             <Image
               className="h-auto w-full"
-              src="/slike/bez-boli-9-md.jpg"
+              src="/slike/bez-boli-12-md.jpg"
               alt=""
               width={960}
               height={1080}

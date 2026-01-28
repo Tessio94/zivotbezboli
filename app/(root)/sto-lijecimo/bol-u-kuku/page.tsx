@@ -36,7 +36,7 @@ const page = () => {
     <>
       <section>
         <div className="flex flex-col md:flex-row">
-          <div className="relative z-10 bg-[url(/zivotbezboli-background-nostroke-1920.png)] max-md:order-1 max-md:order-2 md:w-1/2">
+          <div className="relative z-10 bg-[url(/zivotbezboli-background-nostroke-1920.png)] max-md:order-1 max-md:order-2 md:md:w-1/2">
             <div className="from-theme3/90 to-theme3/30 absolute inset-0 -z-10 bg-linear-to-r" />
 
             <motion.div
@@ -47,7 +47,7 @@ const page = () => {
             >
               <Image
                 className="mx-auto inline-block"
-                src="/usluge/ikone/bijele/sportske-ozljede.svg"
+                src="/usluge/ikone/bijele/kukovi.svg"
                 alt=""
                 width={160}
                 height={160}
@@ -55,8 +55,13 @@ const page = () => {
 
               <p className="flex flex-row items-start gap-2 text-xl text-slate-100">
                 <BiChevronRight className="shrink-0 text-3xl" />
-                sa sportskim ozljedama što kao bivši sportaš što kroz praksu
-                imam jako puno iskustva i jako dobro znam kako vam pomoći.
+                Bolovi u kuku, leđima i koljenu idu ruku pod ruku.
+              </p>
+              <p className="flex flex-row items-start gap-2 text-xl text-slate-100">
+                <BiChevronRight className="shrink-0 text-3xl" />
+                Uzroci vaše boli u kuku mogu biti povezani s tendinitisom,
+                burzitisom, pritiskom živaca ili kompenzacijom od prošlih
+                ozljeda na drugim područjima.
               </p>
             </motion.div>
           </div>
@@ -67,7 +72,7 @@ const page = () => {
               whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              Sportske ozljede
+              Bol u kuku
             </motion.h2>
             <motion.p
               className="text-theme4 text-xl"
@@ -75,10 +80,7 @@ const page = () => {
               whileInView={{ opacity: 1, transition: { duration: 1 } }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              Ako ste nedavno zadobili sportsku ozljedu ili ako već neko vrijeme
-              patite od ozljede – može biti vrlo primamljivo to pripisati kao
-              &quot;ništa ozbiljno&quot; i jednostavno &quot;trpjeti&quot; i
-              nastaviti najbolje što možete.
+              Bol u kuku je česta pojava u mojoj ordinaciji.
             </motion.p>
             <motion.p
               className="text-theme4 text-xl"
@@ -86,9 +88,18 @@ const page = () => {
               whileInView={{ opacity: 1, transition: { duration: 1 } }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              Ili je vrlo lako obeshrabriti se i na kraju se osjećati
-              &quot;zaglavljeno&quot;, pitajući se hoćete li se ikada moći
-              vratiti sportu ili ostati aktivni kao prije...
+              Pacijenti mi često govore da imaju artritis, trošenje,
+              degeneraciju i druge tegobe. Međutim, češće se može učiniti mnogo
+              toga kako bi se pomoglo.
+            </motion.p>
+            <motion.p
+              className="text-theme4 text-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              Promjena na strukturi ne znači i bol, vrlo često možete imati
+              artritis, a ipak nemati bol.
             </motion.p>
             <motion.div
               initial={{ y: 50, opacity: 0 }}
@@ -114,8 +125,16 @@ const page = () => {
               whileInView={{ opacity: 1, transition: { duration: 1 } }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              U ordinaciji Život Bez Boli imamo iskustva u pomaganju svima, od
-              rekreativnih sportaša do vrhunskih sportaša
+              Moj posao je napraviti vam procjenu cijelog tijela kako bismo
+              otkrili <span className="font-semibold">ZAŠTO</span> vas boli.
+            </motion.p>
+            <motion.p
+              className="text-theme4 text-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              To zahtijeva temeljit pregled kako bi se sagledali vaši:
             </motion.p>
             <motion.ul
               className="flex flex-col gap-4"
@@ -130,7 +149,7 @@ const page = () => {
               >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
-                  Tendinitis
+                  Statički položaj
                 </p>
               </motion.li>
               <motion.li
@@ -139,7 +158,7 @@ const page = () => {
               >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
-                  Ozljede od trčanja i biciklizma
+                  Opseg pokreta
                 </p>
               </motion.li>
               <motion.li
@@ -148,7 +167,7 @@ const page = () => {
               >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
-                  Burzitis
+                  Neurološka testiranja
                 </p>
               </motion.li>
               <motion.li
@@ -157,7 +176,7 @@ const page = () => {
               >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
-                  Istegnuća i uganuća
+                  Ortopedsko testiranje
                 </p>
               </motion.li>
               <motion.li
@@ -166,45 +185,27 @@ const page = () => {
               >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
-                  Rehabilitacija nakon operacije
-                </p>
-              </motion.li>
-              <motion.li
-                className="flex flex-row items-start gap-2"
-                variants={itemVariants}
-              >
-                <BiChevronRight className="text-theme4 text-3xl" />
-                <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
-                  Oštećenje ligamenata
-                </p>
-              </motion.li>
-              <motion.li
-                className="flex flex-row items-start gap-2"
-                variants={itemVariants}
-              >
-                <BiChevronRight className="text-theme4 text-3xl" />
-                <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
-                  Bol u gležnju i koljenu
-                </p>
-              </motion.li>
-              <motion.li
-                className="flex flex-row items-start gap-2"
-                variants={itemVariants}
-              >
-                <BiChevronRight className="text-theme4 text-3xl" />
-                <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
-                  Rehabilitacija nakon potresa mozga
+                  Testiranje manualnih mišića
                 </p>
               </motion.li>
             </motion.ul>
+            <motion.p
+              className="text-theme4 text-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              Postoji mnogo toga što se može učiniti da se pomogne. Zapravo,
+              mnogi ljudi će imati sve te nalaze u odsutnosti boli.
+            </motion.p>
           </div>
           <div className="max-h-212.5 overflow-hidden xl:w-1/2">
             <Image
               className="h-auto w-full"
-              src="/slike/bez-boli-8-md.jpg"
+              src="/slike/bez-boli-7-md.jpg"
               alt=""
               width={960}
-              height={960}
+              height={1080}
               sizes="(min-width: 1280px) 50vw, 100vw"
             />
           </div>
