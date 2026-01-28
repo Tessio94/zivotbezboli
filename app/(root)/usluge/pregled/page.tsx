@@ -1,7 +1,7 @@
 import React from "react";
-import * as motion from "motion/react-client";
 import Link from "next/link";
 import Image from "next/image";
+import * as motion from "motion/react-client";
 
 const Page = () => {
   return (
@@ -49,10 +49,10 @@ const Page = () => {
         </div>
       </section>
       <section>
-        <div className="flex flex-col xl:flex-row">
-          <div className="max-h-212.5 overflow-hidden xl:w-1/2">
+        <div className="flex flex-col lg:flex-row">
+          <div className="overflow-hidden bg-none bg-cover bg-no-repeat max-2xl:bg-position-[20%] max-xl:bg-position-[50%] max-lg:order-2 lg:w-1/2 lg:bg-[url(/slike/bez-boli-7-md.jpg)]">
             <Image
-              className="h-auto w-full"
+              className="block h-auto w-full lg:hidden"
               src="/slike/bez-boli-7-md.jpg"
               alt=""
               width={960}
@@ -60,7 +60,7 @@ const Page = () => {
               sizes="(min-width: 1280px) 50vw, 100vw"
             />
           </div>
-          <div className="bg-theme1/10 w-full px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26 xl:w-1/2">
+          <div className="bg-theme1/10 w-full px-6 py-16 sm:px-10 sm:py-20 lg:w-1/2 lg:px-18 lg:py-26">
             <motion.h2
               className="text-theme1 mb-15 text-5xl font-semibold"
               initial={{ y: -50, opacity: 0 }}
@@ -69,9 +69,9 @@ const Page = () => {
             >
               Proces prvog pregleda
             </motion.h2>
-            <div className="flex flex-col gap-5">
-              <div className="flex flex-row items-start gap-3">
-                <div className="bg-theme4 after:bg-theme4 relative z-10 flex h-10 min-w-10 items-center justify-center rounded-full text-2xl font-semibold text-slate-100 after:absolute after:top-full after:left-1/2 after:h-40 after:w-1 after:-translate-x-1/2 after:content-[''] max-[500px]:after:h-65">
+            <div className="flex flex-col">
+              <div className="flex flex-row items-start gap-3 pb-5">
+                <div className="bg-theme4 after:bg-theme4 relative z-10 flex h-10 min-w-10 items-center justify-center rounded-full text-2xl font-semibold text-slate-100 after:absolute after:top-full after:left-1/2 after:h-80 after:w-1 after:-translate-x-1/2 after:content-[''] max-[550px]:after:h-105">
                   1
                 </div>
                 <div className="flex flex-col items-start gap-2">
@@ -114,9 +114,9 @@ const Page = () => {
                 </div>
               </div>
 
-              <div>
+              <div className="relative overflow-hidden pb-5">
                 <div className="flex flex-row items-start gap-3">
-                  <div className="bg-theme4 after:bg-theme4 relative z-10 flex h-10 min-w-10 items-center justify-center rounded-full text-2xl font-semibold text-slate-100 after:absolute after:top-full after:left-1/2 after:h-75 after:w-1 after:-translate-x-1/2 after:content-[''] max-[500px]:after:h-105 max-[380px]:after:h-135 sm:after:h-55 xl:after:h-75">
+                  <div className="bg-theme4 after:bg-theme4 max- relative z-10 flex h-10 min-w-10 items-center justify-center rounded-full text-2xl font-semibold text-slate-100 after:absolute after:top-full after:left-1/2 after:h-95 after:w-1 after:-translate-x-1/2 after:content-[''] max-[450px]:after:h-135">
                     2
                   </div>
                   <div className="flex flex-col items-start gap-2">
@@ -150,7 +150,7 @@ const Page = () => {
                   </div>
                 </div>
               </div>
-              <div>
+              <div className="relative overflow-hidden">
                 <div className="flex flex-row items-start gap-3">
                   <div className="bg-theme4 relative z-20 flex h-10 min-w-10 items-center justify-center rounded-full text-2xl font-semibold text-slate-100">
                     3
@@ -188,6 +188,63 @@ const Page = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="mx-auto px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26 xl:w-3/4">
+          <div className="flex flex-col gap-8 sm:gap-10">
+            <motion.h2
+              className="text-theme1 text-3xl font-semibold sm:text-4xl"
+              initial={{ y: -50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              Što obući za prvi pregled?
+            </motion.h2>
+            <motion.p
+              className="text-theme4 text-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              Preporučuje se: udobna odjeća koja omogućuje slobodno kretanje
+              trenirka, tajice, kratke hlače, majica
+            </motion.p>
+            <motion.p
+              className="text-theme4 text-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              Udobnost pomaže kvalitetnijoj procjeni i tretmanu.
+            </motion.p>
+            <motion.p
+              className="text-theme4 text-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              Prvi pregled – prvi korak prema rješenju
+            </motion.p>
+            <motion.p
+              className="text-theme4 text-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              Prvi pregled osmišljen je kako biste se osjećali sigurno,
+              informirano i zbrinuto.
+            </motion.p>
+            <motion.p
+              className="text-theme4 text-xl"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, transition: { duration: 1 } }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              To je početak individualnog terapijskog procesa usmjerenog na
+              bolje kretanje, manje boli i dugoročnu funkcionalnost.
+            </motion.p>
           </div>
         </div>
       </section>
