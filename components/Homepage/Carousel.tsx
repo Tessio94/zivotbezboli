@@ -51,7 +51,7 @@ const Carousel = () => {
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1 }}
                 >
-                  Život bez boli i stresa – holistički pristup zdravlju
+                  Život bez boli – holistički pristup bolovima i zdravlju
                 </motion.h3>
                 <motion.div
                   className="mt-5"

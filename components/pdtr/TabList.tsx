@@ -9,7 +9,7 @@ const TabList = () => {
   const [dropdown, setDropdown] = useState("");
 
   return (
-    <section className="bg-theme1/10 px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26">
+    <section className="bg-theme1/10 w-full px-6 py-16 sm:px-10 sm:py-20 lg:w-1/2 lg:px-18 lg:py-26">
       <motion.h2
         className="text-theme4 mb-11 text-center text-3xl font-semibold"
         initial={{ y: -50, opacity: 0 }}
@@ -19,7 +19,7 @@ const TabList = () => {
         P-DTR® koristim kod slijedećih simptoma i sindroma:
       </motion.h2>
 
-      <ul className="z-10 mx-auto rounded-t-2xl rounded-b-2xl md:max-w-[85%] xl:max-w-[70%]">
+      <ul className="z-10 mx-auto rounded-t-2xl rounded-b-2xl">
         <li
           className="border-theme1 to-theme2/40 hover:from-theme2/10 hover:to-theme2/60 group cursor-pointer rounded-t-2xl border-2 border-b-0 bg-linear-to-br from-transparent px-5 py-3 transition-colors duration-500 hover:bg-linear-to-br"
           onClick={() =>

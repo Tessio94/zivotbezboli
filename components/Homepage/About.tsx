@@ -71,10 +71,10 @@ const About = () => {
           </motion.div>
         </div>
 
-        <div className="max-h-212.5 overflow-hidden xl:w-1/2">
+        <div className="overflow-hidden xl:max-h-212.5 xl:w-1/2">
           <Image
             className="h-auto w-full"
-            src="/slike/bez-boli-5-md.jpg"
+            src="/slike/bez-boli-24-md.jpg"
             alt=""
             width={960}
             height={960}

@@ -193,7 +193,7 @@ const page = () => {
               preopterećenja živčanog sustava nakon stresa ili starih ozljeda.
             </motion.p>
           </div>
-          <div className="max-h-212.5 overflow-hidden xl:w-1/2">
+          <div className="overflow-hidden xl:max-h-212.5 xl:w-1/2">
             <Image
               className="h-auto min-h-full w-full"
               src="/slike/bez-boli-18-md.jpg"

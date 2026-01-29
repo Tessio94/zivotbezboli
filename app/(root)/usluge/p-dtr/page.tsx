@@ -3,6 +3,7 @@ import Pdtr from "@/components/pdtr/Pdtr";
 import Banner from "@/components/Homepage/Banner";
 import TabList from "@/components/pdtr/TabList";
 import * as motion from "motion/react-client";
+import Image from "next/image";
 
 const Page = () => {
   return (
@@ -37,7 +38,19 @@ const Page = () => {
         </div>
       </section>
       <Banner version="three" />
-      <TabList />
+      <div className="flex flex-col lg:flex-row">
+        <TabList />
+        <div className="w-full overflow-hidden bg-none bg-cover bg-no-repeat max-2xl:bg-position-[50%] max-xl:bg-position-[70%] max-lg:order-2 lg:w-1/2 lg:bg-[url(/slike/bez-boli-23-md.jpg)]">
+          <Image
+            className="block h-auto w-full lg:hidden"
+            src="/slike/bez-boli-23-md.jpg"
+            alt=""
+            width={960}
+            height={1080}
+            sizes="(min-width: 1280px) 50vw, 100vw"
+          />
+        </div>
+      </div>
     </>
   );
 };

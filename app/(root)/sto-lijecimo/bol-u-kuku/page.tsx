@@ -199,10 +199,10 @@ const page = () => {
               mnogi ljudi će imati sve te nalaze u odsutnosti boli.
             </motion.p>
           </div>
-          <div className="max-h-212.5 overflow-hidden xl:w-1/2">
+          <div className="overflow-hidden xl:max-h-212.5 xl:w-1/2">
             <Image
               className="h-auto w-full"
-              src="/slike/bez-boli-7-md.jpg"
+              src="/slike/bez-boli-13-md.jpg"
               alt=""
               width={960}
               height={1080}

@@ -195,7 +195,7 @@ const page = () => {
               </motion.li>
             </motion.ul>
           </div>
-          <div className="max-h-212.5 overflow-hidden xl:w-1/2">
+          <div className="overflow-hidden xl:max-h-212.5 xl:w-1/2">
             <Image
               className="h-auto w-full"
               src="/slike/bez-boli-16-md.jpg"

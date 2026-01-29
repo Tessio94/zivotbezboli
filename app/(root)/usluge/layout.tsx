@@ -15,7 +15,7 @@ const TITLES: Record<string, string> = {
 };
 
 const IMAGES: Record<string, string> = {
-  "/usluge/p-dtr": "/slike/bez-boli-10-xl.jpg",
+  "/usluge/p-dtr": "/slike/bez-boli-22-xl.jpg",
   "/usluge/manualna-fizioterapija": "/slike/bez-boli-9-xl.jpg",
   "/usluge/osteopatija": "/slike/bez-boli-2-xl.jpg",
   "/usluge/pregled": "/slike/bez-boli-1-xl.jpg",
