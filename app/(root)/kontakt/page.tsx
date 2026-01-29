@@ -77,6 +77,15 @@ const Page = () => {
             Svaki tretman započinje razgovorom i individualnom procjenom, kako
             bismo zajedno pronašli najbolji put prema životu bez boli.
           </motion.p>
+          <motion.p
+            className="text-theme4 text-xl font-semibold italic"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            *Otkazivanje termina moguće je napraviti 24 sata prije termina, u
+            suprotnom slučaju naplaćujemo punu cijenu tretmana.
+          </motion.p>
           <motion.div
             className="mt-5"
             initial={{ opacity: 0 }}
