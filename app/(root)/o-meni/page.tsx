@@ -400,8 +400,8 @@ const Page = () => {
             >
               Proces od 4 koraka
             </motion.h2>
-            <div className="flex flex-col gap-5">
-              <div className="flex flex-row items-start gap-3">
+            <div className="flex flex-col">
+              <div className="relative flex flex-row items-start gap-3 overflow-hidden pb-5">
                 <div className="bg-theme4 after:bg-theme4 relative z-10 flex h-10 min-w-10 items-center justify-center rounded-full text-2xl font-semibold text-slate-100 after:absolute after:top-full after:left-1/2 after:h-40 after:w-1 after:-translate-x-1/2 after:content-[''] max-[500px]:after:h-65">
                   1
                 </div>
@@ -418,57 +418,51 @@ const Page = () => {
                 </div>
               </div>
 
-              <div>
-                <div className="flex flex-row items-start gap-3">
-                  <div className="bg-theme4 after:bg-theme4 relative z-10 flex h-10 min-w-10 items-center justify-center rounded-full text-2xl font-semibold text-slate-100 after:absolute after:top-full after:left-1/2 after:h-75 after:w-1 after:-translate-x-1/2 after:content-[''] max-[500px]:after:h-105 max-[380px]:after:h-135 sm:after:h-55 xl:after:h-75">
-                    2
-                  </div>
-                  <div className="flex flex-col items-start gap-2">
-                    <p className="text-theme4 text-2xl font-semibold">
-                      Desibilizacija živčanog sustava i terapija
-                    </p>
-                    <p className="text-theme4 font-regular text-xl">
-                      Ovo je glavni dio procesa u kojem tražim razloge zašto
-                      osjećate bol u nekom području i koji je razlog za to.
-                      <br />
-                      Bilo da se radi o starim traumama, zbog prekomjerne
-                      upotrebe ili različitih kompenzacija. Popravljamo ulaznu
-                      informaciju preko vašeg tijela da vas mozak i živčani
-                      sustav prestanu štiti i da prestane osjećati bol i
-                      ukočenost.
-                    </p>
-                  </div>
+              <div className="relative flex flex-row items-start gap-3 overflow-hidden pb-5">
+                <div className="bg-theme4 after:bg-theme4 relative z-10 flex h-10 min-w-10 items-center justify-center rounded-full text-2xl font-semibold text-slate-100 after:absolute after:top-full after:left-1/2 after:h-75 after:w-1 after:-translate-x-1/2 after:content-[''] max-[500px]:after:h-135">
+                  2
+                </div>
+                <div className="flex flex-col items-start gap-2">
+                  <p className="text-theme4 text-2xl font-semibold">
+                    Desibilizacija živčanog sustava i terapija
+                  </p>
+                  <p className="text-theme4 font-regular text-xl">
+                    Ovo je glavni dio procesa u kojem tražim razloge zašto
+                    osjećate bol u nekom području i koji je razlog za to.
+                    <br />
+                    Bilo da se radi o starim traumama, zbog prekomjerne upotrebe
+                    ili različitih kompenzacija. Popravljamo ulaznu informaciju
+                    preko vašeg tijela da vas mozak i živčani sustav prestanu
+                    štiti i da prestane osjećati bol i ukočenost.
+                  </p>
                 </div>
               </div>
-              <div>
-                <div className="flex flex-row items-start gap-3">
-                  <div className="bg-theme4 relative z-20 flex h-10 min-w-10 items-center justify-center rounded-full text-2xl font-semibold text-slate-100">
-                    3
-                  </div>
-                  <div className="flex flex-col items-start gap-2">
-                    <p className="text-theme4 text-2xl font-semibold">Pokret</p>
-                    <p className="text-theme4 font-regular text-xl">
-                      Naučiti ću vas kako se kretati na siguran i učinkovit
-                      način bez kompenzacija i novih bolova i to ciljano za
-                      svakog što mu je u tom trenutku potrebno.
-                    </p>
-                  </div>
+              <div className="relative flex flex-row items-start gap-3 overflow-hidden pb-5">
+                <div className="bg-theme4 after:bg-theme4 relative z-20 flex h-10 min-w-10 items-center justify-center rounded-full text-2xl font-semibold text-slate-100 after:absolute after:top-full after:left-1/2 after:h-75 after:w-1 after:-translate-x-1/2 after:content-[''] max-[380px]:after:h-105">
+                  3
+                </div>
+                <div className="flex flex-col items-start gap-2">
+                  <p className="text-theme4 text-2xl font-semibold">Pokret</p>
+                  <p className="text-theme4 font-regular text-xl">
+                    Naučiti ću vas kako se kretati na siguran i učinkovit način
+                    bez kompenzacija i novih bolova i to ciljano za svakog što
+                    mu je u tom trenutku potrebno.
+                  </p>
                 </div>
               </div>
-              <div>
-                <div className="flex flex-row items-start gap-3">
-                  <div className="bg-theme4 after:bg-theme4 relative z-10 flex h-10 min-w-10 items-center justify-center rounded-full text-2xl font-semibold text-slate-100 after:absolute after:bottom-full after:left-1/2 after:h-45 after:w-1 after:-translate-x-1/2 after:rotate-x-180 after:content-[''] max-[380px]:after:h-55">
-                    4
-                  </div>
-                  <div className="flex flex-col items-start gap-2">
-                    <p className="text-theme4 text-2xl font-semibold">
-                      Trening jakosti
-                    </p>
-                    <p className="text-theme4 font-regular text-xl">
-                      Naučit ću vas kako da ojačate slaba područja, poboljšate
-                      kvalitetu života i zaštite se od budućih ozljeda i bolova
-                    </p>
-                  </div>
+
+              <div className="flex flex-row items-start gap-3">
+                <div className="bg-theme4 relative z-10 flex h-10 min-w-10 items-center justify-center rounded-full text-2xl font-semibold text-slate-100">
+                  4
+                </div>
+                <div className="flex flex-col items-start gap-2">
+                  <p className="text-theme4 text-2xl font-semibold">
+                    Trening jakosti
+                  </p>
+                  <p className="text-theme4 font-regular text-xl">
+                    Naučit ću vas kako da ojačate slaba područja, poboljšate
+                    kvalitetu života i zaštite se od budućih ozljeda i bolova
+                  </p>
                 </div>
               </div>
             </div>

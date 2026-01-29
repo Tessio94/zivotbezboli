@@ -41,11 +41,11 @@ const Header = () => {
         />
       </Link>
       <nav className="hidden lg:block">
-        <ul className="flex items-center lg:gap-6.5 xl:gap-14 2xl:gap-22">
+        <ul className="flex items-center lg:gap-4 xl:gap-14 2xl:gap-22">
           <li>
             <Link
               href="/"
-              className="text-md relative inline-block cursor-pointer font-semibold text-slate-100 uppercase before:absolute before:top-full before:right-0 before:left-full before:h-0.5 before:bg-slate-100 before:transition-all before:duration-300 after:absolute after:top-full after:right-full after:left-0 after:h-0.5 after:bg-slate-100 after:transition-all after:duration-300 after:content-[''] hover:before:left-1/2 hover:after:right-1/2"
+              className="xl:text-md relative inline-block cursor-pointer text-sm font-semibold text-slate-100 uppercase before:absolute before:top-full before:right-0 before:left-full before:h-0.5 before:bg-slate-100 before:transition-all before:duration-300 after:absolute after:top-full after:right-full after:left-0 after:h-0.5 after:bg-slate-100 after:transition-all after:duration-300 after:content-[''] hover:before:left-1/2 hover:after:right-1/2"
             >
               Naslovnica
             </Link>
@@ -53,14 +53,14 @@ const Header = () => {
           <li>
             <Link
               href="/o-meni"
-              className="text-md relative inline-block cursor-pointer font-semibold text-slate-100 uppercase before:absolute before:top-full before:right-0 before:left-full before:h-0.5 before:bg-slate-100 before:transition-all before:duration-300 after:absolute after:top-full after:right-full after:left-0 after:h-0.5 after:bg-slate-100 after:transition-all after:duration-300 after:content-[''] hover:before:left-1/2 hover:after:right-1/2"
+              className="xl:text-md relative inline-block cursor-pointer text-sm font-semibold text-slate-100 uppercase before:absolute before:top-full before:right-0 before:left-full before:h-0.5 before:bg-slate-100 before:transition-all before:duration-300 after:absolute after:top-full after:right-full after:left-0 after:h-0.5 after:bg-slate-100 after:transition-all after:duration-300 after:content-[''] hover:before:left-1/2 hover:after:right-1/2"
             >
               O meni
             </Link>
           </li>
-         
+
           <li>
-            <div className="text-md group relative flex cursor-pointer items-center gap-2 font-semibold text-slate-100">
+            <div className="xl:text-md group relative flex cursor-pointer items-center gap-2 text-sm font-semibold text-slate-100">
               <span className="uppercase">Što liječimo</span>
               <BiChevronDown className="text-3xl transition-all duration-300 group-hover:rotate-x-180" />
               <div className="invisible absolute top-[130%] max-h-0 opacity-0 transition-all duration-300 group-hover:visible group-hover:max-h-250 group-hover:opacity-100">
@@ -149,8 +149,8 @@ const Header = () => {
               </div>
             </div>
           </li>
-           <li>
-            <div className="text-md group relative flex cursor-pointer items-center gap-2 font-semibold text-slate-100">
+          <li>
+            <div className="xl:text-md group relative flex cursor-pointer items-center gap-2 text-sm font-semibold text-slate-100">
               <span className="uppercase">Usluge</span>
               <BiChevronDown className="text-3xl transition-all duration-300 group-hover:rotate-x-180" />
               <div className="invisible absolute top-[130%] max-h-0 opacity-0 transition-all duration-300 group-hover:visible group-hover:max-h-250 group-hover:opacity-100">
@@ -176,7 +176,7 @@ const Header = () => {
                       href="/usluge/osteopatija"
                       className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
-                     Osteopatija
+                      Osteopatija
                     </Link>
                   </li>
                   <li>
@@ -198,7 +198,7 @@ const Header = () => {
                   <li>
                     <Link
                       href="/usluge/terapijski-trening"
-                      className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100 rounded-b-xl"
+                      className="text-theme4 hover:bg-theme4 border-theme4 block rounded-b-xl border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Terapijski trening
                     </Link>
@@ -210,7 +210,7 @@ const Header = () => {
           <li>
             <Link
               href="/kontakt"
-              className="text-md relative inline-block cursor-pointer font-semibold text-slate-100 uppercase before:absolute before:top-full before:right-0 before:left-full before:h-0.5 before:bg-slate-100 before:transition-all before:duration-300 after:absolute after:top-full after:right-full after:left-0 after:h-0.5 after:bg-slate-100 after:transition-all after:duration-300 after:content-[''] hover:before:left-1/2 hover:after:right-1/2"
+              className="xl:text-md relative inline-block cursor-pointer text-sm font-semibold text-slate-100 uppercase before:absolute before:top-full before:right-0 before:left-full before:h-0.5 before:bg-slate-100 before:transition-all before:duration-300 after:absolute after:top-full after:right-full after:left-0 after:h-0.5 after:bg-slate-100 after:transition-all after:duration-300 after:content-[''] hover:before:left-1/2 hover:after:right-1/2"
             >
               Kontakt
             </Link>
@@ -218,7 +218,7 @@ const Header = () => {
         </ul>
       </nav>
 
-      <div className="bg-theme1 hidden items-center gap-2 rounded-4xl px-5 py-1 lg:flex">
+      <div className="bg-theme1 hidden items-center gap-2 rounded-4xl px-5 py-1 max-[1140px]:gap-0.5 max-[1140px]:px-2 lg:flex">
         <a
           href="https://wa.me/385989648532"
           target="_blank"
@@ -452,7 +452,7 @@ const Header = () => {
                         href="/usluge/manualna-fizioterapija"
                         className="block border-t border-slate-100 px-3 py-2 text-slate-100"
                       >
-                       Manualna fizioterapija
+                        Manualna fizioterapija
                       </Link>
                     </li>
                     <li>

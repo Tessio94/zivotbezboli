@@ -220,7 +220,7 @@ const Page = () => {
               Udobnost pomaže kvalitetnijoj procjeni i tretmanu.
             </motion.p>
             <motion.p
-              className="text-theme4 text-xl"
+              className="text-theme4 text-xl font-semibold"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, transition: { duration: 1 } }}
               viewport={{ once: true, amount: 0.3 }}

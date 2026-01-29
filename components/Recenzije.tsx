@@ -12,7 +12,11 @@ import { CgClose } from "react-icons/cg";
 import { cn } from "@/lib/utils";
 
 const Recenzije = () => {
-  const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
+  const [emblaRef] = useEmblaCarousel({ loop: false }, [
+    Autoplay({
+      delay: 3000,
+    }),
+  ]);
   // const [emblaRef] = useEmblaCarousel({ loop: false });
 
   const [closeModal, setCloseModal] = useState<boolean>(false);

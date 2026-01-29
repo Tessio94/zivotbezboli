@@ -1,6 +1,33 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
-import * as motion from "motion/react-client";
+import { easeOut, motion } from "motion/react";
+import { BiChevronRight } from "react-icons/bi";
+
+const listVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: {
+    y: 50,
+    opacity: 0,
+  },
+  show: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      easingIn: easeOut,
+    },
+  },
+};
 
 const page = () => {
   return (
@@ -307,9 +334,12 @@ const page = () => {
               whileInView={{ opacity: 1, transition: { duration: 1 } }}
               viewport={{ once: true, amount: 0.3 }}
             >
-              Cilj osteopatije je uspostaviti optimalnu ravnotežu u tijelu,
-              poboljšati kvalitetu pokreta, smanjiti napetosti i potaknuti
-              prirodno zdravlje.
+              Cilj osteopatije je{" "}
+              <strong>
+                uspostaviti optimalnu ravnotežu u tijelu, poboljšati kvalitetu
+                pokreta, smanjiti napetosti i potaknuti prirodno zdravlje
+              </strong>
+              .
             </motion.p>
             <motion.p
               className="text-theme4 text-xl"
@@ -350,31 +380,68 @@ const page = () => {
             >
               Osteopatija je prikladna za:
             </motion.p>
-            <ul className="ml-5 list-disc">
-              <li>
-                <p className="text-theme4 text-xl">
-                  osobe s bolovima u leđima, vratu i zglobovima
+            <motion.ul
+              className="flex flex-col gap-4"
+              variants={listVariants}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <motion.li
+                className="flex flex-row items-start gap-2"
+                variants={itemVariants}
+              >
+                <BiChevronRight className="text-theme4 text-3xl" />
+                <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
+                  prirodne obrasce kretanja (čučanj, iskorak, rotacija, oslonci)
                 </p>
-              </li>
-              <li>
-                <p className="text-theme4 text-xl">
-                  osobe pod stresom i napetošću
+              </motion.li>
+              <motion.li
+                className="flex flex-row items-start gap-2"
+                variants={itemVariants}
+              >
+                <BiChevronRight className="text-theme4 text-3xl" />
+                <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
+                  pravilno i svjesno disanje
                 </p>
-              </li>
-              <li>
-                <p className="text-theme4 text-xl">
-                  osobe s kroničnim tegobama
+              </motion.li>
+              <motion.li
+                className="flex flex-row items-start gap-2"
+                variants={itemVariants}
+              >
+                <BiChevronRight className="text-theme4 text-3xl" />
+                <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
+                  razvoj jakosti (snage) bez preopterećenja
                 </p>
-              </li>
-              <li>
-                <p className="text-theme4 text-xl">sportaše i rekreativce</p>
-              </li>
-              <li>
-                <p className="text-theme4 text-xl">
-                  osobe koje žele preventivno brinuti o svom zdravlju
+              </motion.li>
+              <motion.li
+                className="flex flex-row items-start gap-2"
+                variants={itemVariants}
+              >
+                <BiChevronRight className="text-theme4 text-3xl" />
+                <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
+                  poboljšanje funkcionalnosti i izdržljivosti
                 </p>
-              </li>
-            </ul>
+              </motion.li>
+              <motion.li
+                className="flex flex-row items-start gap-2"
+                variants={itemVariants}
+              >
+                <BiChevronRight className="text-theme4 text-3xl" />
+                <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
+                  kontrolu i stabilnost trupa
+                </p>
+              </motion.li>
+              <motion.li
+                className="flex flex-row items-start gap-2"
+                variants={itemVariants}
+              >
+                <BiChevronRight className="text-theme4 text-3xl" />
+                <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
+                  mentalnu prisutnost i fokus
+                </p>
+              </motion.li>
+            </motion.ul>
             <motion.p
               className="text-theme4 text-xl"
               initial={{ opacity: 0 }}

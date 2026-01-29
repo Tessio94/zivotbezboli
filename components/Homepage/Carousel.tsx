@@ -112,8 +112,8 @@ const Carousel = () => {
                 </ul>
 
                 <div className="flex flex-col gap-2 text-2xl text-slate-100">
-                  <p className="mb-5">Radno vrijeme:</p>{" "}
-                  <ul className="flex list-disc flex-col gap-2 text-slate-100">
+                  <p className="mb-2">Radno vrijeme:</p>{" "}
+                  <ul className="flex flex-col gap-2 text-slate-100">
                     <li>
                       <p className="font-regular flex items-center gap-2 text-lg text-slate-100">
                         <CiClock1 className="shrink-0 text-xl text-slate-100" />{" "}
