@@ -3,14 +3,10 @@ import { notFound } from "next/navigation";
 import { PAGES } from "@/components/pages/sto-lijecimo";
 import { STO_LIJECIMO } from "@/data/sto-lijecimo";
 
-const page = async ({
-  params,
-}: {
-  params: Promise<{ slug: keyof typeof STO_LIJECIMO }>;
-}) => {
+const page = async ({ params }: { params: Promise<{ slug: string }> }) => {
   const { slug } = await params;
 
-  const PageComponent = PAGES[slug];
+  const PageComponent = PAGES[slug as keyof typeof STO_LIJECIMO];
 
   if (!PageComponent) notFound();
 

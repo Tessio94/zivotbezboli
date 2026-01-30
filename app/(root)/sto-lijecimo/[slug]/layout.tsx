@@ -9,11 +9,11 @@ const Layout = async ({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ slug: keyof typeof STO_LIJECIMO }>;
+  params: Promise<{ slug: string }>;
 }) => {
   const { slug } = await params;
 
-  const data = STO_LIJECIMO[slug];
+  const data = STO_LIJECIMO[slug as keyof typeof STO_LIJECIMO];
 
   if (!data) notFound();
 
