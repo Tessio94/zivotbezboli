@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Recenzije from "@/components/Recenzije";
-import seoData from "@/data/metadata";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,10 +13,6 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
-
-type Params = {
-  slug?: string[] | string;
-};
 
 export const metadata: Metadata = {
   title: "Privatna fizioterapija Zagreb |  Život bez boli",

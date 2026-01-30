@@ -4,6 +4,7 @@ import Link from "next/link";
 import Contact from "@/components/Homepage/Contact";
 import { CiLocationOn, CiMail, CiMobile3 } from "react-icons/ci";
 import * as motion from "motion/react-client";
+import { Metadata } from "next";
 
 const Page = () => {
   return (
@@ -142,3 +143,25 @@ const Page = () => {
 };
 
 export default Page;
+
+export const metadata: Metadata = {
+  title: "Kontakt | Život bez boli",
+  description:
+    "Kontaktirajte privatnu ordinaciju Život bez boli i dogovorite pregled. Posjetite nas na lokaciji Ul. Charlesa Darwina 10, Zagreb",
+  openGraph: {
+    title: "Ivan Radičev – fizioterapeut, osteopat i P-DTR terapeut",
+    description:
+      "Kontaktirajte privatnu ordinaciju Život bez boli i dogovorite pregled. Posjetite nas na lokaciji Ul. Charlesa Darwina 10, Zagreb",
+    url: "https://www.zivotbezboli.com/kontakt",
+    images: [
+      {
+        url: "https://www.zivotbezboli.com/slike/bez-boli-2-xl.jpg",
+        width: 1920,
+        height: 1080,
+        alt: "O meni | Život bez boli",
+      },
+    ],
+    type: "website",
+    locale: "hr_HR",
+  },
+};

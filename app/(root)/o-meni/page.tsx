@@ -1,4 +1,5 @@
 import React from "react";
+import { Metadata } from "next";
 import Image from "next/image";
 import * as motion from "motion/react-client";
 import Banner from "@/components/Homepage/Banner";
@@ -474,3 +475,25 @@ const Page = () => {
 };
 
 export default Page;
+
+export const metadata: Metadata = {
+  title: "O meni |  Život bez boli",
+  description:
+    "Ivan Radičev, bacc. fizioterapije, diplomirani osteopat i P-DTR terapeut. Individualan pristup i fokus na uzrok boli.",
+  openGraph: {
+    title: "Ivan Radičev – fizioterapeut, osteopat i P-DTR terapeut",
+    description:
+      "Saznajte više o mom profesionalnom putu, iskustvu i pristupu liječenju boli, pokreta i kroničnih tegoba.",
+    url: "https://www.zivotbezboli.com/o-meni",
+    images: [
+      {
+        url: "https://www.zivotbezboli.com/slike/bez-boli-11-xl.jpg",
+        width: 1920,
+        height: 1080,
+        alt: "O meni | Život bez boli",
+      },
+    ],
+    type: "website",
+    locale: "hr_HR",
+  },
+};
