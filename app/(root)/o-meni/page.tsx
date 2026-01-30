@@ -181,20 +181,20 @@ const Page = () => {
             </motion.p>
           </div>
           <motion.div
-            className="h-fit shrink-0 overflow-hidden max-xl:flex max-xl:gap-10"
+            className="h-fit shrink-0 overflow-hidden max-xl:flex max-xl:w-full"
             initial={{ y: -50, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
             viewport={{ once: true, amount: 0.3 }}
           >
             <Image
-              className="rounded-[38%_62%_77%_23%/30%_30%_70%_70%]"
+              className="rounded-[38%_62%_77%_23%/30%_30%_70%_70%] max-xl:w-1/2 max-xl:pr-5 max-md:w-full max-md:pr-0"
               src="/slike/bez-boli-4-sm.jpg"
               alt=""
               width={600}
               height={1080}
             />
             <Image
-              className="block scale-x-[-1] rounded-[38%_62%_77%_23%/30%_30%_70%_70%] max-md:hidden xl:hidden"
+              className="block scale-x-[-1] rounded-[38%_62%_77%_23%/30%_30%_70%_70%] max-xl:w-1/2 max-xl:pl-5 max-md:hidden xl:hidden"
               src="/slike/bez-boli-9-sm.jpg"
               alt=""
               width={600}

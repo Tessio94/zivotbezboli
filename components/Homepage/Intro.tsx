@@ -24,7 +24,7 @@ const Intro = () => {
             <strong>Život Bez Boli</strong> je privatna ordinacija
             specijalizirana za dijagnostiku i tretman boli, disfunkcija pokreta
             i kroničnih tegoba koje često nemaju jasan uzrok na klasičnim
-            nalazima. minus.
+            nalazima.
           </motion.p>
           <motion.p
             className="text-theme4 text-xl"

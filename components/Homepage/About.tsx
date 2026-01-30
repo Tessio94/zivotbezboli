@@ -23,8 +23,8 @@ const About = () => {
             whileInView={{ opacity: 1, transition: { duration: 1 } }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            Moje ime je <strong>Ivan Radičev</strong>, diplomirani
-            fizioterapeut, osteopat i P-DTR terapeut. Kroz vlastito iskustvo
+            Moje ime je <strong>Ivan Radičev</strong>, bacc. fizioterapije,
+            diplomirani osteopat i P-DTR terapeut. Kroz vlastito iskustvo
             ozljede i dugotrajnog oporavka započeo je moj profesionalni put.
           </motion.p>
           <motion.p

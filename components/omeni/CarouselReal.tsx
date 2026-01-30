@@ -74,8 +74,8 @@ const CarouselReal = () => {
                   uzroke.
                 </p>
                 <p className="text-2xl font-semibold text-slate-100 sm:text-3xl">
-                  Zbog svega toga razvio sam smo jedinstven pristup za
-                  rješavanje kronične boli i ozljeda.
+                  Zbog svega toga razvio sam jedinstven pristup za rješavanje
+                  kronične boli i ozljeda.
                 </p>
               </div>
             </div>

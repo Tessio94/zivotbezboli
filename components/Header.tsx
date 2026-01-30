@@ -157,20 +157,21 @@ const Header = () => {
                 <ul className="flex flex-col">
                   <li>
                     <Link
-                      href="/usluge/p-dtr"
-                      className="text-theme4 hover:bg-theme4 block rounded-t-xl bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
-                    >
-                      P-DTR
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
                       href="/usluge/pregled"
-                      className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
+                      className="text-theme4 hover:bg-theme4 border-theme4 block rounded-t-xl bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
                     >
                       Pregled
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      href="/usluge/p-dtr"
+                      className="text-theme4 hover:bg-theme4 border-theme4 block border-t bg-slate-100 px-3 py-2 text-nowrap transition-all duration-300 hover:text-slate-100"
+                    >
+                      P-DTR
+                    </Link>
+                  </li>
+
                   <li>
                     <Link
                       href="/usluge/osteopatija"
@@ -425,18 +426,18 @@ const Header = () => {
                   <ul className="flex flex-col">
                     <li>
                       <Link
-                        href="/usluge/p-dtr"
+                        href="/usluge/pregled"
                         className="block px-3 py-2 text-slate-100"
                       >
-                        P-DTR
+                        Pregled
                       </Link>
                     </li>
                     <li>
                       <Link
-                        href="/usluge/pregled"
+                        href="/usluge/p-dtr"
                         className="block border-t border-slate-100 px-3 py-2 text-slate-100"
                       >
-                        Pregled
+                        P-DTR
                       </Link>
                     </li>
                     <li>
