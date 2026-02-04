@@ -11,10 +11,10 @@ const Page = () => {
     <>
       <section>
         <div className="relative">
-          <div className="bg-theme4/70 absolute inset-0" />
-          <div className="absolute top-1/2 right-1/2 flex translate-x-1/2 -translate-y-1/2 flex-col items-center gap-6">
+          <div className="bg-theme4/70 absolute inset-0 z-50" />
+          <div className="absolute top-1/2 right-1/2 z-50 flex translate-x-1/2 -translate-y-1/2 flex-col items-center gap-6">
             <motion.h1
-              className="after:to-theme1 relative text-center text-5xl text-8xl font-bold text-slate-100 after:absolute after:top-[calc(100%+5px)] after:left-1/2 after:h-1 after:w-[50%] after:-translate-x-1/2 after:rounded-full after:bg-linear-to-r after:from-slate-100 after:content-[''] sm:text-6xl md:text-7xl lg:text-8xl"
+              className="after:to-theme1 relative text-center text-5xl font-bold text-slate-100 after:absolute after:top-[calc(100%+5px)] after:left-1/2 after:h-1 after:w-[50%] after:-translate-x-1/2 after:rounded-full after:bg-linear-to-r after:from-slate-100 after:content-[''] sm:text-6xl md:text-7xl lg:text-8xl"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1 }}
@@ -22,18 +22,12 @@ const Page = () => {
               Kontakt
             </motion.h1>
           </div>
-          <div
-            className="h-140 max-h-150 overflow-hidden bg-cover md:h-fit md:bg-none!"
-            style={{
-              background: `url(/slike/bez-boli-2-xl.jpg) center / cover no-repeat`,
-            }}
-          >
+          <div className="-z-10 h-140 max-h-150 overflow-hidden xl:h-150">
             <Image
-              className="hidden min-[1920px]:w-full md:block"
+              className="block object-cover object-top min-[1920px]:w-full"
               src="/slike/bez-boli-2-xl.jpg"
               alt="Život bez boli hero image"
-              width={1920}
-              height={300}
+              fill
               preload={true}
             />
           </div>

@@ -24,7 +24,7 @@ const Recenzije = () => {
   return (
     <div
       className={cn(
-        "fixed bottom-3 left-3 z-900 max-w-[95%] sm:max-w-110",
+        "fixed bottom-3 left-3 z-100 max-w-[95%] sm:max-w-110",
         closeModal ? "hidden" : "block",
       )}
     >
