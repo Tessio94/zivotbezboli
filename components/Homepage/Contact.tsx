@@ -29,7 +29,7 @@ const Contact = () => {
           </motion.h2>
         )}
         <div className="flex w-full flex-col items-center justify-between gap-15 lg:h-160 lg:flex-row lg:gap-0">
-          <div className="shadow-theme1/60 relative z-10 order-1 h-full rounded-2xl bg-[url(/zivotbezboli-background-nostroke-1920.png)] bg-cover bg-no-repeat p-5 shadow-lg sm:rounded-4xl sm:p-10 lg:order-2 lg:h-fit lg:w-[750px]">
+          <div className="shadow-theme1/60 relative z-10 order-1 h-full rounded-2xl bg-[url(/zivotbezboli-background-nostroke-1920.jpg)] bg-cover bg-no-repeat p-5 shadow-lg sm:rounded-4xl sm:p-10 lg:order-2 lg:h-fit lg:w-[750px]">
             <div className="from-theme3/90 to-theme3/30 absolute inset-0 -z-10 rounded-2xl bg-linear-to-r sm:rounded-4xl" />
             <h2 className="font-playfair relative mb-15 text-4xl font-bold text-slate-100 after:absolute after:top-[105%] after:left-0 after:h-[5px] after:w-25 after:rounded-full after:bg-slate-100 after:content-['']">
               Pošaljite upit

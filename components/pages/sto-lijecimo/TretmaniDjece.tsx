@@ -35,7 +35,7 @@ const TretmaniDjece = () => {
     <>
       <section>
         <div className="flex flex-col md:flex-row">
-          <div className="relative z-10 bg-[url(/zivotbezboli-background-nostroke-1920.png)] max-md:order-1 max-md:order-2 md:w-1/2">
+          <div className="relative z-10 bg-[url(/zivotbezboli-background-nostroke-1920.jpg)] max-md:order-1 max-md:order-2 md:w-1/2">
             <div className="from-theme3/90 to-theme3/30 absolute inset-0 -z-10 bg-linear-to-r" />
             <motion.div
               className="flex flex-col items-start gap-10 px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26"

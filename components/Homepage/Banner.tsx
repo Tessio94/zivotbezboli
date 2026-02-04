@@ -4,7 +4,7 @@ import * as motion from "motion/react-client";
 
 const Banner = ({ version }: { version: string }) => {
   return (
-    <section className="relative z-10 bg-[url(/zivotbezboli-background-nostroke-1920.png)]">
+    <section className="relative z-10 bg-[url(/zivotbezboli-background-nostroke-1920.jpg)]">
       <div className="from-theme3/90 to-theme3/30 absolute inset-0 -z-10 bg-linear-to-r" />
       {version === "one" && (
         <div className="z-10 mx-auto flex max-w-[60%] flex-col items-center gap-8 px-6 py-16 max-[1600px]:max-w-[80%] max-[1200px]:max-w-full sm:px-10 sm:py-20 lg:px-18 lg:py-26">
