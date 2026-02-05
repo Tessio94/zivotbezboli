@@ -284,10 +284,10 @@ const Osteopatija = () => {
 
                 <ul className="ml-5 list-disc">
                   <li>
-                    <p className="text-theme4 text-xl">lubanja,</p>
+                    <p className="text-theme4 text-xl">lubanja</p>
                   </li>
                   <li>
-                    <p className="text-theme4 text-xl">kralježnica,</p>
+                    <p className="text-theme4 text-xl">kralježnica</p>
                   </li>
                   <li>
                     <p className="text-theme4 text-xl">
