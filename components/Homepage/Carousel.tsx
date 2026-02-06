@@ -229,7 +229,7 @@ const Carousel = () => {
               />
             </div> */}
               <Image
-                className="z-0 max-[1000px]:object-[30%] max-[930px]:rotate-y-180 max-[550px]:object-[25%] max-xl:min-h-[1080px] max-xl:object-cover min-[1920px]:w-full"
+                className="z-0 max-[1000px]:object-[30%] max-[550px]:object-[25%] max-xl:min-h-[1080px] max-xl:object-cover min-[1920px]:w-full"
                 src="/slike/bez-boli-test-carousel-2.jpg"
                 alt="Život bez boli hero image"
                 width={1920}
