@@ -1,16 +1,32 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Geist,
+  Geist_Mono,
+  Josefin_Sans,
+  Libre_Baskerville,
+  Inter,
+  Montserrat,
+} from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Recenzije from "@/components/Recenzije";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
+
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
+const josefineSans = Josefin_Sans({
+  variable: "--font-josefine-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const libre = Libre_Baskerville({
+  variable: "--font-libre",
   subsets: ["latin"],
 });
 
@@ -44,7 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${josefineSans.variable} ${libre.variable} antialiased`}
       >
         <div>
           <Link
