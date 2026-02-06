@@ -15,8 +15,8 @@ import {
 } from "react-icons/io";
 
 const Carousel = () => {
-  const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
-  // const [emblaRef] = useEmblaCarousel({ loop: false });
+  // const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
+  const [emblaRef] = useEmblaCarousel({ loop: false });
 
   return (
     <section>
@@ -76,8 +76,16 @@ const Carousel = () => {
                 preload={true}
               /> */}
               <Image
-                className="z-0 max-[930px]:object-[70%] max-xl:min-h-[1080px] max-xl:object-cover min-[1920px]:w-full"
+                className="z-0 hidden max-[930px]:object-[70%] max-xl:min-h-[1080px] max-xl:object-cover min-[600px]:block min-[1920px]:w-full"
                 src="/slike/bez-boli-test-carousel-1.jpg"
+                alt="Život bez boli hero image"
+                width={1920}
+                height={1080}
+                preload={true}
+              />
+              <Image
+                className="z-0 block object-top max-[930px]:object-[70%] max-xl:min-h-[1080px] max-xl:object-cover min-[600px]:hidden min-[1920px]:w-full"
+                src="/slike/bez-boli-test-carousel-1-sm2.jpg"
                 alt="Život bez boli hero image"
                 width={1920}
                 height={1080}
