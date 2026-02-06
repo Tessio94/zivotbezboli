@@ -75,22 +75,27 @@ const Carousel = () => {
                 height={1080}
                 preload={true}
               /> */}
-              <Image
-                className="z-0 hidden max-[930px]:object-[70%] max-xl:min-h-[1080px] max-xl:object-cover min-[600px]:block min-[1920px]:w-full"
-                src="/slike/bez-boli-test-carousel-1.jpg"
-                alt="Život bez boli hero image"
-                width={1920}
-                height={1080}
-                preload={true}
-              />
-              <Image
-                className="z-0 block object-top max-[930px]:object-[70%] max-xl:min-h-[1080px] max-xl:object-cover min-[600px]:hidden min-[1920px]:w-full"
-                src="/slike/bez-boli-test-carousel-1-sm2.jpg"
-                alt="Život bez boli hero image"
-                width={1920}
-                height={1080}
-                preload={true}
-              />
+
+              <picture>
+                <source
+                  media="(max-width: 599px)"
+                  srcSet="/slike/bez-boli-test-carousel-1-sm2.jpg"
+                />
+                <source
+                  media="(min-width: 600px)"
+                  srcSet="/slike/bez-boli-test-carousel-1.jpg"
+                />
+
+                <Image
+                  src="/slike/bez-boli-test-carousel-1.jpg"
+                  alt="Život bez boli hero image"
+                  width={1920}
+                  height={1080}
+                  preload
+                  loading="eager"
+                  className="z-0 max-[930px]:object-[70%] max-xl:min-h-[1080px] max-xl:object-cover min-[1920px]:w-full"
+                />
+              </picture>
             </div>
           </div>
           <div className="embla__slide">
