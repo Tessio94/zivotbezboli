@@ -240,10 +240,10 @@ const TerapijskeVjezbe = () => {
               pravilnog izvođenja.
             </motion.p>
           </div>
-          <div className="2xl:bg-position-[0% 50%] overflow-hidden bg-none bg-cover bg-no-repeat max-2xl:bg-position-[20%] max-lg:order-2 lg:w-1/2 lg:bg-[url(/slike/bez-boli-4-md.jpg)]">
+          <div className="overflow-hidden bg-none bg-cover bg-center bg-no-repeat max-2xl:bg-position-[20%] max-lg:order-2 lg:w-1/2 lg:bg-[url(/slike/bez-boli-26-md.jpg)]">
             <Image
               className="block h-auto w-full lg:hidden"
-              src="/slike/bez-boli-4-md.jpg"
+              src="/slike/bez-boli-26-md.jpg"
               alt=""
               width={960}
               height={1080}

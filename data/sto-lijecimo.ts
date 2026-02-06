@@ -119,7 +119,7 @@ export const STO_LIJECIMO = {
 
   "bol-u-laktu-i-ruci": {
     title: "Bol u laktu i ruci",
-    image: "/slike/bez-boli-6-xl.jpg",
+    image: "/slike/bez-boli-28-xl.jpg",
     seoTitle:
       "Bol u laktu i ruci – fizioterapija i terapija pokreta | Život bez boli",
     description:
@@ -128,7 +128,7 @@ export const STO_LIJECIMO = {
       seoTitle: "Bol u laktu i ruci",
       images: [
         {
-          url: "https://www.zivotbezboli.com/slike/bez-boli-6-xl.jpg",
+          url: "https://www.zivotbezboli.com/slike/bez-boli-28-xl.jpg",
           width: 1920,
           height: 1080,
           alt: "Terapija boli u laktu i ruci",
@@ -159,7 +159,7 @@ export const STO_LIJECIMO = {
 
   "tretmani-djece": {
     title: "Tretmani djece",
-    image: "/slike/bez-boli-14-xl.jpg",
+    image: "/slike/bez-boli-29-xl.jpg",
     seoTitle:
       "Tretmani djece – dječja fizioterapija i osteopatija | Život bez boli",
     description:
@@ -168,7 +168,7 @@ export const STO_LIJECIMO = {
       seoTitle: "Tretmani djece – fizioterapija",
       images: [
         {
-          url: "https://www.zivotbezboli.com/slike/bez-boli-14-xl.jpg",
+          url: "https://www.zivotbezboli.com/slike/bez-boli-29-xl.jpg",
           width: 1920,
           height: 1080,
           alt: "Dječja fizioterapija i osteopatija",

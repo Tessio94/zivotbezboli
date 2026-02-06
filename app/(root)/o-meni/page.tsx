@@ -183,14 +183,14 @@ const Page = () => {
           >
             <Image
               className="rounded-[38%_62%_77%_23%/30%_30%_70%_70%] max-xl:w-1/2 max-xl:pr-5 max-md:w-full max-md:pr-0"
-              src="/slike/bez-boli-4-sm.jpg"
+              src="/slike/bez-boli-30-sm.jpg"
               alt=""
               width={600}
               height={1080}
             />
             <Image
               className="block scale-x-[-1] rounded-[38%_62%_77%_23%/30%_30%_70%_70%] max-xl:w-1/2 max-xl:pl-5 max-md:hidden xl:hidden"
-              src="/slike/bez-boli-9-sm.jpg"
+              src="/slike/bez-boli-31-sm.jpg"
               alt=""
               width={600}
               height={1080}
@@ -289,6 +289,15 @@ const Page = () => {
           </motion.li>
         </ul>
       </section>
+      <div className="overflow-hidden xl:max-h-212.5">
+        <Image
+          className="h-auto w-full"
+          src="/slike/bez-boli-32-xl.jpg"
+          alt=""
+          width={1920}
+          height={1080}
+        />
+      </div>
       <Banner version="two" />
       <section>
         <div className="flex flex-col xl:flex-row">

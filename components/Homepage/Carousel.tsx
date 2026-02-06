@@ -67,9 +67,17 @@ const Carousel = () => {
                   </Link>
                 </motion.div>
               </div>
-              <Image
+              {/* <Image
                 className="z-0 rotate-y-180 max-[930px]:object-[30%] max-xl:min-h-[1080px] max-xl:object-cover min-[1920px]:w-full"
                 src="/slike/bez-boli-4-xl.jpg"
+                alt="Život bez boli hero image"
+                width={1920}
+                height={1080}
+                preload={true}
+              /> */}
+              <Image
+                className="z-0 max-[930px]:object-[70%] max-xl:min-h-[1080px] max-xl:object-cover min-[1920px]:w-full"
+                src="/slike/bez-boli-test-carousel-1.jpg"
                 alt="Život bez boli hero image"
                 width={1920}
                 height={1080}
@@ -167,9 +175,16 @@ const Carousel = () => {
                   </a>
                 </div>
               </div>
-              <Image
+              {/* <Image
                 className="z-0 rotate-y-180 max-[930px]:object-[30%] max-xl:min-h-[1080px] max-xl:object-cover min-[1920px]:w-full"
                 src="/slike/bez-boli-10-xl.jpg"
+                alt="Život bez boli hero image"
+                width={1920}
+                height={1080}
+              /> */}
+              <Image
+                className="z-0 max-[560px]:object-[60%] max-xl:min-h-[1080px] max-xl:object-cover min-[930px]:rotate-y-180 min-[1920px]:w-full"
+                src="/slike/bez-boli-test-carousel-3.jpg"
                 alt="Život bez boli hero image"
                 width={1920}
                 height={1080}
@@ -178,8 +193,8 @@ const Carousel = () => {
           </div>
           <div className="embla__slide">
             <div className="relative">
-              <div className="from-theme4/20 via-theme4/90 to-theme4/20 max-[930px]:from-theme4/90 absolute inset-0 bg-linear-to-l max-[930px]:bg-linear-to-r max-[930px]:via-none" />
-              <div className="absolute top-1/2 right-1/2 flex w-full translate-x-1/2 -translate-y-1/2 flex-col items-center gap-6 px-6 sm:px-10 xl:w-auto xl:px-0">
+              <div className="from-theme4/20 via-theme4/90 to-theme4/20 max-[930px]:from-theme4/90 absolute inset-0 z-10 bg-linear-to-l max-[930px]:bg-linear-to-r max-[930px]:via-none" />
+              <div className="absolute top-1/2 right-1/2 z-20 flex w-full translate-x-1/2 -translate-y-1/2 flex-col items-center gap-6 px-6 sm:px-10 xl:w-auto xl:px-0">
                 <h1 className="text-center text-9xl font-bold text-slate-100 max-[1700px]:text-8xl max-[1500px]:text-7xl max-[750px]:text-6xl max-[640px]:text-5xl max-[450px]:text-4xl xl:text-nowrap">
                   <span className="text-theme1">Bol </span>nije problem.
                 </h1>
@@ -197,9 +212,17 @@ const Carousel = () => {
                   Rezervirajte termin
                 </Link>
               </div>
-              <Image
+              {/* <Image
                 className="z-0 max-[930px]:object-[30%] max-xl:min-h-[1080px] max-xl:object-cover min-[1920px]:w-full"
                 src="/slike/bez-boli-3-xl.jpg"
+                alt="Život bez boli hero image"
+                width={1920}
+                height={1080}
+              />
+            </div> */}
+              <Image
+                className="z-0 max-[1000px]:object-[30%] max-[930px]:rotate-y-180 max-[550px]:object-[25%] max-xl:min-h-[1080px] max-xl:object-cover min-[1920px]:w-full"
+                src="/slike/bez-boli-test-carousel-2.jpg"
                 alt="Život bez boli hero image"
                 width={1920}
                 height={1080}
