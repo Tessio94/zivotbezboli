@@ -393,7 +393,7 @@ const Osteopatija = () => {
               >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
-                  prirodne obrasce kretanja (čučanj, iskorak, rotacija, oslonci)
+                  osobe s bolovima u leđima, vratu i zglobovima
                 </p>
               </motion.li>
               <motion.li
@@ -402,7 +402,7 @@ const Osteopatija = () => {
               >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
-                  pravilno i svjesno disanje
+                  osobe pod stresom i napetošću
                 </p>
               </motion.li>
               <motion.li
@@ -411,7 +411,7 @@ const Osteopatija = () => {
               >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
-                  razvoj jakosti (snage) bez preopterećenja
+                  osobe s kroničnim tegobama
                 </p>
               </motion.li>
               <motion.li
@@ -420,7 +420,7 @@ const Osteopatija = () => {
               >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
-                  poboljšanje funkcionalnosti i izdržljivosti
+                  sportaše i rekreativce
                 </p>
               </motion.li>
               <motion.li
@@ -429,16 +429,7 @@ const Osteopatija = () => {
               >
                 <BiChevronRight className="text-theme4 text-3xl" />
                 <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
-                  kontrolu i stabilnost trupa
-                </p>
-              </motion.li>
-              <motion.li
-                className="flex flex-row items-start gap-2"
-                variants={itemVariants}
-              >
-                <BiChevronRight className="text-theme4 text-3xl" />
-                <p className="text-theme4 flex flex-row items-center gap-2 text-xl font-semibold">
-                  mentalnu prisutnost i fokus
+                  osobe koje žele preventivno brinuti o svom zdravlju
                 </p>
               </motion.li>
             </motion.ul>
