@@ -30,18 +30,18 @@ const Cjenik = () => {
                 </div>
                 <div className="flex flex-row">
                   <p className="border-theme2 grow border-b-2 px-3 py-3 text-xl text-slate-100 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
-                    Kontrolni pregled i tretman (30min)
+                    Paket pregled + 3 tretmana
                   </p>
                   <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-b-2 border-l-2 px-3 py-3 text-xl text-slate-100 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
-                    50 €
+                    210 €
                   </p>
                 </div>
                 <div className="flex flex-row">
                   <p className="grow px-3 py-3 text-xl text-slate-100 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
-                    Paket pregled + 3 tretmana
+                    Kontrolni pregled i tretman (30min)
                   </p>
                   <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-l-2 px-3 py-3 text-xl text-slate-100 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
-                    210 €
+                    50 €
                   </p>
                 </div>
               </div>

@@ -32,11 +32,17 @@ const Banner = ({ version }: { version: string }) => {
             whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <Link
+            {/* <Link
               href="/rezervacija"
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-4xl px-8 py-3 text-center text-3xl tracking-wider text-slate-100 transition-all duration-300 max-[400px]:text-2xl"
             >
               Rezervirajte termin
+            </Link> */}
+            <Link
+              href="/kontakt"
+              className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-4xl px-8 py-3 text-center text-3xl tracking-wider text-slate-100 transition-all duration-300 max-[400px]:text-2xl"
+            >
+              Kontaktirajte nas
             </Link>
           </motion.div>
         </div>
@@ -102,8 +108,14 @@ const Banner = ({ version }: { version: string }) => {
             whileInView={{ y: 0, opacity: 1, transition: { duration: 1 } }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <Link
+            {/* <Link
               href="/rezervacija"
+              className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-4xl px-8 py-3 text-center text-3xl tracking-wider text-slate-100 transition-all duration-300"
+            >
+              Rezervirajte termin
+            </Link> */}
+            <Link
+              href="/kontakt"
               className="bg-theme1 hover:bg-theme4 flex items-center gap-6 rounded-4xl px-8 py-3 text-center text-3xl tracking-wider text-slate-100 transition-all duration-300"
             >
               Rezervirajte termin

@@ -60,21 +60,13 @@ const Carousel = () => {
                   transition={{ duration: 1 }}
                 >
                   <Link
-                    href="/rezervacija"
+                    href="/kontakt"
                     className="bg-theme1 hover:bg-theme4 rounded-4xl border-2 border-transparent px-10 py-5 text-3xl font-semibold text-slate-100 transition-all duration-300 hover:border-slate-100 max-[1400px]:px-7 max-[1400px]:py-3 max-[640px]:text-2xl"
                   >
                     Rezervirajte termin
                   </Link>
                 </motion.div>
               </div>
-              {/* <Image
-                className="z-0 rotate-y-180 max-[930px]:object-[30%] max-xl:min-h-[1080px] max-xl:object-cover min-[1920px]:w-full"
-                src="/slike/bez-boli-4-xl.jpg"
-                alt="Život bez boli hero image"
-                width={1920}
-                height={1080}
-                preload={true}
-              /> */}
 
               <picture>
                 <source
@@ -188,16 +180,10 @@ const Carousel = () => {
                   </a>
                 </div>
               </div>
-              {/* <Image
-                className="z-0 rotate-y-180 max-[930px]:object-[30%] max-xl:min-h-[1080px] max-xl:object-cover min-[1920px]:w-full"
-                src="/slike/bez-boli-10-xl.jpg"
-                alt="Život bez boli hero image"
-                width={1920}
-                height={1080}
-              /> */}
+
               <Image
-                className="z-0 max-[560px]:object-[60%] max-xl:min-h-[1080px] max-xl:object-cover min-[930px]:rotate-y-180 min-[1920px]:w-full"
-                src="/slike/bez-boli-test-carousel-3.jpg"
+                className="z-0 max-[560px]:object-[60%] max-xl:min-h-[1080px] max-xl:object-cover min-[1920px]:w-full"
+                src="/slike/bez-boli-33-xl.jpg"
                 alt="Život bez boli hero image"
                 width={1920}
                 height={1080}
@@ -219,20 +205,13 @@ const Carousel = () => {
                   Ne liječimo simptome – tražimo zašto vas boli.
                 </h3>
                 <Link
-                  href="/rezervacija"
+                  href="/kontakt"
                   className="bg-theme1 hover:bg-theme4 mt-5 rounded-4xl border-2 border-transparent px-10 py-5 text-3xl font-semibold text-slate-100 transition-all duration-300 hover:border-slate-100 max-[1400px]:px-7 max-[1400px]:py-3 max-[640px]:text-2xl"
                 >
                   Rezervirajte termin
                 </Link>
               </div>
-              {/* <Image
-                className="z-0 max-[930px]:object-[30%] max-xl:min-h-[1080px] max-xl:object-cover min-[1920px]:w-full"
-                src="/slike/bez-boli-3-xl.jpg"
-                alt="Život bez boli hero image"
-                width={1920}
-                height={1080}
-              />
-            </div> */}
+
               <Image
                 className="z-0 max-[1000px]:object-[30%] max-[550px]:object-[25%] max-xl:min-h-[1080px] max-xl:object-cover min-[1920px]:w-full"
                 src="/slike/bez-boli-test-carousel-2.jpg"

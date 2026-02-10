@@ -236,7 +236,7 @@ const Osteopatija = () => {
                 viewport={{ once: true, amount: 0.3 }}
               >
                 <p className="text-theme4 text-center text-2xl font-semibold">
-                  Parijetalni sustav
+                  Mišično-koštani sustav
                 </p>
 
                 <ul className="ml-5 list-disc">
