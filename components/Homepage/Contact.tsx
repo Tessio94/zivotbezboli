@@ -62,7 +62,7 @@ const Contact = () => {
           },
         }}
       />
-      <section className="bg-theme1/10">
+      <section className="bg-theme1/10" id="kontakt-forma">
         <div className="px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26">
           {location === "/" && (
             <motion.h2
