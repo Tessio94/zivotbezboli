@@ -54,7 +54,7 @@ export default function RootLayout({
             Rezervacija
           </Link>
         </div> */}
-        <Recenzije />
+        {/* <Recenzije /> */}
         {children}
       </body>
     </html>
