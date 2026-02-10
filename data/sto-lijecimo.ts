@@ -1,7 +1,18 @@
+import kronicnaBolImg from "@/public/slike/bez-boli-19-xl.jpg";
+import ledjaImg from "@/public/slike/bez-boli-9-xl.jpg";
+import kukImg from "@/public/slike/bez-boli-2-xl.jpg";
+import koljenaStopalaImg from "@/public/slike/bez-boli-8-xl.jpg";
+import vratImg from "@/public/slike/bez-boli-17-xl.jpg";
+import vratRameImg from "@/public/slike/bez-boli-19-xl.jpg";
+import lakatRukaImg from "@/public/slike/bez-boli-28-xl.jpg";
+import sportskeOzljedeImg from "@/public/slike/bez-boli-13-xl.jpg";
+import djecaImg from "@/public/slike/bez-boli-29-xl.jpg";
+import ostaleTegobeImg from "@/public/slike/bez-boli-9-xl.jpg";
+
 export const STO_LIJECIMO = {
   "kronicna-bol": {
     title: "Kronična bol",
-    image: "/slike/bez-boli-19-xl.jpg",
+    image: kronicnaBolImg,
     seoTitle:
       "Kronična bol – dijagnostika i terapija u Zagrebu | Život bez boli",
     description:
@@ -21,7 +32,7 @@ export const STO_LIJECIMO = {
 
   "bol-u-ledjima": {
     title: "Bol u leđima",
-    image: "/slike/bez-boli-9-xl.jpg",
+    image: ledjaImg,
     seoTitle:
       "Bol u leđima – privatna fizioterapija u Zagrebu | Život bez boli",
     description:
@@ -41,7 +52,7 @@ export const STO_LIJECIMO = {
 
   "bol-u-kuku": {
     title: "Bol u kuku",
-    image: "/slike/bez-boli-2-xl.jpg",
+    image: kukImg,
     seoTitle: "Bol u kuku – terapija pokreta i fizioterapija | Život bez boli",
     description:
       "Bol u kuku povezana s hodom, sportom ili dugotrajnim sjedenjem. Funkcionalni pristup terapiji.",
@@ -60,7 +71,7 @@ export const STO_LIJECIMO = {
 
   "bol-u-koljenima-i-stopalima": {
     title: "Bol u koljenima i stopalima",
-    image: "/slike/bez-boli-8-xl.jpg",
+    image: koljenaStopalaImg,
     seoTitle:
       "Bol u koljenima i stopalima – fizioterapija i terapija | Život bez boli",
     description:
@@ -80,7 +91,7 @@ export const STO_LIJECIMO = {
 
   "bol-u-vratu": {
     title: "Bol u vratu",
-    image: "/slike/bez-boli-17-xl.jpg",
+    image: vratImg,
     seoTitle: "Bol u vratu – fizioterapija i osteopatija | Život bez boli",
     description:
       "Liječenje boli u vratu uzrokovane napetošću, stresom ili disfunkcijom pokreta.",
@@ -99,7 +110,7 @@ export const STO_LIJECIMO = {
 
   "bol-u-vratu-i-ramenu": {
     title: "Bol u vratu i ramenu",
-    image: "/slike/bez-boli-19-xl.jpg",
+    image: vratRameImg,
     seoTitle:
       "Bol u vratu i ramenu – fizioterapija i osteopatija | Život bez boli",
     description:
@@ -119,7 +130,7 @@ export const STO_LIJECIMO = {
 
   "bol-u-laktu-i-ruci": {
     title: "Bol u laktu i ruci",
-    image: "/slike/bez-boli-28-xl.jpg",
+    image: lakatRukaImg,
     seoTitle:
       "Bol u laktu i ruci – fizioterapija i terapija pokreta | Život bez boli",
     description:
@@ -139,7 +150,7 @@ export const STO_LIJECIMO = {
 
   "sportske-ozljede": {
     title: "Sportske ozljede",
-    image: "/slike/bez-boli-13-xl.jpg",
+    image: sportskeOzljedeImg,
     seoTitle:
       "Sportske ozljede – rehabilitacija i fizioterapija | Život bez boli",
     description:
@@ -159,7 +170,7 @@ export const STO_LIJECIMO = {
 
   "tretmani-djece": {
     title: "Tretmani djece",
-    image: "/slike/bez-boli-29-xl.jpg",
+    image: djecaImg,
     seoTitle:
       "Tretmani djece – dječja fizioterapija i osteopatija | Život bez boli",
     description:
@@ -179,7 +190,7 @@ export const STO_LIJECIMO = {
 
   "ostale-tegobe": {
     title: "Ostale tegobe",
-    image: "/slike/bez-boli-9-xl.jpg",
+    image: ostaleTegobeImg,
     seoTitle: "Ostale tegobe i disfunkcije pokreta – terapija | Život bez boli",
     description:
       "Vrtoglavice, napetosti, ograničenja pokreta i funkcionalni poremećaji – individualna terapija.",

@@ -2,9 +2,10 @@ import React from "react";
 import { Metadata } from "next";
 import Image from "next/image";
 import * as motion from "motion/react-client";
-import Banner from "@/components/Homepage/Banner";
 import { CgChevronRight } from "react-icons/cg";
+import Banner from "@/components/Homepage/Banner";
 import CarouselReal from "@/components/omeni/CarouselReal";
+import heroImg from "@/public/slike/bez-boli-11-xl.jpg";
 
 const Page = () => {
   return (
@@ -26,9 +27,10 @@ const Page = () => {
           <div className="-z-10 h-140 max-h-150 overflow-hidden xl:h-150">
             <Image
               className="block object-cover max-[550px]:object-[30%] min-[1920px]:w-full 2xl:object-top"
-              src="/slike/bez-boli-11-xl.jpg"
+              src={heroImg}
               alt="Život bez boli hero image"
               fill
+              placeholder="blur"
               preload={true}
             />
           </div>

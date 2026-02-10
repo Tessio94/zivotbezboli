@@ -1,7 +1,14 @@
+import pregledImg from "@/public/slike/bez-boli-1-xl.jpg";
+import pDtrImg from "@/public/slike/bez-boli-22-xl.jpg";
+import osteopatijaImg from "@/public/slike/bez-boli-2-xl.jpg";
+import manualnaImg from "@/public/slike/bez-boli-9-xl.jpg";
+import vjezbeImg from "@/public/slike/bez-boli-10-xl.jpg";
+import treningImg from "@/public/slike/bez-boli-21-xl.jpg";
+
 export const USLUGE = {
   pregled: {
     title: "Pregled",
-    image: "/slike/bez-boli-1-xl.jpg",
+    image: pregledImg,
     seoTitle: "Pregled i dijagnostika | Život bez boli",
     description:
       "Detaljan pregled i funkcionalna dijagnostika kako bismo otkrili pravi uzrok boli i tegoba.",
@@ -20,7 +27,7 @@ export const USLUGE = {
 
   "p-dtr": {
     title: "P-DTR®",
-    image: "/slike/bez-boli-22-xl.jpg",
+    image: pDtrImg,
     seoTitle: "P-DTR® terapija | Život bez boli",
     description:
       "P-DTR® terapija koristi neurološke principe za uklanjanje uzroka boli i disfunkcija pokreta.",
@@ -39,7 +46,7 @@ export const USLUGE = {
 
   osteopatija: {
     title: "Osteopatija",
-    image: "/slike/bez-boli-2-xl.jpg",
+    image: osteopatijaImg,
     seoTitle: "Osteopatija – cjelovit pristup tijelu | Život bez boli",
     description:
       "Osteopatski tretman usmjeren na ravnotežu tijela, živčanog sustava i pokreta.",
@@ -58,7 +65,7 @@ export const USLUGE = {
 
   "manualna-fizioterapija": {
     title: "Manualna fizioterapija",
-    image: "/slike/bez-boli-9-xl.jpg",
+    image: manualnaImg,
     seoTitle: "Manualna fizioterapija | Život bez boli",
     description:
       "Individualni manualni tretmani za smanjenje boli, poboljšanje pokreta i funkcije tijela.",
@@ -77,7 +84,7 @@ export const USLUGE = {
 
   "terapijske-vjezbe": {
     title: "Terapijske vježbe",
-    image: "/slike/bez-boli-10-xl.jpg",
+    image: vjezbeImg,
     seoTitle: "Terapijske vježbe | Život bez boli",
     description:
       "Ciljane terapijske vježbe prilagođene vašem stanju, mogućnostima i ciljevima oporavka.",
@@ -96,7 +103,7 @@ export const USLUGE = {
 
   "terapijski-trening": {
     title: "Terapijski trening",
-    image: "/slike/bez-boli-21-xl.jpg",
+    image: treningImg,
     seoTitle: "Terapijski trening | Život bez boli",
     description:
       "Siguran i kontroliran povratak snazi, stabilnosti i pokretu kroz terapijski trening.",

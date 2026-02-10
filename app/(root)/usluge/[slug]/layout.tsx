@@ -37,6 +37,7 @@ const Layout = async ({
               className="block object-cover object-top min-[1920px]:w-full"
               src={data.image}
               alt={data.title}
+              placeholder="blur"
               fill
               preload={true}
             />

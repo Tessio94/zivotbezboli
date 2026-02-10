@@ -1,10 +1,10 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import Image from "next/image";
-import Link from "next/link";
 import { CiClock1, CiLocationOn, CiMail, CiMobile3 } from "react-icons/ci";
 import { motion } from "motion/react";
 import {
@@ -13,6 +13,8 @@ import {
   IoLogoWhatsapp,
   IoLogoYoutube,
 } from "react-icons/io";
+import carousel1desk from "@/public/slike/bez-boli-test-carousel-1.jpg";
+import carousel1mob from "@/public/slike/bez-boli-test-carousel-1-sm2.jpg";
 
 const Carousel = () => {
   const [emblaRef] = useEmblaCarousel({ loop: false }, [Autoplay()]);
@@ -68,26 +70,25 @@ const Carousel = () => {
                 </motion.div>
               </div>
 
-              <picture>
-                <source
-                  media="(max-width: 599px)"
-                  srcSet="/slike/bez-boli-test-carousel-1-sm2.jpg"
-                />
-                <source
-                  media="(min-width: 600px)"
-                  srcSet="/slike/bez-boli-test-carousel-1.jpg"
-                />
+              {/* Mobile */}
+              <Image
+                src={carousel1mob}
+                alt="Život bez boli hero image"
+                width={600}
+                height={1080}
+                placeholder="blur"
+                className="z-0 hidden max-[930px]:object-[70%] max-[600px]:block max-xl:min-h-[1080px] max-xl:object-cover"
+              />
 
-                <Image
-                  src="/slike/bez-boli-test-carousel-1.jpg"
-                  alt="Život bez boli hero image"
-                  width={1920}
-                  height={1080}
-                  preload
-                  loading="eager"
-                  className="z-0 max-[930px]:object-[70%] max-xl:min-h-[1080px] max-xl:object-cover min-[1920px]:w-full"
-                />
-              </picture>
+              {/* Desktop */}
+              <Image
+                src={carousel1desk}
+                alt="Život bez boli hero image"
+                width={1920}
+                height={1080}
+                placeholder="blur"
+                className="z-0 block max-[930px]:object-[70%] max-[600px]:hidden max-xl:min-h-[1080px] max-xl:object-cover min-[1920px]:w-full"
+              />
             </div>
           </div>
           <div className="embla__slide">

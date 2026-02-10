@@ -1,10 +1,11 @@
 import React from "react";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import Contact from "@/components/Homepage/Contact";
-import { CiLocationOn, CiMail, CiMobile3 } from "react-icons/ci";
 import * as motion from "motion/react-client";
-import { Metadata } from "next";
+import { CiLocationOn, CiMail, CiMobile3 } from "react-icons/ci";
+import Contact from "@/components/Homepage/Contact";
+import heroImg from "@/public/slike/bez-boli-2-xl.jpg";
 
 const Page = () => {
   return (
@@ -25,9 +26,10 @@ const Page = () => {
           <div className="-z-10 h-140 max-h-150 overflow-hidden xl:h-150">
             <Image
               className="block object-cover object-top min-[1920px]:w-full"
-              src="/slike/bez-boli-2-xl.jpg"
+              src={heroImg}
               alt="Život bez boli hero image"
               fill
+              placeholder="blur"
               preload={true}
             />
           </div>
