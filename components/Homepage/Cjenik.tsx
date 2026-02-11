@@ -14,77 +14,95 @@ const Cjenik = () => {
           Cjenik
         </motion.h2>
         <div className="grid items-stretch gap-10 lg:grid-cols-2 2xl:grid-cols-3">
-          <div className="bg-theme1/10 border-theme1 rounded-2xl border-2 p-5 sm:p-8">
+          <div className="bg-theme1/10 border-theme1 rounded-2xl border-2 p-5 max-[430px]:p-2 sm:p-8">
             <div className="bg-theme4/90 overflow-hidden rounded-2xl">
-              <p className="bg-theme2 px-3 py-3 text-2xl font-semibold text-slate-100 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
+              <p className="bg-theme2 px-3 py-3 text-2xl font-semibold text-slate-100 max-[430px]:px-2 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
                 Pregled/tretman
               </p>
               <div>
                 <div className="flex flex-row">
-                  <p className="border-theme2 grow border-b-2 px-3 py-3 text-xl text-slate-100 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
+                  <p className="border-theme2 grow border-b-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
                     Prvi pregled i tretman
                   </p>
-                  <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-b-2 border-l-2 px-3 py-3 text-xl text-slate-100 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
+                  <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-b-2 border-l-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
                     80 €
                   </p>
                 </div>
                 <div className="flex flex-row">
-                  <p className="border-theme2 grow border-b-2 px-3 py-3 text-xl text-slate-100 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
+                  <p className="border-theme2 grow border-b-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
                     Paket pregled + 3 tretmana
                   </p>
-                  <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-b-2 border-l-2 px-3 py-3 text-xl text-slate-100 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
+                  <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-b-2 border-l-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
                     210 €
                   </p>
                 </div>
                 <div className="flex flex-row">
-                  <p className="grow px-3 py-3 text-xl text-slate-100 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
+                  <p className="grow px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
                     Kontrolni pregled i tretman (30min)
                   </p>
-                  <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-l-2 px-3 py-3 text-xl text-slate-100 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
+                  <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-l-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
                     50 €
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="bg-theme1/10 border-theme1 rounded-2xl border-2 p-5 sm:p-8">
+          <div className="bg-theme1/10 border-theme1 rounded-2xl border-2 p-5 max-[430px]:p-2 sm:p-8">
             <div className="bg-theme4/90 overflow-hidden rounded-2xl">
-              <p className="bg-theme2 px-3 py-3 text-2xl font-semibold text-slate-100 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
+              <p className="bg-theme2 px-3 py-3 text-2xl font-semibold text-slate-100 max-[430px]:px-2 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
                 Terapijske vježbe
               </p>
               <div>
                 <div className="flex flex-row">
-                  <p className="border-theme2 grow border-b-2 px-3 py-3 text-xl text-slate-100 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
+                  <p className="border-theme2 grow border-b-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
                     Ciljane terapijske vježbe + podrška 1 mj
                   </p>
-                  <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-b-2 border-l-2 px-3 py-3 text-xl text-slate-100 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
+                  <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-b-2 border-l-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
                     100 €
                   </p>
                 </div>
                 <div className="flex flex-row">
-                  <p className="grow px-3 py-3 text-xl text-slate-100 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
+                  <p className="grow px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
                     Terapijske vježbe + pregled i 3 tretmana
                   </p>
-                  <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-l-2 px-3 py-3 text-xl text-slate-100 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
+                  <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-l-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
                     300 €
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="bg-theme1/10 border-theme1 rounded-2xl border-2 p-5 sm:p-8">
+          <div className="bg-theme1/10 border-theme1 rounded-2xl border-2 p-5 max-[430px]:p-2 sm:p-8">
             <div className="bg-theme4/90 overflow-hidden rounded-2xl">
-              <p className="bg-theme2 px-3 py-3 text-2xl font-semibold text-slate-100 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
+              <p className="bg-theme2 px-3 py-3 text-2xl font-semibold text-slate-100 max-[430px]:px-2 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
                 Terapijski trening
               </p>
               <div>
                 <div className="flex flex-row">
-                  <p className="border-theme2 grow border-b-2 px-3 py-3 text-xl text-slate-100 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
+                  <p className="border-theme2 grow border-b-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
                     8 treninga + plan prehrane + video materijal + skripta +
                     podrška
                   </p>
-                  <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-b-2 border-l-2 px-3 py-3 text-xl text-slate-100 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
+                  <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-b-2 border-l-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
                     400 €
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-theme1/10 border-theme1 rounded-2xl border-2 p-5 max-[430px]:p-2 sm:p-8">
+            <div className="bg-theme4/90 overflow-hidden rounded-2xl">
+              <p className="bg-theme2 px-3 py-3 text-2xl font-semibold text-slate-100 max-[430px]:px-2 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
+                Život Bez Boli paket
+              </p>
+              <div>
+                <div className="flex flex-row">
+                  <p className="border-theme2 grow border-b-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
+                    3 mjeseca pregled + tretmani + terapijske vježbe + trening +
+                    podrška
+                  </p>
+                  <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-b-2 border-l-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
+                    1.000 €
                   </p>
                 </div>
               </div>
