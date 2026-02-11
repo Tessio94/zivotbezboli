@@ -124,10 +124,10 @@ const Page = () => {
               <CiMail className="text-theme3 text-5xl" />
               <p className="text-theme4 text-4xl font-semibold">E-mail</p>
               <a
-                href="mailto:ivan@ivanradicev.com"
+                href="mailto:info@zivotbezboli.com"
                 className="after:bg-theme4 text-theme4 relative inline-block text-3xl after:absolute after:top-full after:right-full after:left-0 after:h-0.5 after:transition-all after:duration-500 after:content-[''] hover:after:right-0 focus:after:right-0 active:after:right-0"
               >
-                ivan@ivanradicev.com
+                info@zivotbezboli.com
               </a>
             </div>
           </div>

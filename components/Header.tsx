@@ -498,11 +498,11 @@ const Header = () => {
             </div>
             <div className="px-3 py-1 transition-all duration-500">
               <a
-                href="mailto:ivan@ivanradicev.com"
+                href="mailto:info@zivotbezboli.com"
                 className="flex cursor-pointer items-center gap-2 text-lg tracking-wider text-slate-100 sm:text-xl"
               >
                 <CiMail className="shrink-0 text-2xl text-slate-100 sm:text-3xl" />
-                ivan@ivanradicev.com
+                info@zivotbezboli.com
               </a>
             </div>
 

@@ -113,10 +113,10 @@ const Footer = () => {
             <li className="flex items-center gap-4">
               <CiMail className="text-theme1 shrink-0 text-3xl" />
               <a
-                href="mailto:ivan@ivanradicev.com "
+                href="mailto:info@zivotbezboli.com"
                 className="relative flex items-center gap-4 text-2xl text-slate-100 after:absolute after:top-full after:right-full after:left-0 after:h-0.5 after:bg-slate-100 after:transition-all after:duration-300 after:content-[''] hover:after:right-0"
               >
-                ivan@ivanradicev.com
+                info@zivotbezboli.com
               </a>
             </li>
           </ul>
