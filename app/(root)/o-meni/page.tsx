@@ -218,6 +218,17 @@ const Page = () => {
           >
             <CgChevronRight className="text-theme1 shrink-0 text-3xl" />
             <p className="text-theme4 text-2xl font-semibold sm:text-3xl">
+              2009 do 2013 bacc. physioth
+            </p>
+          </motion.li>
+          <motion.li
+            className="flex items-start gap-2 sm:gap-4"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, transition: { duration: 1 } }}
+            viewport={{ once: true, amount: 0.3 }}
+          >
+            <CgChevronRight className="text-theme1 shrink-0 text-3xl" />
+            <p className="text-theme4 text-2xl font-semibold sm:text-3xl">
               2014 do 2016 Ortopedska manualna fizioterapija
               (Kalteborn/Evjenth–pristup)
             </p>
