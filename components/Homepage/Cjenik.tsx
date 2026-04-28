@@ -25,6 +25,14 @@ const Cjenik = () => {
                     Prvi pregled i tretman
                   </p>
                   <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-b-2 border-l-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
+                    100 €
+                  </p>
+                </div>
+                <div className="flex flex-row">
+                  <p className="border-theme2 grow border-b-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
+                    Tretman
+                  </p>
+                  <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-b-2 border-l-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
                     80 €
                   </p>
                 </div>
@@ -33,12 +41,12 @@ const Cjenik = () => {
                     Paket pregled + 3 tretmana
                   </p>
                   <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-b-2 border-l-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
-                    210 €
+                    250 €
                   </p>
                 </div>
                 <div className="flex flex-row">
                   <p className="grow px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
-                    Kontrolni pregled i tretman (30min)
+                    Kontrolni pregled
                   </p>
                   <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-l-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
                     50 €
@@ -55,7 +63,7 @@ const Cjenik = () => {
               <div>
                 <div className="flex flex-row">
                   <p className="border-theme2 grow border-b-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
-                    Ciljane terapijske vježbe + podrška 1 mj
+                    Ciljane terapijske vježbe
                   </p>
                   <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-b-2 border-l-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
                     100 €
@@ -66,7 +74,7 @@ const Cjenik = () => {
                     Terapijske vježbe + pregled i 3 tretmana
                   </p>
                   <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-l-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
-                    300 €
+                    350 €
                   </p>
                 </div>
               </div>
@@ -98,11 +106,11 @@ const Cjenik = () => {
               <div>
                 <div className="flex flex-row">
                   <p className="border-theme2 grow border-b-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
-                    3 mjeseca pregled + tretmani + terapijske vježbe + trening +
-                    podrška
+                    2 mjeseca pregled + 3 tretmana + terapijske vježbe + trening
+                    + kontrolni pregled
                   </p>
                   <p className="border-theme2 flex min-w-23 shrink-0 items-center justify-center border-b-2 border-l-2 px-3 py-3 text-xl text-slate-100 max-[430px]:px-2 max-[430px]:text-lg sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
-                    1.000 €
+                    750 €
                   </p>
                 </div>
               </div>
