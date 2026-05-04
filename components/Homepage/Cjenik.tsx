@@ -80,7 +80,7 @@ const Cjenik = () => {
               </div>
             </div>
           </div>
-          <div className="bg-theme1/10 border-theme1 rounded-2xl border-2 p-5 max-[430px]:p-2 sm:p-8">
+          {/* <div className="bg-theme1/10 border-theme1 rounded-2xl border-2 p-5 max-[430px]:p-2 sm:p-8">
             <div className="bg-theme4/90 overflow-hidden rounded-2xl">
               <p className="bg-theme2 px-3 py-3 text-2xl font-semibold text-slate-100 max-[430px]:px-2 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
                 Terapijski trening
@@ -97,11 +97,11 @@ const Cjenik = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
           <div className="bg-theme1/10 border-theme1 rounded-2xl border-2 p-5 max-[430px]:p-2 sm:p-8">
             <div className="bg-theme4/90 overflow-hidden rounded-2xl">
               <p className="bg-theme2 px-3 py-3 text-2xl font-semibold text-slate-100 max-[430px]:px-2 sm:px-5 sm:py-5 lg:px-3 lg:py-3 2xl:px-5 2xl:py-5">
-                Život Bez Boli paket
+                Bez Boli paket
               </p>
               <div>
                 <div className="flex flex-row">
