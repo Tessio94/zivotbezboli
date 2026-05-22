@@ -4,13 +4,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://zivotbezboli.com";
 
   return [
-    // main pages
     { url: `${baseUrl}/`, lastModified: new Date() },
     { url: `${baseUrl}/kontakt`, lastModified: new Date() },
     { url: `${baseUrl}/o-meni`, lastModified: new Date() },
-    { url: `${baseUrl}/rezervacija`, lastModified: new Date() },
-
-    // sto-lijecimo
     { url: `${baseUrl}/sto-lijecimo`, lastModified: new Date() },
     {
       url: `${baseUrl}/sto-lijecimo/bol-u-koljenima-i-stopalima`,
@@ -34,8 +30,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${baseUrl}/sto-lijecimo/sportske-ozljede`,
       lastModified: new Date(),
     },
-
-    // usluge
     { url: `${baseUrl}/usluge`, lastModified: new Date() },
     { url: `${baseUrl}/usluge/pregled`, lastModified: new Date() },
     { url: `${baseUrl}/usluge/osteopatija`, lastModified: new Date() },

@@ -78,7 +78,7 @@ const KronicnaBol = () => {
               viewport={{ once: true, amount: 0.3 }}
             >
               <Link
-                href="/usluge/rezervacija"
+                href="/kontakt"
                 className="bg-theme1 hover:bg-theme4 flex w-fit items-center gap-6 rounded-2xl px-4 py-2 text-lg tracking-wider text-slate-100 transition-all duration-300"
               >
                 Rezerviraj termin
