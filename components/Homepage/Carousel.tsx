@@ -29,7 +29,7 @@ const Carousel = () => {
               <div className="from-theme4/90 to-theme4/20 absolute inset-0 z-10 bg-linear-to-r" />
               <div className="absolute top-1/2 left-1/2 z-20 flex w-full -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-6 px-6 max-[1400px]:gap-4 max-[1024px]:gap-6 sm:px-10 lg:left-18 lg:w-auto lg:translate-x-0 lg:px-0">
                 <motion.h1
-                  className="text-center text-9xl font-bold text-slate-100 max-[1700px]:text-8xl max-[1500px]:text-7xl max-[640px]:text-5xl max-[400px]:text-4xl"
+                  className="text-center text-9xl font-bold text-slate-100 max-[1700px]:text-8xl max-[1500px]:text-7xl max-[640px]:text-6xl max-[450px]:text-7xl max-[450px]:text-[65px]"
                   initial={{ opacity: 0, y: -50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1 }}
