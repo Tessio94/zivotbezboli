@@ -3,7 +3,7 @@ import * as motion from "motion/react-client";
 
 const Cjenik = () => {
   return (
-    <section id="#cjenik">
+    <section id="cjenik">
       <div className="px-6 py-16 sm:px-10 sm:py-20 lg:px-18 lg:py-26">
         <motion.h2
           className="text-theme1 mb-15 text-5xl font-semibold"
