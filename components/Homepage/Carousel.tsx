@@ -62,7 +62,7 @@ const Carousel = () => {
                   transition={{ duration: 1 }}
                 >
                   <Link
-                    href="/kontakt"
+                    href="/rezervacija"
                     className="bg-theme1 hover:bg-theme4 rounded-4xl border-2 border-transparent px-10 py-5 text-3xl font-semibold text-slate-100 transition-all duration-300 hover:border-slate-100 max-[1400px]:px-7 max-[1400px]:py-3 max-[640px]:text-2xl"
                   >
                     Rezervirajte termin
@@ -206,7 +206,7 @@ const Carousel = () => {
                   Ne liječimo simptome – tražimo zašto vas boli.
                 </h3>
                 <Link
-                  href="/kontakt"
+                  href="/rezervacija"
                   className="bg-theme1 hover:bg-theme4 mt-5 rounded-4xl border-2 border-transparent px-10 py-5 text-3xl font-semibold text-slate-100 transition-all duration-300 hover:border-slate-100 max-[1400px]:px-7 max-[1400px]:py-3 max-[640px]:text-2xl"
                 >
                   Rezervirajte termin

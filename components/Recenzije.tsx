@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { AiFillStar } from "react-icons/ai";
@@ -8,6 +9,8 @@ import { CgClose } from "react-icons/cg";
 import { cn } from "@/lib/utils";
 
 const Recenzije = () => {
+  const pathname = usePathname();
+
   const [emblaRef] = useEmblaCarousel({ loop: false }, [
     Autoplay({
       delay: 3000,
@@ -16,6 +19,10 @@ const Recenzije = () => {
   // const [emblaRef] = useEmblaCarousel({ loop: false });
 
   const [closeModal, setCloseModal] = useState<boolean>(false);
+
+  if (pathname === "/rezervacija") {
+    return null;
+  }
 
   return (
     <div
