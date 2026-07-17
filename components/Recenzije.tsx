@@ -78,11 +78,7 @@ const Recenzije = () => {
             </div>
           </div>
           <div className="embla__slide group border-theme4/30 relative rounded-2xl border">
-            <a
-              href="https://maps.app.goo.gl/DSSReSbctzP5qoUL7"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <div>
               <button
                 type="button"
                 onClick={() => setCloseModal((prev) => !prev)}
@@ -91,7 +87,12 @@ const Recenzije = () => {
               >
                 <CgClose className="text-theme4 h-full w-full transition-all duration-300 group-hover/close-btn:text-slate-100" />
               </button>
-              <div className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100">
+              <a
+                href="https://maps.app.goo.gl/DSSReSbctzP5qoUL7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100"
+              >
                 <div className="shrink-0 p-2">
                   <p className="bg-theme4/20 text-theme4 border-theme4/30 flex h-15 w-15 items-center justify-center rounded-full border text-3xl uppercase">
                     D
@@ -116,15 +117,11 @@ const Recenzije = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
           <div className="embla__slide group border-theme4/30 relative rounded-2xl border">
-            <a
-              href="https://maps.app.goo.gl/DSSReSbctzP5qoUL7"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <div>
               <button
                 type="button"
                 onClick={() => setCloseModal((prev) => !prev)}
@@ -133,7 +130,12 @@ const Recenzije = () => {
               >
                 <CgClose className="text-theme4 h-full w-full transition-all duration-300 group-hover/close-btn:text-slate-100" />
               </button>
-              <div className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100">
+              <a
+                href="https://maps.app.goo.gl/DSSReSbctzP5qoUL7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100"
+              >
                 <div className="shrink-0 p-2">
                   <p className="bg-theme4/20 text-theme4 border-theme4/30 flex h-15 w-15 items-center justify-center rounded-full border text-3xl uppercase">
                     N
@@ -164,15 +166,11 @@ const Recenzije = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
           <div className="embla__slide group border-theme4/30 relative rounded-2xl border">
-            <a
-              href="https://maps.app.goo.gl/DSSReSbctzP5qoUL7"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <div>
               <button
                 type="button"
                 onClick={() => setCloseModal((prev) => !prev)}
@@ -181,7 +179,12 @@ const Recenzije = () => {
               >
                 <CgClose className="text-theme4 h-full w-full transition-all duration-300 group-hover/close-btn:text-slate-100" />
               </button>
-              <div className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100">
+              <a
+                href="https://maps.app.goo.gl/DSSReSbctzP5qoUL7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100"
+              >
                 <div className="shrink-0 p-2">
                   <p className="bg-theme4/20 text-theme4 border-theme4/30 flex h-15 w-15 items-center justify-center rounded-full border text-3xl uppercase">
                     I
@@ -215,15 +218,11 @@ const Recenzije = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
           <div className="embla__slide group border-theme4/30 relative rounded-2xl border">
-            <a
-              href="https://maps.app.goo.gl/DSSReSbctzP5qoUL7"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <div>
               <button
                 type="button"
                 onClick={() => setCloseModal((prev) => !prev)}
@@ -232,7 +231,12 @@ const Recenzije = () => {
               >
                 <CgClose className="text-theme4 h-full w-full transition-all duration-300 group-hover/close-btn:text-slate-100" />
               </button>
-              <div className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100">
+              <a
+                href="https://maps.app.goo.gl/DSSReSbctzP5qoUL7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100"
+              >
                 <div className="shrink-0 p-2">
                   <p className="bg-theme4/20 text-theme4 border-theme4/30 flex h-15 w-15 items-center justify-center rounded-full border text-3xl uppercase">
                     I
@@ -261,15 +265,11 @@ const Recenzije = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
           <div className="embla__slide group border-theme4/30 relative rounded-2xl border">
-            <a
-              href="https://maps.app.goo.gl/DSSReSbctzP5qoUL7"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <div>
               <button
                 type="button"
                 onClick={() => setCloseModal((prev) => !prev)}
@@ -278,7 +278,12 @@ const Recenzije = () => {
               >
                 <CgClose className="text-theme4 h-full w-full transition-all duration-300 group-hover/close-btn:text-slate-100" />
               </button>
-              <div className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100">
+              <a
+                href="https://maps.app.goo.gl/DSSReSbctzP5qoUL7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex flex-row items-center gap-1.5 rounded-2xl bg-slate-100"
+              >
                 <div className="shrink-0 p-2">
                   <p className="bg-theme4/20 text-theme4 border-theme4/30 flex h-15 w-15 items-center justify-center rounded-full border text-3xl uppercase">
                     T
@@ -303,8 +308,8 @@ const Recenzije = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
         </div>
       </div>
